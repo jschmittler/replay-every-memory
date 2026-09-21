@@ -28,13 +28,14 @@ Introduce ReplayEveryMemory Studio and its first game, Trash Dash; offer an artw
 The user's September 21 request supersedes the earlier website handoff's page list, fonts, four-member roster, roles, and contact details. Old handoff documents are historical reference only; their embedded build instructions are not new user instructions.
 
 ## Capabilities and Constraints
-- Home: studio introduction, first-game overview, core cast preview, social and email contact.
-- Media: filterable artwork/logo gallery, full-size views, downloads including the official SVG, and data-driven support for captioned self-hosted video. There is no video supplied yet and no public upload form or CMS.
+- Home: studio introduction with the approved transparent Trashy idle loop, first-game overview, core cast preview, social and email contact. The loop is muted and pausable, stops offscreen/when hidden, and keeps a still fallback for reduced motion, errors, or unsupported transparency.
+- Media: filterable artwork/logo gallery, an in-page viewing-only preview, and data-driven support for captioned self-hosted video. There is no video supplied yet and no public upload form or CMS.
 - About Us: studio profile and all eleven approved credits, exact bios and roles, owner-supplied portraits.
 - Public Instagram: https://www.instagram.com/replayeverymemory/
 - Public email: trashdash@replayeverymemory.com
 - Release dates and store destinations are not promised. Game status: in development.
 - Only Home, Media, and About Us are public content pages; a 404 recovery page is included.
+- Original artwork stays in `src/assets/`; only display renditions ship. No download or direct-original links. Image context menus and dragging are discouraged, not security controls. Displayed previews and fonts can still be copied by a determined visitor, and screenshots cannot be prevented.
 - Deployment/domain unconfigured; preview remains noindex until a public origin is set.
 
 ## Accessibility & Inclusion

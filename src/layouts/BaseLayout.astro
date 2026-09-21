@@ -3,21 +3,28 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { site } from '../config/site';
+import ArtworkViewing from '../components/ArtworkViewing.astro';
+import { getImage } from 'astro:assets';
+import studioMark from '../assets/studio-mark.png';
+import studioLogo from '../assets/studio-logo.png';
+import displayFontUrl from '../assets/fonts/eurostile-extended-black.ttf?url';
 interface Props { title: string; description: string; }
 const { title, description } = Astro.props;
 const canonical = site.siteUrl ? new URL(Astro.url.pathname, site.siteUrl).href : undefined;
+const favicon = await getImage({ src: studioMark, width: 96, format: 'png' });
+const socialImage = site.siteUrl ? await getImage({ src: studioLogo, width: 1200, format: 'webp', quality: 82 }) : undefined;
 ---
 <!doctype html>
 <html lang="en"><head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content={description} /><meta name="theme-color" content="#f7c75d" />
   {!site.siteUrl && <meta name="robots" content="noindex, nofollow" />}
-  <link rel="icon" type="image/png" href="/assets/studio-mark.png" />
-  <link rel="preload" href="/assets/fonts/eurostile-extended-black.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="icon" type="image/png" href={favicon.src} />
+  <link rel="preload" href={displayFontUrl} as="font" type="font/ttf" crossorigin />
   {canonical && <link rel="canonical" href={canonical} />}
   <meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:type" content="website" />
-  {site.siteUrl && <meta property="og:image" content={new URL('/assets/studio-logo.png', site.siteUrl).href} />}
+  {site.siteUrl && socialImage && <meta property="og:image" content={new URL(socialImage.src, site.siteUrl).href} />}
   <title>{title}</title>
 </head><body>
-  <!-- THESIS: A homegrown studio introduces its first adventure through the real art and people making it. OWN-WORLD: Established navy and gold, made brighter with sunlit fields, EuroStyle lettering, open layouts, and approved character art. STORY: Meet the studio, discover Trash Dash, explore the art, and say hello. FIRST VIEWPORT: A generous gold stage pairs a large left-aligned studio promise and navy game link with full-height Trashy on the right. FORM: Direct extension and simplification of the established studio identity; user requested brighter and more playful. Signature interaction: media filters reveal artwork and an honest video empty state, with keyboard-accessible full-size images. FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance -->
-  <a class="skip-link" href="#main">Skip to content</a><Header /><main id="main"><slot /></main><Footer />
+  <!-- THESIS: A homegrown studio introduces its first adventure through the real art and people making it. OWN-WORLD: Established navy and gold, made brighter with sunlit fields, EuroStyle lettering, open layouts, and approved character art. STORY: Meet the studio, discover Trash Dash, explore the art, and say hello. FIRST VIEWPORT: A generous gold stage pairs a large left-aligned studio promise and navy game link with full-height Trashy on the right. FORM: Direct extension and simplification of the established studio identity; user requested brighter and more playful. Signature interaction: media filters reveal artwork and an honest video empty state, with a keyboard-accessible in-page artwork viewer. FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance -->
+  <a class="skip-link" href="#main">Skip to content</a><Header /><main id="main"><slot /></main><Footer /><ArtworkViewing />
 </body></html>

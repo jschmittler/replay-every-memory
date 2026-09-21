@@ -79,14 +79,6 @@ components:
     textColor: "{colors.ink}"
     rounded: "{rounded.panel}"
     padding: "4.5rem 1.5rem 5rem"
-  download-link:
-    backgroundColor: "{colors.cream}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.circle}"
-    width: "44px"
-    height: "44px"
-  download-link-hover:
-    backgroundColor: "{colors.gold}"
 ---
 
 # Design System: ReplayEveryMemory Studio
@@ -121,7 +113,7 @@ Gold can fill a welcoming section; paper, cream, and dark ink support longer rea
 ### Neutral
 
 - **Warm Paper:** Default page and header background, plus text on navy controls, use `paper`.
-- **Studio Cream:** Cast-preview section, media framing, downloads, and empty state use `cream`.
+- **Studio Cream:** Cast-preview section, media framing and empty state use `cream`.
 - **Reading Ink:** Default text and light-surface controls use `ink`.
 - **Quiet Text:** Descriptions, biographies, and collection counts use `muted`.
 - **Quiet Line:** Media-toolbar dividers use `line`.
@@ -163,15 +155,15 @@ Preserve semantic reading order and wrapping. Long media titles and contact addr
 
 ## Elevation & Depth
 
-The build uses no box shadows or artwork drop shadows. Depth comes from color fields, image scale, the circle behind Trashy, and small transforms. Primary buttons rise on hover (2px), portrait previews rise (5px), and gallery or logo artwork enlarges slightly.
+The build uses no box shadows or artwork drop shadows. Depth comes from color fields, image scale, the circle behind Trashy, and small transforms. Primary buttons rise on hover (2px), portrait previews rise (5px), and the linked game-logo artwork enlarges slightly.
 
-The shared easing is `cubic-bezier(.16,1,.3,1)`. Control transitions run for .2s, portraits for .3s, gallery or logo images for .45s, and Trashy's single arrival for .8s. Reduced-motion preferences disable animation and transitions throughout.
+The shared easing is `cubic-bezier(.16,1,.3,1)`. Control transitions run for .2s, portraits for .3s, gallery or logo images for .45s, while the Home hero uses the supplied 4.041-second transparent idle video instead of a CSS entrance. The hero loop is muted, has a Pause/Play control, and pauses outside the viewport or while the page is hidden. Reduced-motion preferences keep the approved still image and disable CSS animation and transitions. If VP9 playback or actual frame transparency is unavailable, the still also remains.
 
 **The Flat Surface Rule.** Separate content with space, tone, and fine rules; the current system does not add shadows to controls, artwork, or containers.
 
 ## Shapes
 
-Sections are rectangular fields. Controls use the control radius; portraits and media frames use the image radius; game posters and empty states use the panel radius. Filters are pills. Circles appear in download controls, the poster arrow, the development marker, and the hero's background light.
+Sections are rectangular fields. Controls use the control radius; portraits and media frames use the image radius; game posters and empty states use the panel radius. Filters are pills. Circles appear in the poster arrow, the development marker, and the hero's background light.
 
 Portraits use square crops. Gallery artwork is contained within wider frames, with a local character crop. Logo lockups keep their proportions. Slight rotations belong to the Home character and About logo compositions, not every container.
 
@@ -191,7 +183,7 @@ Pills pair category names with counts. Transparent ink controls hover to cream; 
 
 ### Gallery and Empty State
 
-`src/data/media.ts` drives the collection. Rounded image frames have a full-size viewing link, title, description, and separate circular download target. Full-size views open the actual asset in a new tab with an accessible label. The supplied SVG has its own download link. Cream, navy, white, and warm character fields are asset-specific presentation variants.
+`src/data/media.ts` drives the collection. Rounded image frames have a title, description, and a keyboard-accessible View artwork button. A native dialog displays the web preview with a Close control and a viewing-only notice; Escape closes it and focus returns to the opener. No download controls or direct asset links are offered. Development boards fit fully inside their frames. Cream, navy, and warm character fields are asset-specific presentation variants. Source artwork stays outside the public folder, and a build hook excludes original image files. Context-menu and drag deterrents apply to imagery only; ordinary text selection and browser zoom remain available. Public previews are not copy-proof.
 
 The zero-video view uses a cream panel, outlined video icon, “Still in the making.” heading, honest copy, and Instagram link. Filter changes update a polite live count. There are currently no supplied videos; data-backed videos use native controls, poster, and optional captions when supplied. Do not substitute a playable thumbnail for missing footage.
 

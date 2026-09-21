@@ -27,3 +27,7 @@ The older `Replay_Every_Memory_Website_Build_Handoff_v1.0` folder is historical 
 ## Deployment
 
 Set `siteUrl` in `src/config/site.ts` to the final HTTPS origin and rebuild to enable indexing and canonical metadata. Deploy only the generated `dist/` folder to a static host that resolves extensionless page links (or serves the generated directory indexes). No analytics, remote forms, cookies, or external font requests are included.
+
+## Artwork handling
+
+Original artwork is stored in `src/assets/`. `StudioImage` generates compressed display previews, and the production build excludes original artwork files. The public gallery offers in-page viewing only. See CONTENT_GUIDE.md for the limits of browser-based copying deterrents. Deploy only `dist/`, replacing the previous output rather than retaining old asset files.

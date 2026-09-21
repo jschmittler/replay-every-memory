@@ -3,7 +3,7 @@ export type MediaItem = {
   type: 'image' | 'video'; src: string; alt: string; description: string;
   width: number; height: number;
   presentation?: 'character' | 'dark' | 'board';
-  poster?: string; captions?: string; svg?: string;
+  poster?: string; captions?: string;
 };
 // Add artwork or self-hosted videos here; see CONTENT_GUIDE.md for examples.
 export const media: MediaItem[] = [
@@ -13,5 +13,5 @@ export const media: MediaItem[] = [
   { id: 'props-and-items', title: 'Props & items', category: 'Artwork', type: 'image', src: '/assets/media/social-prop-and-items.png', alt: 'Concept catalogue of collectible tokens and leaves, breakable containers, log platforms, rope bridges, campsite objects, and forest scenery.', description: 'A concept catalogue of collectibles, containers, traversal objects, and forest details. Created to give small objects clear roles, it explores recognizable shapes and materials that help distinguish a reward, an obstacle, or a piece of scenery while making the world feel lived in.', width: 541, height: 941, presentation: 'board' },
   { id: 'story-beat-board', title: 'Story beat storyboard', category: 'Artwork', type: 'image', src: '/assets/media/social-story-board.png', alt: 'Six story beats showing Trashy and Jimothy setting out, discovering purple corruption, scavenging, facing danger, following a trail, and heading toward the city.', description: 'A six-beat storyboard connecting the opening forest adventure to the city beyond. Created to bring story and exploration into the same sequence, it maps the visual progression from bright, inviting woods through purple corruption to a distant skyline that promises a larger world.', width: 1774, height: 887, presentation: 'board' },
   { id: 'trashy', title: 'Meet Trashy', category: 'Artwork', type: 'image', src: '/assets/trashy.png', alt: 'Trashy, the raccoon hero of Trash Dash, with a golden bandana, blue trousers, and utility belt.', description: 'Our curious raccoon, ready for his first adventure.', width: 2244, height: 2804, presentation: 'character' },
-  { id: 'trash-dash', title: 'Trash Dash', category: 'Logos', type: 'image', src: '/assets/trash-dash-logo.png', svg: '/assets/trash-dash-logo.svg', alt: 'The official Trash Dash logo, with cream lettering, an orange underline, and a paw print.', description: 'The official title artwork for our first game.', width: 2049, height: 869, presentation: 'dark' },
+  { id: 'trash-dash', title: 'Trash Dash', category: 'Logos', type: 'image', src: '/assets/trash-dash-logo.png', alt: 'The official Trash Dash logo, with cream lettering, an orange underline, and a paw print.', description: 'The official title artwork for our first game.', width: 2049, height: 869, presentation: 'dark' },
 ];

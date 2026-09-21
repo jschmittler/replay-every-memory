@@ -1,101 +1,106 @@
 {
-  "note": "Owner-supplied approved assets. Originals copied without visual modification.",
+  "note": "Owner-supplied original images stay outside public/ and are excluded from production. Web previews and the owner-approved web-ready animation are delivered for viewing.",
   "files": [
     {
       "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/branding/newlogo/4x/Artboard 1@4x.png",
-      "shipping": "public/assets/studio-mark.png"
+      "sourceAsset": "src/assets/studio-mark.png"
     },
     {
       "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/branding/newlogo/4x/Artboard 1 copy@4x.png",
-      "shipping": "public/assets/studio-logo.png"
+      "sourceAsset": "src/assets/studio-logo.png"
     },
     {
       "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/character-designs/heroes/Trashy/Trashy-Regular.png",
-      "shipping": "public/assets/trashy.png"
+      "sourceAsset": "src/assets/trashy.png"
     },
     {
       "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/interface/logos/TrashDashLogo-transparent.png",
-      "shipping": "public/assets/trash-dash-logo.png"
+      "sourceAsset": "src/assets/trash-dash-logo.png"
     },
     {
       "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/interface/logos/TrashDashLogo-transparent.svg",
-      "shipping": "public/assets/trash-dash-logo.svg"
+      "sourceAsset": "src/assets/trash-dash-logo.svg"
     },
     {
       "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/branding/newlogo/eurostile/EuroStyle Normal.ttf",
-      "shipping": "public/assets/fonts/eurostyle-normal.ttf"
+      "sourceAsset": "src/assets/fonts/eurostyle-normal.ttf"
     },
     {
       "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/branding/newlogo/eurostile/EurostileExtendedBlack.ttf",
-      "shipping": "public/assets/fonts/eurostile-extended-black.ttf"
+      "sourceAsset": "src/assets/fonts/eurostile-extended-black.ttf"
     },
     {
       "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/branding/newlogo/eurostile/eurostile.TTF",
-      "shipping": "public/assets/fonts/eurostile.ttf"
+      "sourceAsset": "src/assets/fonts/eurostile.ttf"
     },
     {
       "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/james.png",
-      "shipping": "public/assets/team/james.png"
+      "sourceAsset": "src/assets/team/james.png"
     },
     {
       "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/emily.png",
-      "shipping": "public/assets/team/emily.png"
+      "sourceAsset": "src/assets/team/emily.png"
     },
     {
       "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/matilda.png",
-      "shipping": "public/assets/team/matilda.png"
+      "sourceAsset": "src/assets/team/matilda.png"
     },
     {
       "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/ramona.png",
-      "shipping": "public/assets/team/ramona.png"
+      "sourceAsset": "src/assets/team/ramona.png"
     },
     {
       "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/avery_chen.png",
-      "shipping": "public/assets/team/avery_chen.png"
+      "sourceAsset": "src/assets/team/avery_chen.png"
     },
     {
       "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/mateo_alvarez.png",
-      "shipping": "public/assets/team/mateo_alvarez.png"
+      "sourceAsset": "src/assets/team/mateo_alvarez.png"
     },
     {
       "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/nadia_brooks.png",
-      "shipping": "public/assets/team/nadia_brooks.png"
+      "sourceAsset": "src/assets/team/nadia_brooks.png"
     },
     {
       "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/priya_nair.png",
-      "shipping": "public/assets/team/priya_nair.png"
+      "sourceAsset": "src/assets/team/priya_nair.png"
     },
     {
       "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/kenji_sato.png",
-      "shipping": "public/assets/team/kenji_sato.png"
+      "sourceAsset": "src/assets/team/kenji_sato.png"
     },
     {
       "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/zoe_kim.png",
-      "shipping": "public/assets/team/zoe_kim.png"
+      "sourceAsset": "src/assets/team/zoe_kim.png"
     },
     {
       "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/amari_okafor.png",
-      "shipping": "public/assets/team/amari_okafor.png"
+      "sourceAsset": "src/assets/team/amari_okafor.png"
     },
     {
       "source": "/Users/jamesschmittler/Downloads/social-story.png",
-      "shipping": "public/assets/media/social-story.png"
+      "sourceAsset": "src/assets/media/social-story.png"
     },
     {
       "source": "/Users/jamesschmittler/Downloads/social-character-design.png",
-      "shipping": "public/assets/media/social-character-design.png"
+      "sourceAsset": "src/assets/media/social-character-design.png"
     },
     {
       "source": "/Users/jamesschmittler/Downloads/social-environments.png",
-      "shipping": "public/assets/media/social-environments.png"
+      "sourceAsset": "src/assets/media/social-environments.png"
     },
     {
       "source": "/Users/jamesschmittler/Downloads/social-prop-and-items.png",
-      "shipping": "public/assets/media/social-prop-and-items.png"
+      "sourceAsset": "src/assets/media/social-prop-and-items.png"
     },
     {
       "source": "/Users/jamesschmittler/Downloads/social-story-board.png",
-      "shipping": "public/assets/media/social-story-board.png"
+      "sourceAsset": "src/assets/media/social-story-board.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Downloads/idle-relaxed-loop-1811-transparent-video.webm",
+      "sourceAsset": "src/assets/animation/trashy-idle.webm",
+      "usage": "Owner-approved web-ready display loop for the Home hero; VP9 alpha, 1112 \u00d7 834, 24fps, 4.041 seconds. No direct file link or download control."
     }
   ]
 }

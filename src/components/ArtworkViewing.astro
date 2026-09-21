@@ -1,0 +1,6 @@
+<!-- These conveniences deter casual saving; they are not copy protection. -->
+<script>
+  const artworkTarget = (target: EventTarget | null) => target instanceof Element && target.closest('img, video, [data-artwork]');
+  document.addEventListener('contextmenu', event => { if (artworkTarget(event.target)) event.preventDefault(); });
+  document.addEventListener('dragstart', event => { if (artworkTarget(event.target)) event.preventDefault(); });
+</script>
