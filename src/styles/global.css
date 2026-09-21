@@ -45,7 +45,7 @@ body:has(.artwork-viewer[open]){overflow:hidden}
 
 /* The native character loop replaces the former entrance transform. */
 .hero-art .trashy-art{animation:none;transform:none}
-.trashy-idle{position:absolute;top:-29%;left:58%;height:145%;width:auto;max-width:none;transform:translateX(-50%);visibility:hidden;pointer-events:none}
+.trashy-idle{position:absolute;top:-29%;left:61%;height:145%;width:auto;max-width:none;transform:translateX(-50%);visibility:hidden;pointer-events:none}
 .trashy-art[data-video-ready] .trashy-idle{visibility:visible}
 .trashy-art[data-video-ready]>img{visibility:hidden}
 .trashy-motion-toggle{position:absolute;bottom:-.4rem;left:0;min-height:44px;padding:.5rem .7rem;border:1px solid var(--navy);border-radius:12px;background:var(--gold);color:var(--navy);font-size:.9rem}

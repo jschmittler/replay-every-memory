@@ -201,12 +201,12 @@
       {
         "name": "artwork-transition",
         "value": ".45s",
-        "purpose": "Gallery and game-logo hover."
+        "purpose": "Linked game-logo hover."
       },
       {
-        "name": "trashy-arrive",
-        "value": ".8s",
-        "purpose": "Single character entrance; disabled with reduced motion."
+        "name": "trashy-idle",
+        "value": "4.041s",
+        "purpose": "Owner-supplied silent transparent loop; user-pausable, suspended offscreen/when hidden, with a still for reduced motion or unsupported playback/transparency."
       }
     ],
     "breakpoints": [
@@ -269,7 +269,7 @@
       "kind": "card",
       "refersTo": "media-empty",
       "description": "Honest zero-video collection state with a useful follow-along link.",
-      "html": "<div class=\"ds-empty\"><svg class=\"ds-video-icon\" viewBox=\"0 0 48 48\" fill=\"none\" aria-hidden=\"true\"><rect x=\"5\" y=\"10\" width=\"28\" height=\"28\" rx=\"5\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"m33 20 10-6v20l-10-6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg><h2>Still in the making.</h2><p>We’re busy bringing Trash Dash to life. Videos will join the collection when they’re ready to share.</p><a class=\"ds-text-link\" href=\"https://www.instagram.com/replayeverymemory/\" target=\"_blank\" rel=\"noopener noreferrer\">Follow along on Instagram <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div>",
+      "html": "<div class=\"ds-empty\"><svg class=\"ds-video-icon\" viewBox=\"0 0 48 48\" fill=\"none\" aria-hidden=\"true\"><rect x=\"5\" y=\"10\" width=\"28\" height=\"28\" rx=\"5\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"m33 20 10-6v20l-10-6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg><h2>Still in the making.</h2><p>We\u2019re busy bringing Trash Dash to life. Videos will join the collection when they\u2019re ready to share.</p><a class=\"ds-text-link\" href=\"https://www.instagram.com/replayeverymemory/\" target=\"_blank\" rel=\"noopener noreferrer\">Follow along on Instagram <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div>",
       "css": ".ds-empty{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;text-align:center;padding:4.5rem 1.5rem 5rem;background:var(--cream,#f5f0e4);color:var(--ink,#15313e);border-radius:16px;font-size:1.125rem}.ds-video-icon{display:block;width:50px;height:50px;margin:0 auto 1.5rem;color:#805415}.ds-empty h2{font-family:var(--display,'Eurostile Extended',sans-serif);font-weight:900;font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.15;letter-spacing:-.03em;text-wrap:balance;margin:0}.ds-empty p{max-width:43ch;margin:1rem auto;text-wrap:pretty}.ds-empty .ds-text-link{margin-top:1rem}@media(max-width:760px){.ds-empty{padding:3rem 1.25rem}}.ds-text-link{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;display:inline-flex;align-items:center;gap:.75rem;min-height:44px;color:var(--ink,#15313e);text-decoration:none;font-size:1.125rem}.ds-text-link .ds-arrow{transition:transform .2s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-text-link:hover{text-decoration:underline}.ds-text-link:hover .ds-arrow{transform:translateX(4px)}.ds-arrow{display:block;width:1.3rem;height:1.3rem;flex-shrink:0}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible{outline:3px solid #ad470c;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button,.ds-text-link .ds-arrow,.ds-nav a:after,.ds-filter{animation:none!important;transition:none!important}}"
     }
   ],
@@ -466,13 +466,13 @@
         },
         {
           "name": "Gallery and Empty State",
-          "description": "`src/data/media.ts` drives the collection. Rounded image frames have a title, description, and a keyboard-accessible View artwork button. A native dialog displays the web preview with a Close control and a viewing-only notice; Escape closes it and focus returns to the opener. No download controls or direct asset links are offered. Development boards fit fully inside their frames. Cream, navy, and warm character fields are asset-specific presentation variants. Source artwork stays outside the public folder, and a build hook excludes original image files. Context-menu and drag deterrents apply to imagery only; ordinary text selection and browser zoom remain available. Public previews are not copy-proof. The zero-video view uses a cream panel, outlined video icon, “Still in the making.” heading, honest copy, and Instagram link. Filter changes update a polite live count. There are currently no supplied videos; data-backed videos use native controls, poster, and optional captions when supplied. Do not substitute a playable thumbnail for missing footage.",
+          "description": "`src/data/media.ts` drives the collection. Rounded image frames have a title, description, and a keyboard-accessible View artwork button. A native dialog displays the web preview with a Close control and a viewing-only notice; Escape closes it and focus returns to the opener. No download controls or direct asset links are offered. Development boards fit fully inside their frames. Cream, navy, and warm character fields are asset-specific presentation variants. Source artwork stays outside the public folder, and a build hook excludes original image files. Context-menu and drag deterrents apply to imagery only; ordinary text selection and browser zoom remain available. Public previews are not copy-proof. The zero-video view uses a cream panel, outlined video icon, \u201cStill in the making.\u201d heading, honest copy, and Instagram link. Filter changes update a polite live count. There are currently no supplied videos; data-backed videos use native controls, poster, and optional captions when supplied. Do not substitute a playable thumbnail for missing footage.",
           "properties": {},
           "variants": []
         },
         {
           "name": "Portraits and Credits",
-          "description": "Home previews the first four approved credits; About Us presents all eleven in order from `src/data/studio-team.json`. Supplied square portraits sit above extended-face names, roles, and regular-font biographies. Original personas have explicit “Studio persona” labels. The data remains authoritative for names, roles, bios, and order.",
+          "description": "Home previews the first four approved credits; About Us presents all eleven in order from `src/data/studio-team.json`. Supplied square portraits sit above extended-face names, roles, and regular-font biographies. Original personas have explicit \u201cStudio persona\u201d labels. The data remains authoritative for names, roles, bios, and order.",
           "properties": {},
           "variants": []
         },
