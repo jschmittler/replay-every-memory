@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "packageVersion": "1.0",
+  "assets": [
+    {
+      "path": "04_BRAND_ASSETS/approved/rem-horizontal-lockup-full-color-3600x1038.png",
+      "status": "approved",
+      "role": "primary horizontal studio lockup",
+      "width": 3600,
+      "height": 1038,
+      "sha256": "1f142ecb78d41072bf07f949dff2eff780058157f5cffdbfa49fa82182be94e0",
+      "shipping": "master; create optimized derivatives",
+      "notes": "Preserve aspect ratio and all lockup elements."
+    },
+    {
+      "path": "04_BRAND_ASSETS/approved/rem-icon-full-color.png",
+      "status": "approved",
+      "role": "compact brand icon",
+      "width": 1300,
+      "height": 1038,
+      "sha256": "b6e4f641a81253c72a0ab72b72b742e9eed94ced76a1d828be753726bffeb47d",
+      "shipping": "master; derive favicon/social sizes only if needed",
+      "notes": "Do not crop the silhouette or gold sun without visual review."
+    },
+    {
+      "path": "04_BRAND_ASSETS/approved/rem-wordmark-navy.png",
+      "status": "approved",
+      "role": "separated navy wordmark",
+      "width": 2122,
+      "height": 115,
+      "sha256": "a554e036327eb7e2417a5ad71639ed27f5193cb478fe1927a7d629e4e3598f4a",
+      "shipping": "optional production element",
+      "notes": "Use only on a background with verified contrast."
+    },
+    {
+      "path": "04_BRAND_ASSETS/approved/rem-wordmark-gold.png",
+      "status": "approved",
+      "role": "separated gold wordmark",
+      "width": 2122,
+      "height": 115,
+      "sha256": "fea990775fa01ec90df4f3638d58a76866b954178a0e60a1afa731cdfb0f1097",
+      "shipping": "optional production element",
+      "notes": "Use only on a background with verified contrast."
+    },
+    {
+      "path": "04_BRAND_ASSETS/approved/rem-tagline-lockup.png",
+      "status": "approved",
+      "role": "separated tagline and rule",
+      "width": 1713,
+      "height": 56,
+      "sha256": "2ef98669d0bac35863c18cf3fc8f0c31ece8e3a191858436f4d32ba19778af71",
+      "shipping": "optional production element",
+      "notes": "Do not use below a size at which the tagline remains legible."
+    },
+    {
+      "path": "04_BRAND_ASSETS/approved/trashy-running-silhouette.png",
+      "status": "approved",
+      "role": "brand mascot running silhouette",
+      "width": 791,
+      "height": 546,
+      "sha256": "d8d38d18b6b0295fb78cce2653b930ab7a2f0487fbb61195fd94d4a805f88261",
+      "shipping": "optional production element",
+      "notes": "Preserve silhouette integrity."
+    },
+    {
+      "path": "04_BRAND_ASSETS/approved/trashy-identity-reference.png",
+      "status": "approved reference",
+      "role": "Trashy identity/appearance reference",
+      "width": 1200,
+      "height": 1020,
+      "sha256": "6a0d48324592d0d41e35f3f86d0d7dc0497a22853826f05fb2e68da87fac85bc",
+      "shipping": "do not ship by default; use for crop and identity verification",
+      "notes": "Internal visual reference unless separately approved as public media."
+    },
+    {
+      "path": "04_BRAND_ASSETS/approved/approved-logo-direction-source.png",
+      "status": "approved direction provenance",
+      "role": "low-resolution original approval source",
+      "width": 470,
+      "height": 348,
+      "sha256": "7bafb0fc96bb566ff4dedd07ddedb9ebe3815e07715d939671f3d5d276a335a0",
+      "shipping": "do not ship; use high-resolution masters",
+      "notes": "Included because it records the approved direction."
+    },
+    {
+      "path": "04_BRAND_ASSETS/reference_only/logo-inspiration-01.png",
+      "status": "reference only",
+      "role": "logo inspiration",
+      "width": 704,
+      "height": 435,
+      "sha256": "7f074404e40268fc77308e2c11dd3bc08ace894d42a4726ac17a5472cf3fcf9a",
+      "shipping": "prohibited",
+      "notes": "Rights and ownership are not established in this handoff."
+    },
+    {
+      "path": "04_BRAND_ASSETS/reference_only/logo-inspiration-02.jpeg",
+      "status": "reference only",
+      "role": "logo inspiration",
+      "width": 638,
+      "height": 480,
+      "sha256": "efce20cabf34bd112531f55343f79dace1d1ffbc208b2a4b7f328aa9ebd45b81",
+      "shipping": "prohibited",
+      "notes": "Rights and ownership are not established in this handoff."
+    },
+    {
+      "path": "04_BRAND_ASSETS/reference_only/logo-inspiration-03.jpeg",
+      "status": "reference only",
+      "role": "logo inspiration",
+      "width": 447,
+      "height": 447,
+      "sha256": "9b8b06734744514dae9f2914bc51bda2785a6f1d189bffee2723122b4bd16332",
+      "shipping": "prohibited",
+      "notes": "Rights and ownership are not established in this handoff."
+    },
+    {
+      "path": "04_BRAND_ASSETS/reference_only/logo-inspiration-04.jpeg",
+      "status": "reference only",
+      "role": "logo inspiration",
+      "width": 399,
+      "height": 441,
+      "sha256": "3aeab979d9f61e85548f700a3910fce57ec62924e354227ed0a09bc80dfdfd31",
+      "shipping": "prohibited",
+      "notes": "Rights and ownership are not established in this handoff."
+    },
+    {
+      "path": "04_BRAND_ASSETS/reference_only/logo-inspiration-05.jpeg",
+      "status": "reference only",
+      "role": "logo inspiration",
+      "width": 554,
+      "height": 554,
+      "sha256": "65642fb0326000409771a2ae6ec980ed6d787c19cf54643dde579ae9b7b15185",
+      "shipping": "prohibited",
+      "notes": "Rights and ownership are not established in this handoff."
+    },
+    {
+      "path": "04_BRAND_ASSETS/reference_only/logo-inspiration-06.jpeg",
+      "status": "reference only",
+      "role": "logo inspiration",
+      "width": 554,
+      "height": 554,
+      "sha256": "460d1bdd197f1e928751df6dc041ebfe4195717d23cac054552100d2dacedc16",
+      "shipping": "prohibited",
+      "notes": "Rights and ownership are not established in this handoff."
+    },
+    {
+      "path": "04_BRAND_ASSETS/reference_only/logo-inspiration-07.jpeg",
+      "status": "reference only",
+      "role": "logo inspiration",
+      "width": 447,
+      "height": 447,
+      "sha256": "1fc4b76d3d982c141dffb62c0d7576565f4ceaae95c4a709aa3620dfb940a028",
+      "shipping": "prohibited",
+      "notes": "Rights and ownership are not established in this handoff."
+    },
+    {
+      "path": "04_BRAND_ASSETS/reference_only/logo-inspiration-08.jpeg",
+      "status": "reference only",
+      "role": "logo inspiration",
+      "width": 447,
+      "height": 447,
+      "sha256": "30cb5e5f08687af3a5a2dd7a6e2e6be6f725d017e87ff62d637f5339073f8143",
+      "shipping": "prohibited",
+      "notes": "Rights and ownership are not established in this handoff."
+    }
+  ]
+}

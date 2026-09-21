@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "referenceWidths": { "desktop": 1440, "mobile": 390 },
+  "frames": [
+    { "id": "home", "title": "Home", "modules": ["Header", "Trash Dash hero", "Status facts", "Game promise", "Gameplay media", "Trashy", "The Gunk", "Development proof", "Studio doorway", "Principles", "Latest Journal", "Closing", "Footer"] },
+    { "id": "trash-dash", "title": "Trash Dash", "modules": ["Header", "Game hero", "Overview", "Core experience", "Trashy", "Jimothy", "The Gunk", "World progression", "Gameplay", "Gallery", "Status", "Credits", "Closing", "Footer"] },
+    { "id": "journal", "title": "Journal Index", "modules": ["Header", "Introduction", "Filters", "Featured entry", "Entry list", "Pagination or empty state", "Footer"] },
+    { "id": "journal-article", "title": "Journal Article", "modules": ["Header", "Back link", "Article header", "Evidence", "Outline", "Problem", "Observation", "Attempts", "Change", "Improvement", "Remaining work", "Next decision", "Article navigation", "Footer"] },
+    { "id": "studio", "title": "Studio", "modules": ["Header", "Hero", "Why we exist", "Origin", "Name and REM", "Approach", "Team", "Principle", "Timeline", "Closing", "Footer"] },
+    { "id": "press", "title": "Press", "modules": ["Header", "Press hero", "Studio boilerplate", "Game boilerplate", "Fact list", "Asset packages", "Attribution", "Contact", "Footer"] },
+    { "id": "contact", "title": "Contact", "modules": ["Header", "Introduction", "Categories", "Form or email fallback", "Privacy guidance", "Footer"] },
+    { "id": "accessibility", "title": "Accessibility", "modules": ["Header", "Document header", "Approach", "Feedback route", "Footer"] },
+    { "id": "privacy", "title": "Privacy", "modules": ["Header", "Document header", "Pre-launch notice", "Provider placeholders", "Contact", "Footer"] },
+    { "id": "404", "title": "404", "modules": ["Header", "Recovery message", "Recovery actions", "Footer"] },
+    { "id": "mobile-nav", "title": "Mobile Navigation Open", "modules": ["Logo", "Close", "Primary links", "Primary action", "Utility links"] }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "note": "Owner-supplied approved assets. Originals copied without visual modification.",
+  "files": [
+    {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/branding/newlogo/4x/Artboard 1@4x.png",
+      "shipping": "public/assets/studio-mark.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/branding/newlogo/4x/Artboard 1 copy@4x.png",
+      "shipping": "public/assets/studio-logo.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/character-designs/heroes/Trashy/Trashy-Regular.png",
+      "shipping": "public/assets/trashy.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/interface/logos/TrashDashLogo-transparent.png",
+      "shipping": "public/assets/trash-dash-logo.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/interface/logos/TrashDashLogo-transparent.svg",
+      "shipping": "public/assets/trash-dash-logo.svg"
+    },
+    {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/branding/newlogo/eurostile/EuroStyle Normal.ttf",
+      "shipping": "public/assets/fonts/eurostyle-normal.ttf"
+    },
+    {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/branding/newlogo/eurostile/EurostileExtendedBlack.ttf",
+      "shipping": "public/assets/fonts/eurostile-extended-black.ttf"
+    },
+    {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/branding/newlogo/eurostile/eurostile.TTF",
+      "shipping": "public/assets/fonts/eurostile.ttf"
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/james.png",
+      "shipping": "public/assets/team/james.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/emily.png",
+      "shipping": "public/assets/team/emily.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/matilda.png",
+      "shipping": "public/assets/team/matilda.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/ramona.png",
+      "shipping": "public/assets/team/ramona.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/avery_chen.png",
+      "shipping": "public/assets/team/avery_chen.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/mateo_alvarez.png",
+      "shipping": "public/assets/team/mateo_alvarez.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/nadia_brooks.png",
+      "shipping": "public/assets/team/nadia_brooks.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/priya_nair.png",
+      "shipping": "public/assets/team/priya_nair.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/kenji_sato.png",
+      "shipping": "public/assets/team/kenji_sato.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/zoe_kim.png",
+      "shipping": "public/assets/team/zoe_kim.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/credits/studio_team/amari_okafor.png",
+      "shipping": "public/assets/team/amari_okafor.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Downloads/social-story.png",
+      "shipping": "public/assets/media/social-story.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Downloads/social-character-design.png",
+      "shipping": "public/assets/media/social-character-design.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Downloads/social-environments.png",
+      "shipping": "public/assets/media/social-environments.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Downloads/social-prop-and-items.png",
+      "shipping": "public/assets/media/social-prop-and-items.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Downloads/social-story-board.png",
+      "shipping": "public/assets/media/social-story-board.png"
+    }
+  ]
+}

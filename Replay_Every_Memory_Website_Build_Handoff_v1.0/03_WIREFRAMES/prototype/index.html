@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Replay Every Memory — Wireframe Review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!--
+  THESIS: A compact structural review tool for the approved game-first website; it refuses to masquerade as final visual design.
+  OWN-WORLD: Paper-white review canvas, deep navy structure, memory-gold state cues, square low-fidelity modules.
+  STORY: Reviewers select a route, compare desktop/mobile composition, and verify module order.
+  FIRST VIEWPORT: Title and mode controls lead; route list sits beside one scalable frame.
+  FORM: Approved Gate 2 wireframe system, reconstructed from the source task; seed not applicable because structure was already approved.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+  -->
+  <a class="skip-link" href="#review-frame">Skip to wireframe</a>
+  <header class="review-header">
+    <div>
+      <p class="product-name">Replay Every Memory</p>
+      <h1>Responsive wireframe review</h1>
+      <p>Structural reference only. Final typography, media, and high-fidelity styling remain open.</p>
+    </div>
+    <fieldset class="viewport-switcher" aria-label="Reference viewport">
+      <legend>Reference viewport</legend>
+      <label><input type="radio" name="viewport" value="desktop" checked> Desktop · 1440</label>
+      <label><input type="radio" name="viewport" value="mobile"> Mobile · 390</label>
+    </fieldset>
+  </header>
+
+  <main class="review-layout">
+    <nav class="page-list" aria-label="Wireframe pages">
+      <h2>Pages and states</h2>
+      <div id="page-controls"></div>
+    </nav>
+
+    <section class="review-stage" aria-live="polite">
+      <div class="frame-meta">
+        <div>
+          <p id="frame-route"></p>
+          <h2 id="frame-title"></h2>
+        </div>
+        <p id="frame-size"></p>
+      </div>
+      <div class="frame-shell desktop" id="review-frame" tabindex="-1">
+        <div class="site-header-module">
+          <span class="brand-block">REM</span>
+          <span class="nav-lines">Trash Dash&nbsp;&nbsp; Journal&nbsp;&nbsp; Studio&nbsp;&nbsp; Press</span>
+          <span class="action-block">Follow Development</span>
+        </div>
+        <div id="frame-modules"></div>
+        <div class="site-footer-module">Footer · utility navigation · legal</div>
+      </div>
+      <p class="review-note" id="frame-note"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

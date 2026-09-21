@@ -1,0 +1,114 @@
+[
+  {
+    "view": "desktop",
+    "target": "game",
+    "hash": "#trash-dash",
+    "scrollWidth": 1440,
+    "visibleBrokenImages": [],
+    "width": 1440
+  },
+  {
+    "view": "desktop",
+    "target": "studio",
+    "hash": "#studio-heading",
+    "scrollWidth": 1440,
+    "visibleBrokenImages": [],
+    "width": 1440
+  },
+  {
+    "view": "desktop",
+    "target": "contact",
+    "hash": "#hello",
+    "scrollWidth": 1440,
+    "visibleBrokenImages": [],
+    "width": 1440
+  },
+  {
+    "view": "desktop",
+    "target": "team-first",
+    "hash": "#james",
+    "scrollWidth": 1440,
+    "visibleBrokenImages": [],
+    "width": 1440
+  },
+  {
+    "view": "desktop",
+    "target": "team-middle",
+    "hash": "#ramona",
+    "scrollWidth": 1440,
+    "visibleBrokenImages": [],
+    "width": 1440
+  },
+  {
+    "view": "desktop",
+    "target": "team-more",
+    "hash": "#nadia-brooks",
+    "scrollWidth": 1440,
+    "visibleBrokenImages": [],
+    "width": 1440
+  },
+  {
+    "view": "desktop",
+    "target": "team-last",
+    "hash": "#zoe-kim",
+    "scrollWidth": 1440,
+    "visibleBrokenImages": [],
+    "width": 1440
+  },
+  {
+    "view": "mobile",
+    "target": "game",
+    "hash": "#trash-dash",
+    "scrollWidth": 390,
+    "visibleBrokenImages": [],
+    "width": 390
+  },
+  {
+    "view": "mobile",
+    "target": "studio",
+    "hash": "#studio-heading",
+    "scrollWidth": 390,
+    "visibleBrokenImages": [],
+    "width": 390
+  },
+  {
+    "view": "mobile",
+    "target": "contact",
+    "hash": "#hello",
+    "scrollWidth": 390,
+    "visibleBrokenImages": [],
+    "width": 390
+  },
+  {
+    "view": "mobile",
+    "target": "team-first",
+    "hash": "#james",
+    "scrollWidth": 390,
+    "visibleBrokenImages": [],
+    "width": 390
+  },
+  {
+    "view": "mobile",
+    "target": "team-middle",
+    "hash": "#ramona",
+    "scrollWidth": 390,
+    "visibleBrokenImages": [],
+    "width": 390
+  },
+  {
+    "view": "mobile",
+    "target": "team-more",
+    "hash": "#nadia-brooks",
+    "scrollWidth": 390,
+    "visibleBrokenImages": [],
+    "width": 390
+  },
+  {
+    "view": "mobile",
+    "target": "team-last",
+    "hash": "#zoe-kim",
+    "scrollWidth": 390,
+    "visibleBrokenImages": [],
+    "width": 390
+  }
+]

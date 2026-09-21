@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "primaryNavigation": [
+    { "label": "Trash Dash", "href": "/trash-dash" },
+    { "label": "Journal", "href": "/journal" },
+    { "label": "Studio", "href": "/studio" },
+    { "label": "Press", "href": "/press" }
+  ],
+  "primaryAction": { "label": "Follow Development", "href": "/journal" },
+  "utilityNavigation": [
+    { "label": "Contact", "href": "/contact" },
+    { "label": "Accessibility", "href": "/accessibility" },
+    { "label": "Privacy", "href": "/privacy" }
+  ],
+  "routes": [
+    { "path": "/", "name": "Home", "template": "home" },
+    { "path": "/trash-dash", "name": "Trash Dash", "template": "game" },
+    { "path": "/journal", "name": "Journal", "template": "journal-index" },
+    { "path": "/journal/[slug]", "name": "Journal Article", "template": "journal-article" },
+    { "path": "/studio", "name": "Studio", "template": "studio" },
+    { "path": "/press", "name": "Press", "template": "press" },
+    { "path": "/contact", "name": "Contact", "template": "contact" },
+    { "path": "/accessibility", "name": "Accessibility", "template": "document" },
+    { "path": "/privacy", "name": "Privacy", "template": "document" },
+    { "path": "/404", "name": "Page Not Found", "template": "error" }
+  ]
+}

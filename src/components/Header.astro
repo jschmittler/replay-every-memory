@@ -1,0 +1,10 @@
+---
+import Arrow from './Arrow.astro';
+const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
+const links = [['/', 'Home'], ['/media', 'Media'], ['/about', 'About us']];
+---
+<header class="site-header"><div class="container header-row">
+  <a class="brand" href="/" aria-label="ReplayEveryMemory Studio home"><img src="/assets/studio-mark.png" alt="" width="4362" height="2805" /><span><strong>ReplayEveryMemory</strong><span>STUDIO</span></span></a>
+  <nav aria-label="Main navigation"><ul>{links.map(([href, label]) => <li><a href={href} aria-current={pathname === href ? 'page' : undefined}>{label}</a></li>)}</ul></nav>
+  <a class="header-contact text-link" href="/#hello">Say hello <Arrow /></a>
+</div></header>

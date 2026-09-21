@@ -1,0 +1,5 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist", "Replay_Every_Memory_Website_Build_Handoff_v1.0"]
+}

@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-21T14:00:25.114Z",
+  "title": "Design System: ReplayEveryMemory Studio",
+  "extensions": {
+    "colorMeta": {
+      "navy": {
+        "role": "primary",
+        "displayName": "Studio Navy",
+        "canonical": "#091e2a",
+        "tonalRamp": [
+          "oklch(15.00% 0.03560 236.40)",
+          "oklch(26.43% 0.03560 236.40)",
+          "oklch(37.86% 0.03560 236.40)",
+          "oklch(49.29% 0.03560 236.40)",
+          "oklch(60.71% 0.03560 236.40)",
+          "oklch(72.14% 0.03560 236.40)",
+          "oklch(83.57% 0.03560 236.40)",
+          "oklch(95.00% 0.03560 236.40)"
+        ]
+      },
+      "navy-soft": {
+        "role": "primary",
+        "displayName": "Soft Navy",
+        "canonical": "#163847",
+        "tonalRamp": [
+          "oklch(15.00% 0.04742 229.62)",
+          "oklch(26.43% 0.04742 229.62)",
+          "oklch(37.86% 0.04742 229.62)",
+          "oklch(49.29% 0.04742 229.62)",
+          "oklch(60.71% 0.04742 229.62)",
+          "oklch(72.14% 0.04742 229.62)",
+          "oklch(83.57% 0.04742 229.62)",
+          "oklch(95.00% 0.04742 229.62)"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Sunny Gold",
+        "canonical": "#f7c75d",
+        "tonalRamp": [
+          "oklch(15.00% 0.13439 84.73)",
+          "oklch(26.43% 0.13439 84.73)",
+          "oklch(37.86% 0.13439 84.73)",
+          "oklch(49.29% 0.13439 84.73)",
+          "oklch(60.71% 0.13439 84.73)",
+          "oklch(72.14% 0.13439 84.73)",
+          "oklch(83.57% 0.13439 84.73)",
+          "oklch(95.00% 0.13439 84.73)"
+        ]
+      },
+      "sun": {
+        "role": "primary",
+        "displayName": "Sun Accent",
+        "canonical": "#e9aa2e",
+        "tonalRamp": [
+          "oklch(15.00% 0.14862 79.13)",
+          "oklch(26.43% 0.14862 79.13)",
+          "oklch(37.86% 0.14862 79.13)",
+          "oklch(49.29% 0.14862 79.13)",
+          "oklch(60.71% 0.14862 79.13)",
+          "oklch(72.14% 0.14862 79.13)",
+          "oklch(83.57% 0.14862 79.13)",
+          "oklch(95.00% 0.14862 79.13)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#fffdf7",
+        "tonalRamp": [
+          "oklch(15.00% 0.00818 91.48)",
+          "oklch(26.43% 0.00818 91.48)",
+          "oklch(37.86% 0.00818 91.48)",
+          "oklch(49.29% 0.00818 91.48)",
+          "oklch(60.71% 0.00818 91.48)",
+          "oklch(72.14% 0.00818 91.48)",
+          "oklch(83.57% 0.00818 91.48)",
+          "oklch(95.00% 0.00818 91.48)"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Studio Cream",
+        "canonical": "#f5f0e4",
+        "tonalRamp": [
+          "oklch(15.00% 0.01679 88.00)",
+          "oklch(26.43% 0.01679 88.00)",
+          "oklch(37.86% 0.01679 88.00)",
+          "oklch(49.29% 0.01679 88.00)",
+          "oklch(60.71% 0.01679 88.00)",
+          "oklch(72.14% 0.01679 88.00)",
+          "oklch(83.57% 0.01679 88.00)",
+          "oklch(95.00% 0.01679 88.00)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Reading Ink",
+        "canonical": "#15313e",
+        "tonalRamp": [
+          "oklch(15.00% 0.04123 230.39)",
+          "oklch(26.43% 0.04123 230.39)",
+          "oklch(37.86% 0.04123 230.39)",
+          "oklch(49.29% 0.04123 230.39)",
+          "oklch(60.71% 0.04123 230.39)",
+          "oklch(72.14% 0.04123 230.39)",
+          "oklch(83.57% 0.04123 230.39)",
+          "oklch(95.00% 0.04123 230.39)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Quiet Text",
+        "canonical": "#4b6068",
+        "tonalRamp": [
+          "oklch(15.00% 0.02848 223.11)",
+          "oklch(26.43% 0.02848 223.11)",
+          "oklch(37.86% 0.02848 223.11)",
+          "oklch(49.29% 0.02848 223.11)",
+          "oklch(60.71% 0.02848 223.11)",
+          "oklch(72.14% 0.02848 223.11)",
+          "oklch(83.57% 0.02848 223.11)",
+          "oklch(95.00% 0.02848 223.11)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Quiet Line",
+        "canonical": "#d8ddd7",
+        "tonalRamp": [
+          "oklch(15.00% 0.00971 140.51)",
+          "oklch(26.43% 0.00971 140.51)",
+          "oklch(37.86% 0.00971 140.51)",
+          "oklch(49.29% 0.00971 140.51)",
+          "oklch(60.71% 0.00971 140.51)",
+          "oklch(72.14% 0.00971 140.51)",
+          "oklch(83.57% 0.00971 140.51)",
+          "oklch(95.00% 0.00971 140.51)"
+        ]
+      },
+      "focus-rust": {
+        "role": "neutral",
+        "displayName": "Focus Rust",
+        "canonical": "#ad470c",
+        "tonalRamp": [
+          "oklch(15.00% 0.14747 44.05)",
+          "oklch(26.43% 0.14747 44.05)",
+          "oklch(37.86% 0.14747 44.05)",
+          "oklch(49.29% 0.14747 44.05)",
+          "oklch(60.71% 0.14747 44.05)",
+          "oklch(72.14% 0.14747 44.05)",
+          "oklch(83.57% 0.14747 44.05)",
+          "oklch(95.00% 0.14747 44.05)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Shared heading baseline; each page adapts the size and measure."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Major section headings with balanced wrapping."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Compact headings with component-specific adjustments."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading copy and biographies."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Introductory copy."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Media filters and compact control labels."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Shared easing for transforms and state transitions."
+      },
+      {
+        "name": "control-transition",
+        "value": ".2s",
+        "purpose": "Controls and navigation transitions."
+      },
+      {
+        "name": "portrait-transition",
+        "value": ".3s",
+        "purpose": "Portrait-preview hover."
+      },
+      {
+        "name": "artwork-transition",
+        "value": ".45s",
+        "purpose": "Gallery and game-logo hover."
+      },
+      {
+        "name": "trashy-arrive",
+        "value": ".8s",
+        "purpose": "Single character entrance; disabled with reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow-max",
+        "value": "360px"
+      },
+      {
+        "name": "single-column-max",
+        "value": "520px"
+      },
+      {
+        "name": "stacked-layout-max",
+        "value": "760px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1100px"
+      },
+      {
+        "name": "large-hero-min",
+        "value": "1500px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Navy primary action with an outlined arrow, gentle lift, and visible focus.",
+      "html": "<a class=\"ds-button\" href=\"#trash-dash\">Meet Trash Dash <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-button{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;display:inline-flex;gap:1.5rem;min-height:54px;align-items:center;justify-content:center;background:var(--navy,#091e2a);color:var(--paper,#fffdf7);border:0;border-radius:12px;padding:.9rem 1.35rem;text-decoration:none;font-size:1.08rem;transition:background .2s,transform .2s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-button:hover{background:var(--navy-soft,#163847);transform:translateY(-2px)}.ds-button:active{transform:translateY(0)}.ds-arrow{display:block;width:1.3rem;height:1.3rem;flex-shrink:0}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible,.ds-download:focus-visible{outline:3px solid #ad470c;outline-offset:5px}@media(max-width:760px){.ds-button{font-size:1rem;min-height:50px;padding:.8rem 1.15rem}}@media(forced-colors:active){.ds-button{border:1px solid ButtonText}}@media(prefers-reduced-motion:reduce){.ds-button,.ds-text-link .ds-arrow,.ds-nav a:after,.ds-filter{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "Secondary text action with a moving outlined arrow.",
+      "html": "<a class=\"ds-text-link\" href=\"/about\">Meet the studio <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-text-link{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;display:inline-flex;align-items:center;gap:.75rem;min-height:44px;color:var(--ink,#15313e);text-decoration:none;font-size:1.125rem}.ds-text-link .ds-arrow{transition:transform .2s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-text-link:hover{text-decoration:underline}.ds-text-link:hover .ds-arrow{transform:translateX(4px)}.ds-arrow{display:block;width:1.3rem;height:1.3rem;flex-shrink:0}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible,.ds-download:focus-visible{outline:3px solid #ad470c;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button,.ds-text-link .ds-arrow,.ds-nav a:after,.ds-filter{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Main Navigation",
+      "kind": "nav",
+      "description": "Three links remain visible at every width; current and hovered links show a sun underline.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><ul><li><a href=\"/\" aria-current=\"page\">Home</a></li><li><a href=\"/media\">Media</a></li><li><a href=\"/about\">About us</a></li></ul></nav>",
+      "css": ".ds-nav{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;background:var(--paper,#fffdf7);color:var(--ink,#15313e);font-size:1.125rem}.ds-nav ul{display:flex;gap:2.5rem;list-style:none;padding:0;margin:0}.ds-nav a{display:flex;align-items:center;min-height:46px;color:inherit;text-decoration:none;position:relative}.ds-nav a:after{content:'';position:absolute;bottom:3px;left:0;right:0;height:3px;background:var(--sun,#e9aa2e);transform:scaleX(0);transform-origin:left;transition:transform .2s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-nav a:hover:after,.ds-nav a[aria-current=page]:after{transform:scaleX(1)}@media(max-width:1100px){.ds-nav ul{gap:1.5rem}}@media(max-width:760px){.ds-nav{width:100%}.ds-nav ul{justify-content:space-between;gap:1.2rem}.ds-nav a{font-size:1.04rem;min-height:44px}}@media(forced-colors:active){.ds-nav a[aria-current=page]{text-decoration:underline}}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible,.ds-download:focus-visible{outline:3px solid #ad470c;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button,.ds-text-link .ds-arrow,.ds-nav a:after,.ds-filter{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Media Filter",
+      "kind": "chip",
+      "refersTo": "filter-chip",
+      "description": "Category pill with a count; aria-pressed controls selected styling. The preview shows both states.",
+      "html": "<div class=\"ds-filters\" role=\"group\" aria-label=\"Filter media\"><button class=\"ds-filter\" type=\"button\" aria-pressed=\"true\">All<span>4</span></button><button class=\"ds-filter\" type=\"button\" aria-pressed=\"false\">Videos<span>0</span></button></div>",
+      "css": ".ds-filters{display:flex;gap:.6rem;flex-wrap:wrap}.ds-filter{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;background:transparent;color:var(--ink,#15313e);display:flex;gap:.65rem;align-items:center;min-height:44px;border:0;border-radius:999px;padding:.6rem 1rem;font-size:1rem;cursor:pointer;transition:background .2s}.ds-filter span{font-size:.8rem}.ds-filter:hover{background:var(--cream,#f5f0e4)}.ds-filter[aria-pressed=true]{background:var(--navy,#091e2a);color:var(--paper,#fffdf7)}@media(max-width:760px){.ds-filters{gap:.2rem}.ds-filter{padding:.55rem .8rem;font-size:.95rem}}@media(max-width:360px){.ds-filter{padding-inline:.65rem}}@media(forced-colors:active){.ds-filter{border:1px solid ButtonText}}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible,.ds-download:focus-visible{outline:3px solid #ad470c;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button,.ds-text-link .ds-arrow,.ds-nav a:after,.ds-filter{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Download Control",
+      "kind": "button",
+      "refersTo": "download-link",
+      "description": "Circular download target used beside media titles.",
+      "html": "<a class=\"ds-download\" href=\"/assets/trash-dash-logo.svg\" download aria-label=\"Download Trash Dash logo\"><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-download{display:grid;place-items:center;width:44px;min-width:44px;height:44px;border-radius:50%;background:var(--cream,#f5f0e4);color:var(--ink,#15313e)}.ds-download:hover{background:var(--gold,#f7c75d)}.ds-download svg{display:block;width:20px;height:20px}@media(max-width:760px){.ds-download{width:38px;min-width:38px;background:transparent}}@media(max-width:520px){.ds-download{width:44px;min-width:44px;background:var(--cream,#f5f0e4)}}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible,.ds-download:focus-visible{outline:3px solid #ad470c;outline-offset:5px}"
+    },
+    {
+      "name": "Video Empty State",
+      "kind": "card",
+      "refersTo": "media-empty",
+      "description": "Honest zero-video collection state with a useful follow-along link.",
+      "html": "<div class=\"ds-empty\"><svg class=\"ds-video-icon\" viewBox=\"0 0 48 48\" fill=\"none\" aria-hidden=\"true\"><rect x=\"5\" y=\"10\" width=\"28\" height=\"28\" rx=\"5\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"m33 20 10-6v20l-10-6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg><h2>Still in the making.</h2><p>We’re busy bringing Trash Dash to life. Videos will join the collection when they’re ready to share.</p><a class=\"ds-text-link\" href=\"https://www.instagram.com/replayeverymemory/\" target=\"_blank\" rel=\"noopener noreferrer\">Follow along on Instagram <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div>",
+      "css": ".ds-empty{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;text-align:center;padding:4.5rem 1.5rem 5rem;background:var(--cream,#f5f0e4);color:var(--ink,#15313e);border-radius:16px;font-size:1.125rem}.ds-video-icon{display:block;width:50px;height:50px;margin:0 auto 1.5rem;color:#805415}.ds-empty h2{font-family:var(--display,'Eurostile Extended',sans-serif);font-weight:900;font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.15;letter-spacing:-.03em;text-wrap:balance;margin:0}.ds-empty p{max-width:43ch;margin:1rem auto;text-wrap:pretty}.ds-empty .ds-text-link{margin-top:1rem}@media(max-width:760px){.ds-empty{padding:3rem 1.25rem}}.ds-text-link{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;display:inline-flex;align-items:center;gap:.75rem;min-height:44px;color:var(--ink,#15313e);text-decoration:none;font-size:1.125rem}.ds-text-link .ds-arrow{transition:transform .2s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-text-link:hover{text-decoration:underline}.ds-text-link:hover .ds-arrow{transform:translateX(4px)}.ds-arrow{display:block;width:1.3rem;height:1.3rem;flex-shrink:0}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible,.ds-download:focus-visible{outline:3px solid #ad470c;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button,.ds-text-link .ds-arrow,.ds-nav a:after,.ds-filter{animation:none!important;transition:none!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Navy and Gold in Sunlight",
+    "overview": "The established navy and gold identity becomes brighter and more playful through sunny fields, warm reading surfaces, confident official lettering, open layouts, and supplied character art. EuroStyle Normal and Eurostile Extended Black, the studio logo, locked Trash Dash title, and Trashy artwork are durable brand commitments; preserve the supplied assets.\n\nThis record describes the built Home, Media, and About Us surfaces. Home introduces the studio, then the first game and a cast preview. Its gold hero pairs a studio promise with Trashy; that composition is a current implementation example, not a required opening for every page. Media and About Us use collection and portrait layouts within the shared system.",
+    "keyCharacteristics": [
+      "Sunny gold and warm paper balanced by concentrated navy fields.",
+      "Extended black display lettering paired with regular EuroStyle reading text.",
+      "Official artwork and portraits with open space and restrained framing.",
+      "Flat surfaces, rounded image frames, and small responsive hover movements.",
+      "Visible navigation and candid gallery states."
+    ],
+    "rules": [
+      {
+        "name": "The Sunlit Gold Rule",
+        "body": "Gold can be a broad background as well as an accent; use navy or reading ink on its light fields.",
+        "section": "colors"
+      },
+      {
+        "name": "The Official Lettering Rule",
+        "body": "Use the supplied extended black face for headings and the regular face for reading and controls; preserve lettering inside locked logo artwork.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Separate content with space, tone, and fine rules; the current system does not add shadows to controls, artwork, or containers.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do retain the brighter navy and gold identity, official fonts, and supplied artwork.",
+      "Do use warm reading fields, open spacing, and restrained image framing alongside sunny sections.",
+      "Do keep all three navigation links visible and preserve meaningful reading order at every width.",
+      "Do preserve visible focus, accessible names, reduced-motion behavior, and forced-colors support.",
+      "Do present real media, honest availability, and all approved credits from their data sources."
+    ],
+    "donts": [
+      "Don't redraw or replace official logos, locked title artwork, Trashy, or approved portraits.",
+      "Don't restore superseded fonts, hidden mobile navigation, or the former game-first hero as system requirements.",
+      "Don't make local art crops, rotations, or tints mandatory for every surface.",
+      "Don't add fake footage, playback affordances, invented team members, or unsupported release destinations.",
+      "Don't add shadows to every content group or place every paragraph in a rounded card."
+    ]
+  }
+}

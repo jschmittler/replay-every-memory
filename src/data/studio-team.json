@@ -1,0 +1,123 @@
+{
+  "version": 4,
+  "status": "approved",
+  "created": "2026-09-13",
+  "approved": "2026-09-13",
+  "style": "warm stylized 3D-clay studio portrait",
+  "uses": [
+    "main-menu team credits",
+    "final game credits"
+  ],
+  "members": [
+    {
+      "skill": "trash-dash-production",
+      "credit_order": 1,
+      "name": "James",
+      "role": "Creator & Production Director",
+      "bio": "James leads Trash Dash from its first wild idea to the finished journey. He keeps story, play, art, and sound pointed at one promise, and makes the calls that help the whole team move together.",
+      "background": "A welcoming production hub connecting story, levels, characters, effects, and music through planning cards, world maps, models, and overview screens.",
+      "portrait": "res://assets/runtime/campaign/credits/studio_team/james.png",
+      "likeness_source": "owner-supplied family reference"
+    },
+    {
+      "skill": "boss-creator",
+      "credit_order": 2,
+      "name": "Emily",
+      "role": "Boss Creator",
+      "bio": "Emily designs climaxes that test what the player learned and reveal what the opponent cares about. Her bosses enter with personality, fight fairly, and leave consequences behind.",
+      "background": "A dramatic but welcoming boss room with an arena map, creature silhouettes, and red-violet practical light.",
+      "portrait": "res://assets/runtime/campaign/credits/studio_team/emily.png",
+      "likeness_source": "owner-supplied family reference"
+    },
+    {
+      "skill": "story-writer",
+      "credit_order": 3,
+      "name": "Matilda",
+      "role": "Story Writer",
+      "bio": "Matilda catches the funny, heartfelt truths adults can miss. She gives every character a reason to speak, lets discoveries happen in front of the player, and knows when a quiet moment deserves room.",
+      "background": "A cozy story room with an open notebook, abstract beat cards, woodland keepsakes, and warm lamplight.",
+      "portrait": "res://assets/runtime/campaign/credits/studio_team/matilda.png",
+      "likeness_source": "owner-supplied family reference"
+    },
+    {
+      "skill": "conductor",
+      "credit_order": 4,
+      "name": "Ramona",
+      "role": "Conductor",
+      "bio": "Ramona hears the bounce in a run, the hush after a hard moment, and the tune a boss was hiding all along. She keeps the soundtrack playful, brave, and full of room for the game to speak.",
+      "background": "A cozy music studio with keyboard, percussion, glowing waveform shapes, and warm amber light.",
+      "portrait": "res://assets/runtime/campaign/credits/studio_team/ramona.png",
+      "likeness_source": "owner-supplied family reference"
+    },
+    {
+      "skill": "game-asset-director",
+      "credit_order": 5,
+      "name": "Avery Chen",
+      "role": "Game Asset Director",
+      "bio": "Avery protects the look and feel of Trash Dash from first sketch to final scene. They spot the detail that makes an asset belong—and know when a good thing is ready to leave alone.",
+      "background": "A game-art review corner with color swatches, prop silhouettes, maquettes, and monitors in burnt orange and deep teal.",
+      "portrait": "res://assets/runtime/campaign/credits/studio_team/avery_chen.png",
+      "likeness_source": "original studio persona"
+    },
+    {
+      "skill": "level-creator",
+      "credit_order": 6,
+      "name": "Mateo Alvarez",
+      "role": "Level Creator",
+      "bio": "Mateo turns story questions into jumps, routes, recoveries, and satisfying reveals. He believes a great level teaches with kindness, challenges with honesty, and leaves enough quiet space for the world to breathe.",
+      "background": "A bright level-design bench with route blocks, miniature platforms, terrain contours, and a live camera view.",
+      "portrait": "res://assets/runtime/campaign/credits/studio_team/mateo_alvarez.png",
+      "likeness_source": "original studio persona"
+    },
+    {
+      "skill": "player-character-creator",
+      "credit_order": 7,
+      "name": "Nadia Brooks",
+      "role": "Player Character Creator",
+      "bio": "Nadia gives heroes a personality players can read before the first button press. She shapes every pose, transition, and landing so movement feels clear, expressive, and unmistakably Trashy.",
+      "background": "A warm character-animation workspace with pose studies, motion arcs, a drawing tablet, and small hero maquettes.",
+      "portrait": "res://assets/runtime/campaign/credits/studio_team/nadia_brooks.png",
+      "likeness_source": "original studio persona"
+    },
+    {
+      "skill": "npc-creator",
+      "credit_order": 8,
+      "name": "Priya Nair",
+      "role": "NPC Creator",
+      "bio": "Priya builds supporting characters who want something of their own. Her NPCs guide, surprise, and care without becoming walking instruction signs.",
+      "background": "A character workshop with expression studies, conversation-flow shapes, and small portrait maquettes.",
+      "portrait": "res://assets/runtime/campaign/credits/studio_team/priya_nair.png",
+      "likeness_source": "original studio persona"
+    },
+    {
+      "skill": "enemy-creator",
+      "credit_order": 9,
+      "name": "Kenji Sato",
+      "role": "Enemy Creator",
+      "bio": "Kenji makes every threat readable, memorable, and a little sympathetic. He treats anticipation as a promise to the player and preserves the animal still visible beneath the Gunk.",
+      "background": "A playful creature lab with rounded enemy maquettes, attack-motion diagrams, and controlled warning light.",
+      "portrait": "res://assets/runtime/campaign/credits/studio_team/kenji_sato.png",
+      "likeness_source": "original studio persona"
+    },
+    {
+      "skill": "item-creator",
+      "credit_order": 10,
+      "name": "Zoe Kim",
+      "role": "Item Creator",
+      "bio": "Zoe turns overlooked objects into rewards, route clues, and tiny pieces of story. They love an item that is delightful to find and impossible to confuse with scenery.",
+      "background": "A cheerful prop workbench with bottle-cap tokens, found-object treasures, tools, and pickup silhouettes.",
+      "portrait": "res://assets/runtime/campaign/credits/studio_team/zoe_kim.png",
+      "likeness_source": "original studio persona"
+    },
+    {
+      "skill": "vfx-creator",
+      "credit_order": 11,
+      "name": "Amari Okafor",
+      "role": "VFX Creator",
+      "bio": "Amari gives impacts, splashes, danger, and celebration their clearest instant. Their effects arrive on time, say exactly what happened, and disappear before the next important thing.",
+      "background": "An effects workspace with translucent splashes, impact rings, particle arcs, and colorful motion studies.",
+      "portrait": "res://assets/runtime/campaign/credits/studio_team/amari_okafor.png",
+      "likeness_source": "original studio persona"
+    }
+  ]
+}

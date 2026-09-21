@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Replay Every Memory — Game Studio Website Research</title>
+  <style>
+    :root{--ink:#112949;--paper:#f7f0e3;--card:#fffaf0;--gold:#eab64c;--muted:#6f6a60;--line:#d8cbb5;--dark:#081b33}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit}.wrap{width:min(1360px,calc(100% - 40px));margin:auto}.hero{padding:72px 0 54px;border-bottom:1px solid var(--line)}
+    .eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#9b6b11}.hero h1{font-family:Georgia,serif;font-size:clamp(42px,7vw,92px);line-height:.95;max-width:1050px;margin:14px 0 24px}.hero p{font-size:clamp(18px,2.2vw,26px);max-width:920px;margin:0;color:#31425a}
+    .summary{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px}.metric{background:var(--ink);color:#fff;padding:22px;border-radius:16px}.metric strong{display:block;color:var(--gold);font-size:28px}.metric span{font-size:13px;color:#d9e2ed}
+    section{padding:60px 0;border-bottom:1px solid var(--line)}h2{font-family:Georgia,serif;font-size:clamp(32px,4vw,54px);line-height:1.05;margin:0 0 12px}.lede{max-width:850px;color:#4d5360;font-size:18px;margin:0 0 30px}
+    .current{display:grid;grid-template-columns:1.5fr .55fr;gap:18px;align-items:start}.current figure,.card{margin:0;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 14px 34px rgba(17,41,73,.08)}.current img,.card img{display:block;width:100%;height:auto}.current figcaption,.card .body{padding:16px 18px}.current figcaption strong{display:block;margin-bottom:5px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{transition:transform .18s ease,box-shadow .18s ease}.card:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(17,41,73,.14)}.card img{aspect-ratio:768/512;object-fit:cover;background:#ddd}.card h3{font-size:19px;margin:0 0 6px}.card p{margin:0;color:#5a5d66;font-size:14px}.card .source{display:inline-block;margin-top:12px;font-size:13px;font-weight:800;color:#805813}
+    .insight{margin-top:18px;padding:22px 24px;background:#f0c05b;border-radius:16px;color:#172943}.insight strong{display:block;font-size:18px;margin-bottom:4px}
+    .roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.priority{padding:24px;border-radius:18px;background:var(--card);border:1px solid var(--line)}.priority:first-child{background:var(--dark);color:#fff}.priority h3{margin:0 0 14px;font-size:24px}.priority ol{padding-left:20px;margin:0}.priority li+li{margin-top:9px}
+    .architecture{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:24px}.step{padding:18px 12px;text-align:center;border-radius:12px;background:var(--ink);color:#fff;font-weight:800;font-size:13px}.step:nth-child(2n){background:#d49e37;color:#142847}
+    .footer{padding:46px 0 70px}.footer p{max-width:850px}.button{display:inline-block;margin-top:14px;padding:12px 18px;border-radius:10px;background:var(--ink);color:#fff;text-decoration:none;font-weight:800}
+    @media(max-width:900px){.summary,.grid,.roadmap{grid-template-columns:1fr 1fr}.current{grid-template-columns:1fr}.architecture{grid-template-columns:1fr 1fr 1fr}}
+    @media(max-width:620px){.wrap{width:min(100% - 24px,1360px)}.hero{padding-top:44px}.summary,.grid,.roadmap{grid-template-columns:1fr}.architecture{grid-template-columns:1fr 1fr}section{padding:44px 0}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="wrap">
+    <div class="eyebrow">Mobbin research + responsive site audit · August 25, 2026</div>
+    <h1>Make the game the first thing visitors feel.</h1>
+    <p>Replay Every Memory already has a memorable identity and voice. The next leap is to reduce explanation, increase playable proof, and turn every major destination into a useful, finished experience.</p>
+    <div class="summary">
+      <div class="metric"><strong>12</strong><span>Mobbin references reviewed</span></div>
+      <div class="metric"><strong>5</strong><span>Current site destinations audited</span></div>
+      <div class="metric"><strong>6</strong><span>Recommended homepage sections</span></div>
+      <div class="metric"><strong>P0</strong><span>Content readiness before promotion</span></div>
+    </div>
+  </div></header>
+
+  <main>
+    <section><div class="wrap">
+      <div class="eyebrow">Current experience</div><h2>Strong identity, delayed proof</h2>
+      <p class="lede">Desktop establishes the brand immediately, but the hero’s right side communicates the studio mark more than the game. On mobile, the logo, description, status, and two CTAs fill the opening screen before character or game imagery arrives.</p>
+      <div class="current">
+        <figure><img src="replay-every-memory-desktop.png" alt="Current Replay Every Memory desktop homepage hero"/><figcaption><strong>Desktop · 1440 × 900</strong>Balanced and distinctive, but the game fantasy is represented by a silhouette rather than gameplay or a character moment.</figcaption></figure>
+        <figure><img src="replay-every-memory-mobile.png" alt="Current Replay Every Memory mobile homepage hero"/><figcaption><strong>Mobile · 390 × 844</strong>The visual payoff begins below the first viewport. Compress the copy and move game imagery upward.</figcaption></figure>
+      </div>
+    </div></section>
+
+    <section><div class="wrap">
+      <div class="eyebrow">Pattern 01 · Homepage hero</div><h2>Atmosphere first, message second</h2>
+      <p class="lede">The strongest references establish a world immediately, then use one concise proposition and one unmistakable action.</p>
+      <div class="grid">
+        <article class="card"><a href="https://mobbin.com/sites/sections/1bdc4e01-2f7e-4e09-9aa1-27f02c13bcbe"><img src="https://mobbin.com/api/mcp/short/Z09Eyy3P" alt="Unseen Studio hero reference"/></a><div class="body"><h3>Unseen Studio</h3><p>Full-canvas art direction, minimal navigation, one positioning line, and a single work CTA.</p><a class="source" href="https://mobbin.com/sites/sections/1bdc4e01-2f7e-4e09-9aa1-27f02c13bcbe">Open in Mobbin ↗</a></div></article>
+        <article class="card"><a href="https://mobbin.com/sites/sections/acc902bb-ea91-4876-ad44-a2378a7c778e"><img src="https://mobbin.com/api/mcp/short/o8B6dWNf" alt="Shader studio hero reference"/></a><div class="body"><h3>Shader</h3><p>A branded retro-computer metaphor supplies the personality while the copy stays concise.</p><a class="source" href="https://mobbin.com/sites/sections/acc902bb-ea91-4876-ad44-a2378a7c778e">Open in Mobbin ↗</a></div></article>
+        <article class="card"><a href="https://mobbin.com/sites/sections/5a5d7118-210f-41b7-8f16-947f08962f08"><img src="https://mobbin.com/api/mcp/short/zSitplpW" alt="Deel for Gaming hero reference"/></a><div class="body"><h3>Deel for Gaming</h3><p>Not a studio, but a useful clarity model: category, value, explanation, CTA, illustration.</p><a class="source" href="https://mobbin.com/sites/sections/5a5d7118-210f-41b7-8f16-947f08962f08">Open in Mobbin ↗</a></div></article>
+      </div>
+      <div class="insight"><strong>Apply to Replay Every Memory</strong>Keep the official Trash Dash logo and premise. Replace the right-side studio mark with gameplay, a character vignette, or a deliberately composed key-art image when the right asset is available.</div>
+    </div></section>
+
+    <section><div class="wrap">
+      <div class="eyebrow">Pattern 02 · Game showcase</div><h2>Show a world; label it lightly</h2>
+      <p class="lede">Visual grids and strips create range without requiring many projects. Trash Dash can generate that range through movement, characters, environments, enemies, and development milestones.</p>
+      <div class="grid">
+        <article class="card"><a href="https://mobbin.com/sites/sections/79d328bc-800b-4830-9de1-7ef8fd2dd00f"><img src="https://mobbin.com/api/mcp/short/HDpwjR9f" alt="Unseen Studio project grid"/></a><div class="body"><h3>Unseen Studio projects</h3><p>Large two-column imagery with short titles and lightweight categorization.</p><a class="source" href="https://mobbin.com/sites/sections/79d328bc-800b-4830-9de1-7ef8fd2dd00f">Open in Mobbin ↗</a></div></article>
+        <article class="card"><a href="https://mobbin.com/sites/sections/b497edad-c01e-4184-8d52-12689631b694"><img src="https://mobbin.com/api/mcp/short/6WUUgKzq" alt="TinyWins work presentation"/></a><div class="body"><h3>TinyWins</h3><p>A bold thesis paired with long project strips and compact supporting metadata.</p><a class="source" href="https://mobbin.com/sites/sections/b497edad-c01e-4184-8d52-12689631b694">Open in Mobbin ↗</a></div></article>
+        <article class="card"><a href="https://mobbin.com/sites/sections/f890a5d7-f914-4f60-8ec2-a15350081db4"><img src="https://mobbin.com/api/mcp/short/1XpBf098" alt="OFF+BRAND featured work collage"/></a><div class="body"><h3>OFF+BRAND</h3><p>An asymmetric collage creates energy and discovery with very little prose.</p><a class="source" href="https://mobbin.com/sites/sections/f890a5d7-f914-4f60-8ec2-a15350081db4">Open in Mobbin ↗</a></div></article>
+      </div>
+      <div class="insight"><strong>Apply to Replay Every Memory</strong>Replace repeated principle statements with three visual modules: how Trashy moves, who the characters are, and how the Gunk changes the world.</div>
+    </div></section>
+
+    <section><div class="wrap">
+      <div class="eyebrow">Pattern 03 · Studio story</div><h2>Make “homegrown” visible</h2>
+      <p class="lede">The most credible culture sections show specific people and practices. A mission becomes believable when visitors can see who is doing the work and how.</p>
+      <div class="grid">
+        <article class="card"><a href="https://mobbin.com/sites/sections/31c51386-c469-4884-9e7b-5951d9216caf"><img src="https://mobbin.com/api/mcp/short/pn9eCdN8" alt="Superhuman culture practices"/></a><div class="body"><h3>Superhuman</h3><p>Named culture rituals and candid imagery make abstract values concrete.</p><a class="source" href="https://mobbin.com/sites/sections/31c51386-c469-4884-9e7b-5951d9216caf">Open in Mobbin ↗</a></div></article>
+        <article class="card"><a href="https://mobbin.com/sites/sections/a7f6337a-f991-42e6-820e-b45cfb23bbaf"><img src="https://mobbin.com/api/mcp/short/JH9RYEjW" alt="HubSpot culture section"/></a><div class="body"><h3>HubSpot</h3><p>Digestible culture themes lead naturally into a visual team introduction.</p><a class="source" href="https://mobbin.com/sites/sections/a7f6337a-f991-42e6-820e-b45cfb23bbaf">Open in Mobbin ↗</a></div></article>
+        <article class="card"><a href="https://mobbin.com/sites/sections/41607641-6d7c-4795-848f-00866e74ea54"><img src="https://mobbin.com/api/mcp/short/sQda03CT" alt="Airtable team story"/></a><div class="body"><h3>Airtable</h3><p>Mission leads; the editorial story explains how that belief changes the work.</p><a class="source" href="https://mobbin.com/sites/sections/41607641-6d7c-4795-848f-00866e74ea54">Open in Mobbin ↗</a></div></article>
+      </div>
+      <div class="insight"><strong>Apply to Replay Every Memory</strong>Introduce the four people with names, roles, and concise biographies. Pair the origin story with one concrete practice and candid or illustrated team imagery.</div>
+    </div></section>
+
+    <section><div class="wrap">
+      <div class="eyebrow">Pattern 04 · Press and news</div><h2>Utility beats spectacle</h2>
+      <p class="lede">Press pages earn trust through accurate, scannable, downloadable information. They should minimize friction for creators, journalists, and partners.</p>
+      <div class="grid">
+        <article class="card"><a href="https://mobbin.com/sites/sections/1d67ce40-c3b2-46da-a3b9-a8a750209415"><img src="https://mobbin.com/api/mcp/short/sb7sTyb1" alt="Workable press and downloads"/></a><div class="body"><h3>Workable</h3><p>Dated releases and downloadable brand assets share one practical layout.</p><a class="source" href="https://mobbin.com/sites/sections/1d67ce40-c3b2-46da-a3b9-a8a750209415">Open in Mobbin ↗</a></div></article>
+        <article class="card"><a href="https://mobbin.com/sites/sections/85686f39-90c9-488b-b73c-25c3f920d425"><img src="https://mobbin.com/api/mcp/short/tVOemhO8" alt="Qatalog press list"/></a><div class="body"><h3>Qatalog</h3><p>Dates, headlines, and outbound arrows make a large archive easy to scan.</p><a class="source" href="https://mobbin.com/sites/sections/85686f39-90c9-488b-b73c-25c3f920d425">Open in Mobbin ↗</a></div></article>
+        <article class="card"><a href="https://mobbin.com/sites/sections/1b85bd0f-3680-47a1-bfae-97d7cf3a718a"><img src="https://mobbin.com/api/mcp/short/Aq01kctX" alt="Grammarly press release list"/></a><div class="body"><h3>Grammarly</h3><p>An intentionally plain dated link list keeps retrieval fast and predictable.</p><a class="source" href="https://mobbin.com/sites/sections/1b85bd0f-3680-47a1-bfae-97d7cf3a718a">Open in Mobbin ↗</a></div></article>
+      </div>
+      <div class="insight"><strong>Apply to Replay Every Memory</strong>Turn Press into a self-serve resource: one ZIP, individual approved assets, a fact sheet, dated news, usage guidance, and a clear contact.</div>
+    </div></section>
+
+    <section><div class="wrap">
+      <div class="eyebrow">Recommended homepage architecture</div><h2>Six sections, each with one job</h2>
+      <p class="lede">The current material is good; the structure needs stronger editing. Move the longer manifesto content to Studio or Journal and let the homepage prove the game quickly.</p>
+      <div class="architecture">
+        <div class="step">1 · Game-first hero</div><div class="step">2 · Playable proof</div><div class="step">3 · Why it is interesting</div><div class="step">4 · Latest development</div><div class="step">5 · Meet the studio</div><div class="step">6 · Follow / wishlist</div>
+      </div>
+    </div></section>
+
+    <section><div class="wrap">
+      <div class="eyebrow">Implementation roadmap</div><h2>Content readiness before decoration</h2>
+      <div class="roadmap">
+        <div class="priority"><h3>P0 · Before promotion</h3><ol><li>Publish three real Journal posts or stop making Journal the main CTA.</li><li>Create a credible hero/game-media asset and 16:9 trailer placeholder.</li><li>Use the official game logo on the Trash Dash detail page.</li><li>Ship a downloadable press kit and fact sheet.</li></ol></div>
+        <div class="priority"><h3>P1 · Highest return</h3><ol><li>Compress the homepage to six sections.</li><li>Move game imagery into the first mobile viewport.</li><li>Add people and practice to Studio.</li><li>Add three visual gameplay modules.</li></ol></div>
+        <div class="priority"><h3>P2 · Build the system</h3><ol><li>Add Journal categories and optional email signup.</li><li>Introduce restrained gameplay and character motion.</li><li>Add dated news and store badges as infrastructure is ready.</li></ol></div>
+      </div>
+    </div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap">
+    <div class="eyebrow">Research conclusion</div><h2>Replay Every Memory should feel like the doorway to a game world—not the explanation of one.</h2>
+    <p>The brand system should remain. The next version should use less narrative repetition, more game evidence, a visible team, and destinations that are complete enough to reward every click.</p>
+    <a class="button" href="replay-every-memory-studio-research-20260825-2022.md">Open the full written brief</a>
+  </div></footer>
+</body>
+</html>

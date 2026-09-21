@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Arrow from '../components/Arrow.astro';
+import { media } from '../data/media';
+import { site } from '../config/site';
+const categories = ['All', 'Artwork', 'Logos', 'Videos'];
+---
+<BaseLayout title="Media — ReplayEveryMemory Studio" description="Explore the storyboards, character designs, environments, props, and artwork shaping Trash Dash, our first video game.">
+  <section class="media-hero container"><h1>A little look<br />behind the game.</h1><p class="lede">Characters, artwork, and a world taking shape.<br />A collection from the making of Trash Dash.</p></section>
+  <section class="container media-library" aria-label="Studio media">
+    <div class="media-toolbar"><div class="media-filters" role="group" aria-label="Filter media" hidden>{categories.map(category => <button class="filter-button" type="button" data-filter={category} aria-pressed={category === 'All'}>{category}<span>{category === 'All' ? media.length : media.filter(item => item.category === category).length}</span></button>)}</div><p class="media-count" aria-live="polite" aria-atomic="true">{media.length} items</p></div>
+    <div class="media-grid">{media.map(item => <article class="media-item" data-category={item.category}>
+      {item.type === 'image' ? <a class:list={['media-image', `media-${item.presentation ?? 'default'}`]} href={item.src} target="_blank" rel="noopener noreferrer" aria-label={`View ${item.title} at full size (opens in a new tab)`}><img src={item.src} alt={item.alt} width={item.width} height={item.height} loading="lazy" />{item.presentation !== 'board' && <span class="media-view">View artwork <Arrow /></span>}</a> : <div class="media-video"><video controls preload="metadata" poster={item.poster} aria-label={item.title}><source src={item.src} />{item.captions && <track kind="captions" src={item.captions} srclang="en" label="English" default />}Your browser cannot play this video. <a href={item.src}>Download the video</a>.</video></div>}
+      <div class="media-item-info"><div><h2>{item.title}</h2><p>{item.description}</p>{item.presentation === 'board' && <a class="text-link media-full-size" href={item.src} target="_blank" rel="noopener noreferrer">View full artwork <Arrow /><span class="sr-only"> (opens in a new tab)</span></a>}</div><a class="download-link" href={item.src} download aria-label={`Download ${item.title}`}><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg></a></div>{item.svg && <a class="svg-download" href={item.svg} download>Download SVG version</a>}
+    </article>)}</div>
+    <p class="media-note">Development artwork includes early ideas and earlier studio branding. Final game details may change.</p>
+    <div class="media-empty" hidden><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="5" y="10" width="28" height="28" rx="5" stroke="currentColor" stroke-width="2" /><path d="m33 20 10-6v20l-10-6" stroke="currentColor" stroke-width="2" stroke-linejoin="round" /></svg><h2>Still in the making.</h2><p>We’re busy bringing Trash Dash to life. Videos will join the collection when they’re ready to share.</p><a class="text-link" href={site.instagramUrl} target="_blank" rel="noopener noreferrer">Follow along on Instagram <Arrow /><span class="sr-only"> (opens in a new tab)</span></a></div>
+  </section>
+</BaseLayout>
+<script>
+  const filters = document.querySelector<HTMLElement>('.media-filters');
+  const buttons = [...document.querySelectorAll<HTMLButtonElement>('[data-filter]')];
+  const items = [...document.querySelectorAll<HTMLElement>('.media-item')];
+  const count = document.querySelector<HTMLElement>('.media-count');
+  const empty = document.querySelector<HTMLElement>('.media-empty');
+  const note = document.querySelector<HTMLElement>('.media-note');
+  if (filters) filters.hidden = false;
+  for (const button of buttons) button.addEventListener('click', () => {
+    const category = button.dataset.filter;
+    for (const candidate of buttons) candidate.setAttribute('aria-pressed', String(candidate === button));
+    let visible = 0;
+    for (const item of items) { item.hidden = category !== 'All' && item.dataset.category !== category; if (!item.hidden) visible++; }
+    if (count) count.textContent = `${visible} ${visible === 1 ? 'item' : 'items'}${category === 'All' ? '' : ` in ${category?.toLowerCase()}`}`;
+    if (empty) empty.hidden = visible > 0;
+    if (note) note.hidden = category === 'Logos' || category === 'Videos';
+  });
+</script>

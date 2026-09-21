@@ -1,0 +1,5 @@
+---
+interface Props { decorative?: boolean; eager?: boolean; }
+const { decorative = false, eager = false } = Astro.props;
+---
+<div class="trashy-art"><img src="/assets/trashy.png" width="2244" height="2804" alt={decorative ? '' : 'Trashy, our raccoon hero, wearing his golden bandana and trusty utility belt.'} loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : 'auto'} /></div>

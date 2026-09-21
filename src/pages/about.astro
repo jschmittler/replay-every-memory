@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Arrow from '../components/Arrow.astro';
+import credits from '../data/studio-team.json';
+---
+<BaseLayout title="About us — ReplayEveryMemory Studio" description="Meet the people and studio personas behind Trash Dash, with portraits, roles, and introductions from the approved game credits.">
+  <section class="about-hero section"><div class="container about-intro"><div><h1>A small studio.<br />A whole cast<br />of characters.</h1><p class="lede">We’re ReplayEveryMemory Studio.<br />We make dreams with a start button.</p></div><div class="studio-logo-stage"><img src="/assets/studio-logo.png" width="6482" height="3559" alt="ReplayEveryMemory — Dreams with a start button" /></div></div></section>
+  <section class="container about-story"><h2>One adventure.<br />Many imaginations.</h2><div><p>Trash Dash is our first game, built around a curious raccoon and a shared love of playful, expressive worlds. Every part of that world—from its story and characters to its levels, music, and smallest effects—has a voice behind it.</p><p>Meet the family and the original studio personas from our game credits. These are the characters shaping the adventure, each with their own part to play.</p><a class="text-link" href="/#trash-dash">Get to know Trash Dash <Arrow /></a></div></section>
+  <section class="section team-section" aria-labelledby="team-heading"><div class="container"><div class="section-heading"><h2 id="team-heading">The cast behind the craft.</h2><p>Meet the team, in game-credit order.</p></div><div class="team-grid">{credits.members.map(member => <article class="team-member" id={member.name.toLowerCase().replaceAll(' ', '-')}><img src={`/assets/team/${member.portrait.split('/').pop()}`} alt={`Illustrated studio portrait of ${member.name}`} width="512" height="512" loading="lazy" /><div class="member-copy"><h3>{member.name}</h3><p class="member-role">{member.role}</p><p>{member.bio}</p>{member.likeness_source === 'original studio persona' && <span class="persona-label">Studio persona</span>}</div></article>)}</div></div></section>
+</BaseLayout>

@@ -1,0 +1,12 @@
+{
+  "name": "replay-every-memory-website-build-handoff",
+  "version": "1.0.0",
+  "created": "2026-08-25",
+  "sourceConversationId": "6a8c7987-abf8-83ea-8b9c-7224414cbb23",
+  "sourceConversationTitle": "Build Studio Branding",
+  "purpose": "Production website implementation handoff",
+  "publicStudioName": "Replay Every Memory",
+  "firstTitle": "Trash Dash",
+  "primaryPrompt": "07_CODEX_PROMPT/BUILD_WEBSITE_WITH_CODEX.md",
+  "authority": "01_SOURCE_OF_TRUTH/SOURCE_AUTHORITY.md"
+}
