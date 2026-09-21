@@ -26,7 +26,9 @@ The older `Replay_Every_Memory_Website_Build_Handoff_v1.0` folder is historical 
 
 ## Deployment
 
-Set `siteUrl` in `src/config/site.ts` to the final HTTPS origin and rebuild to enable indexing and canonical metadata. Deploy only the generated `dist/` folder to a static host that resolves extensionless page links (or serves the generated directory indexes). No analytics, remote forms, cookies, or external font requests are included.
+The live origin is `https://replayeverymemory.com`. Hostinger clones `main` into `public_html/dist`, so the generated website lives at `public_html/dist/dist`. Install `deployment/hostinger-root.htaccess` as `public_html/.htaccess` through Hostinger's file manager. This file sits outside the Git checkout and routes the public domain to the generated pages and display assets; source files, Git metadata, and old uploads are blocked. Keep its route allowlist in sync if adding new pages or public asset directories.
+
+Follow the testing and approval gate in `AGENTS.md` before pushing. After deployment completes, clear Hostinger's cache if needed and verify the live page content. No analytics, remote forms, cookies, or external font requests are included.
 
 ## Artwork handling
 

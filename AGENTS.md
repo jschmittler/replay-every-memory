@@ -16,4 +16,6 @@
 
 - Repository: `git@github.com:jschmittler/replay-every-memory.git`
 - Branch: `main`
-- Hostinger publishes the repository's `dist/` directory to `public_html/dist`.
+- Hostinger clones the whole repository into `public_html/dist`; the built website is therefore in `public_html/dist/dist`.
+- `public_html/.htaccess` must match `deployment/hostinger-root.htaccess`. It serves only the built pages and display assets, and blocks source files, Git metadata, and old uploads. This root routing file sits outside the Git checkout and is installed separately through Hostinger's file manager.
+- After publishing, verify the actual live page content as well as Hostinger's completed deployment status; a successful Git deployment alone does not prove the domain is serving the new build.

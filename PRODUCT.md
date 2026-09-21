@@ -36,7 +36,7 @@ The user's September 21 request supersedes the earlier website handoff's page li
 - Release dates and store destinations are not promised. Game status: in development.
 - Only Home, Media, and About Us are public content pages; a 404 recovery page is included.
 - Original artwork stays in `src/assets/`; only display renditions ship. No download or direct-original links. Image context menus and dragging are discouraged, not security controls. Displayed previews and fonts can still be copied by a determined visitor, and screenshots cannot be prevented.
-- Deployment/domain unconfigured; preview remains noindex until a public origin is set.
+- Live origin: https://replayeverymemory.com. Hostinger deploys GitHub `main`; the root routing configuration exposes only the generated website. Publishing requires successful local checks and the owner's explicit authorization.
 
 ## Accessibility & Inclusion
 Keep navigation visible on small screens, readable contrast, keyboard-operable controls, visible focus, reduced-motion support, useful alt text, and complete base content without JavaScript.

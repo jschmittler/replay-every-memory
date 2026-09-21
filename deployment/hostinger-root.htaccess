@@ -1,0 +1,17 @@
+# Install as public_html/.htaccess (outside Hostinger's Git checkout).
+# Hostinger clones the repository into public_html/dist; the built site is
+# therefore public_html/dist/dist. Only these built routes are public.
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+RewriteEngine On
+
+# Finish internal rewrites only for generated pages and display assets.
+RewriteRule ^dist/dist/(?:index\.html|404\.html|(?:about|media)/index\.html|_astro/[A-Za-z0-9_.-]+)$ - [L]
+
+RewriteRule ^(?:index\.html)?$ dist/dist/index.html [L]
+RewriteRule ^(about|media)/?$ dist/dist/$1/index.html [L]
+RewriteRule ^(_astro/[A-Za-z0-9_.-]+|404\.html)$ dist/dist/$1 [L]
+
+# Do not serve old uploads, repository metadata, or original artwork.
+RewriteRule ^ - [R=404,L]
