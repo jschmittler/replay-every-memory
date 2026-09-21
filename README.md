@@ -16,7 +16,7 @@ The static website is generated in `dist/`. The current local preview uses port 
 See [CONTENT_GUIDE.md](CONTENT_GUIDE.md) for adding artwork, videos, and social links.
 
 - `src/data/media.ts`: media collection, including future video entries.
-- `src/data/studio-team.json`: the approved eleven-member game credits. This is the roster authority going forward.
+- `src/data/studio-team.json`: the owner-approved four-member website roster: James, Emily, Matilda, and Ramona. This is the roster authority going forward.
 - `src/config/site.ts`: Instagram, public email, and deployment origin.
 - `src/data/asset-provenance.json`: owner-supplied source paths.
 - `PRODUCT.md`: current product truth and scope.

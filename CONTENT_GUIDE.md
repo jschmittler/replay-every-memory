@@ -47,7 +47,7 @@ Add WebVTT captions when the video contains speech or meaningful sound. The nati
 
 ## Update the studio team
 
-The approved roster is in `src/data/studio-team.json`. Roles, biographies, and ordering on About Us come from this file. Original portraits live in `src/assets/team/` and are rendered as web previews. Update from approved game credits only; do not restore the historical website roster or old role descriptions. The four family portraits on Home use the first four members in game-credit order.
+The approved roster is in `src/data/studio-team.json`. Roles, biographies, and ordering on About Us come from this file. Original portraits live in `src/assets/team/` and are rendered as web previews. The owner has limited the website roster to James, Emily, Matilda, and Ramona. Preserve their approved roles, biographies, and existing order; do not restore fictional studio personas from the game credits. The same four family members appear on Home and About Us.
 
 ## Update contact or publish changes
 

@@ -189,7 +189,7 @@ The zero-video view uses a cream panel, outlined video icon, “Still in the mak
 
 ### Portraits and Credits
 
-Home previews the first four approved credits; About Us presents all eleven in order from `src/data/studio-team.json`. Supplied square portraits sit above extended-face names, roles, and regular-font biographies. Original personas have explicit “Studio persona” labels. The data remains authoritative for names, roles, bios, and order.
+Home and About Us present the four approved family members from `src/data/studio-team.json`: James, Emily, Matilda, and Ramona. About Us uses two columns, reducing to one on small phones. Supplied square portraits sit above extended-face names, roles, and regular-font biographies. The data remains authoritative for names, roles, bios, and order; fictional studio personas are excluded.
 
 ### Contact Rows
 

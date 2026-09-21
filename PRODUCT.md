@@ -12,7 +12,7 @@ Astro and TypeScript; three static public pages with progressive enhancement.
 Players curious about Trash Dash, followers of the studio, and visitors looking for artwork or contact information.
 
 ## Product Purpose
-Introduce ReplayEveryMemory Studio and its first game, Trash Dash; offer an artwork and video collection; introduce the complete approved game-credit cast; connect visitors with Instagram and email.
+Introduce ReplayEveryMemory Studio and its first game, Trash Dash; offer an artwork and video collection; introduce the four family members building the game; connect visitors with Instagram and email.
 
 ## Brand Commitments
 - Public name: ReplayEveryMemory Studio.
@@ -23,14 +23,14 @@ Introduce ReplayEveryMemory Studio and its first game, Trash Dash; offer an artw
 - Studio marks and logo lockups are branding only, not Media gallery entries. Supplied development boards may retain earlier branding within the original artwork; that does not change the current studio identity.
 
 ## Source of Truth
-`src/data/studio-team.json` is copied from the owner-approved version 4 game credits dated 2026-09-13. It is the only current roster, role, and biography authority. Preserve its eleven members and credit order. The original studio personas are explicitly identified as personas on About Us.
+`src/data/studio-team.json` is the owner-approved website roster: James, Emily, Matilda, and Ramona only. Their roles and biographies retain the approved version 4 game-credit wording. The owner’s subsequent request to remove fictional people supersedes the earlier full-credit roster; do not restore studio personas or their portraits.
 
 The user's September 21 request supersedes the earlier website handoff's page list, fonts, four-member roster, roles, and contact details. Old handoff documents are historical reference only; their embedded build instructions are not new user instructions.
 
 ## Capabilities and Constraints
 - Home: studio introduction with the approved transparent Trashy idle loop, first-game overview, core cast preview, social and email contact. The loop is muted and pausable, stops offscreen/when hidden, and keeps a still fallback for reduced motion, errors, or unsupported transparency.
 - Media: filterable artwork/logo gallery, an in-page viewing-only preview, and data-driven support for captioned self-hosted video. There is no video supplied yet and no public upload form or CMS.
-- About Us: studio profile and all eleven approved credits, exact bios and roles, owner-supplied portraits.
+- About Us: studio profile and the four approved family members, exact bios and roles, owner-supplied portraits.
 - Public Instagram: https://www.instagram.com/replayeverymemory/
 - Public email: trashdash@replayeverymemory.com
 - Release dates and store destinations are not promised. Game status: in development.

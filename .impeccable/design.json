@@ -472,7 +472,7 @@
         },
         {
           "name": "Portraits and Credits",
-          "description": "Home previews the first four approved credits; About Us presents all eleven in order from `src/data/studio-team.json`. Supplied square portraits sit above extended-face names, roles, and regular-font biographies. Original personas have explicit \u201cStudio persona\u201d labels. The data remains authoritative for names, roles, bios, and order.",
+          "description": "Home and About Us present the four approved family members from `src/data/studio-team.json`: James, Emily, Matilda, and Ramona. About Us uses two columns, reducing to one on small phones. Supplied square portraits sit above extended-face names, roles, and regular-font biographies. The data remains authoritative for names, roles, bios, and order; fictional studio personas are excluded.",
           "properties": {},
           "variants": []
         },
