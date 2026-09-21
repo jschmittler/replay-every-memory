@@ -7,10 +7,10 @@ ErrorDocument 404 /404.html
 RewriteEngine On
 
 # Finish internal rewrites only for generated pages and display assets.
-RewriteRule ^dist/dist/(?:index\.html|404\.html|(?:about|media)/index\.html|_astro/[A-Za-z0-9_.-]+)$ - [L]
+RewriteRule ^dist/dist/(?:index\.html|404\.html|(?:about|characters|media)/index\.html|_astro/[A-Za-z0-9_.-]+)$ - [L]
 
 RewriteRule ^(?:index\.html)?$ dist/dist/index.html [L]
-RewriteRule ^(about|media)/?$ dist/dist/$1/index.html [L]
+RewriteRule ^(about|characters|media)/?$ dist/dist/$1/index.html [L]
 RewriteRule ^(_astro/[A-Za-z0-9_.-]+|404\.html)$ dist/dist/$1 [L]
 
 # Do not serve old uploads, repository metadata, or original artwork.
