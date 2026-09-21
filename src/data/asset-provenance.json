@@ -50,9 +50,9 @@
       "sourceAsset": "src/assets/team/ramona.png"
     },
     {
-      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/portraits/jimothy_portrait_dialogue_01.png",
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/character-designs/heroes/Jimothy/Jimothy-Regular.png",
       "sourceAsset": "src/assets/characters/jimothy.png",
-      "usage": "Approved Jimothy character portrait for the Characters page."
+      "usage": "Owner-supplied full standing pose, replacing the dialogue portrait on Games and Characters. CSS framing removes transparent canvas margins only; the complete figure remains visible."
     },
     {
       "source": "/Users/jamesschmittler/Downloads/social-story.png",
@@ -77,7 +77,27 @@
     {
       "source": "/Users/jamesschmittler/Downloads/idle-relaxed-loop-1811-transparent-video.webm",
       "sourceAsset": "src/assets/animation/trashy-idle.webm",
-      "usage": "Owner-approved web-ready display loop for the Home hero; VP9 alpha, 1112 \u00d7 834, 24fps, 4.041 seconds. No direct file link or download control."
+      "usage": "Owner-approved web-ready display loop for the homepage Trash Dash feature; VP9 alpha, 1112 \u00d7 834, 24fps, 4.041 seconds."
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/environment/level_01/backgrounds/level1-deep-woodland-far.png",
+      "sourceAsset": "src/assets/worlds/woodland-distance.png",
+      "usage": "Owner-owned Trash Dash development artwork, reused for studio website display."
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/environment/level_01/backgrounds/level1-deep-woodland-close.png",
+      "sourceAsset": "src/assets/worlds/woodland-frame.png",
+      "usage": "Owner-owned Trash Dash development artwork, reused for studio website display."
+    },
+    {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/environment/level_01/backgrounds/level1-creek-ruined-mill-far.png",
+      "sourceAsset": "src/assets/worlds/creek-distance.png",
+      "usage": "Owner-owned Trash Dash development artwork, reused for studio website display."
+    },
+    {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/studio-branding/logos/studio-logo-favicon.png",
+      "sourceAsset": "src/assets/studio-logo-favicon.png",
+      "usage": "Owner-supplied 2805 \u00d7 2805 square mark. Use only where a perfect 1:1 image is required, currently the favicon. General studio branding continues using the existing mark and logo."
     }
   ]
 }

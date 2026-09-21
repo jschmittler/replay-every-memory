@@ -64,3 +64,15 @@ The site omits downloads, blocks image dragging and image context menus, and req
 ## Homepage character animation
 
 `src/assets/animation/trashy-idle.webm` is the owner-supplied web-ready loop, used only in the Home hero. `TrashyArt.astro` starts it silently when visible and motion is allowed, pauses it offscreen or when the page is hidden, and provides a Pause/Play control. Reduced-motion preferences, unsupported playback, unavailable transparency, and loading errors keep the approved still image visible. The source is assigned only when animation is allowed and the character is in view. The video remains subject to the same public-preview copying limitations as any displayed media.
+
+
+## Studio-first architecture
+
+- Home introduces the studio, features its current game, and tells the DIY studio story. Keep individual profiles on About Us.
+- The hero’s primary action is `Meet the team` → `/about#team`. General game-introduction links always go to `/games`.
+- `src/data/games.ts` owns shared project identity, status, release note, platform copy, and supporting destinations. `src/pages/games.astro` currently gives the first game a full introduction.
+- Characters and Media retain their public URLs so bookmarks work. Their game subnavigation makes their relationship to Trash Dash clear.
+- When a second game is ready, add its record and create individual game pages (for example `/games/trash-dash`), then change Games to a collection of substantial project introductions. Preserve `/games#trash-dash` and existing supporting routes or add redirects. Adding a data record alone does not automatically publish a project page.
+- The homepage story can later feature a real anecdote or creative-process image. See `ASSET_WISHLIST.md`; no empty news feed is needed.
+- Official studio marks, approved portraits, and character artwork remain intact. New woodland images are sourced from Trash Dash and listed in `src/data/asset-provenance.json`.
+- `src/styles/studio.css` layers the studio-first visual system over shared base, gallery, and character styles. `ForestScene.astro` provides the layered artwork and pointer motion; `TrashyArt.astro` retains video fallback and pause behavior.

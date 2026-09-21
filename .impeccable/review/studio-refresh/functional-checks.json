@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "All local navigation and anchor targets resolve",
+    "Team CTA reaches About team section",
+    "Homepage contains no team profiles",
+    "All game-introduction links reach Games",
+    "Media filters and empty video state",
+    "Artwork dialog Escape and focus return",
+    "Trashy animation pause/play and offscreen pause",
+    "Reduced motion disables animation",
+    "No-JS home and artwork content",
+    "No overflow at 320, 390, 554, 768, 1024, 1440",
+    "No browser runtime errors"
+  ],
+  "productionBase": "http://127.0.0.1:4324"
+}

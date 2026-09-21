@@ -1,0 +1,72 @@
+[
+  {
+    "label": "desktop",
+    "route": "home",
+    "overflow": false,
+    "brokenImages": [],
+    "h1": "Dreams witha start button."
+  },
+  {
+    "label": "desktop",
+    "route": "games",
+    "overflow": false,
+    "brokenImages": [],
+    "h1": "Worlds we’rebringing to life."
+  },
+  {
+    "label": "desktop",
+    "route": "about",
+    "overflow": false,
+    "brokenImages": [],
+    "h1": "A small studio.A whole lotof heart."
+  },
+  {
+    "label": "desktop",
+    "route": "characters",
+    "overflow": false,
+    "brokenImages": [],
+    "h1": "Meet the heroesof Trash Dash."
+  },
+  {
+    "label": "desktop",
+    "route": "media",
+    "overflow": false,
+    "brokenImages": [],
+    "h1": "A little lookbehind the game."
+  },
+  {
+    "label": "mobile",
+    "route": "home",
+    "overflow": false,
+    "brokenImages": [],
+    "h1": "Dreams witha start button."
+  },
+  {
+    "label": "mobile",
+    "route": "games",
+    "overflow": false,
+    "brokenImages": [],
+    "h1": "Worlds we’rebringing to life."
+  },
+  {
+    "label": "mobile",
+    "route": "about",
+    "overflow": false,
+    "brokenImages": [],
+    "h1": "A small studio.A whole lotof heart."
+  },
+  {
+    "label": "mobile",
+    "route": "characters",
+    "overflow": false,
+    "brokenImages": [],
+    "h1": "Meet the heroesof Trash Dash."
+  },
+  {
+    "label": "mobile",
+    "route": "media",
+    "overflow": false,
+    "brokenImages": [],
+    "h1": "A little lookbehind the game."
+  }
+]

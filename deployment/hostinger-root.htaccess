@@ -1,17 +1,29 @@
 # Install as public_html/.htaccess (outside Hostinger's Git checkout).
 # Hostinger clones the repository into public_html/dist; the built site is
-# therefore public_html/dist/dist. Only these built routes are public.
+# therefore public_html/dist/dist. This file exposes that generated directory
+# as the site root without maintaining a route list for every page.
 Options -Indexes
+DirectorySlash Off
 DirectoryIndex index.html
 ErrorDocument 404 /404.html
 RewriteEngine On
 
-# Finish internal rewrites only for generated pages and display assets.
-RewriteRule ^dist/dist/(?:index\.html|404\.html|(?:about|characters|media)/index\.html|_astro/[A-Za-z0-9_.-]+)$ - [L]
+# Never expose the repository checkout, source files, or metadata through the
+# public URL. THE_REQUEST distinguishes a visitor's /dist request from the
+# internal dist/dist path created by the rules below.
+RewriteCond %{THE_REQUEST} \s/+dist(?:/|\s) [NC]
+RewriteRule ^dist(?:/|$) - [R=404,L]
+RewriteRule ^dist/dist/ - [L]
+RewriteRule ^(?:\.git|src|public|node_modules|scripts|deployment)(?:/|$) - [R=404,L]
 
-RewriteRule ^(?:index\.html)?$ dist/dist/index.html [L]
-RewriteRule ^(about|characters|media)/?$ dist/dist/$1/index.html [L]
-RewriteRule ^(_astro/[A-Za-z0-9_.-]+|404\.html)$ dist/dist/$1 [L]
+# Serve generated files directly. New display assets under _astro and the
+# generated error page are covered without exposing source files.
+RewriteRule ^((?:_astro/)[A-Za-z0-9_./-]+|404\.html)$ /dist/dist/$1 [L]
 
-# Do not serve old uploads, repository metadata, or original artwork.
+# Map any clean page path to Astro's directory index. This keeps future routes
+# working without a route allowlist and avoids DirectorySlash redirects.
+RewriteRule ^([A-Za-z0-9][A-Za-z0-9_/-]*)/?$ /dist/dist/$1/index.html [L]
+RewriteRule ^$ /dist/dist/index.html [L]
+
+# Do not serve old uploads or anything outside the generated site.
 RewriteRule ^ - [R=404,L]

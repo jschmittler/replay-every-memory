@@ -6,9 +6,9 @@ import { media } from '../data/media';
 import { site } from '../config/site';
 const categories = ['All', 'Artwork', 'Logos', 'Videos'];
 ---
-<BaseLayout title="Media — ReplayEveryMemory Studio" description="Explore the storyboards, character designs, environments, props, and artwork shaping Trash Dash, our first video game.">
+<BaseLayout title="Trash Dash Artwork & Media — ReplayEveryMemory Studio" description="Explore the storyboards, character designs, environments, props, and artwork shaping Trash Dash, our first video game.">
   <section class="media-hero container"><h1>A little look<br />behind the game.</h1><p class="lede">Characters, artwork, and a world taking shape.<br />A collection from the making of Trash Dash.</p></section>
-  <section class="container media-library" aria-label="Studio media">
+  <section class="container media-library" aria-label="Trash Dash media">
     <div class="media-toolbar"><div class="media-filters" role="group" aria-label="Filter media" hidden>{categories.map(category => <button class="filter-button" type="button" data-filter={category} aria-pressed={category === 'All'}>{category}<span>{category === 'All' ? media.length : media.filter(item => item.category === category).length}</span></button>)}</div><p class="media-count" aria-live="polite" aria-atomic="true">{media.length} items</p></div>
     <div class="media-grid">{media.map(item => <article class="media-item" data-category={item.category}>
       {item.type === 'image' ? <div class:list={['media-image', `media-${item.presentation ?? 'default'}`]} data-artwork><StudioImage src={item.src} alt={item.alt} loading="lazy" /></div> : <div class="media-video" data-artwork><video controls controlslist="nodownload" preload="metadata" poster={item.poster} aria-label={item.title}><source src={item.src} />{item.captions && <track kind="captions" src={item.captions} srclang="en" label="English" default />}Your browser cannot play this video. Please try a newer browser.</video></div>}

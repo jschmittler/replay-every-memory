@@ -1,0 +1,5 @@
+---
+const pathname = Astro.url.pathname.replace(/\/$/, '');
+const show = ['/characters', '/media'].includes(pathname);
+---
+{show && <nav class="game-subnav" aria-label="Trash Dash navigation"><div class="container"><a href="/games">Games / Trash Dash</a><div><a href="/characters" aria-current={pathname === '/characters' ? 'page' : undefined}>Characters</a><a href="/media" aria-current={pathname === '/media' ? 'page' : undefined}>Artwork & media</a></div></div></nav>}

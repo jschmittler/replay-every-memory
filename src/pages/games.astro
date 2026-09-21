@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { featuredGame } from '../data/games';
+import StudioImage from '../components/StudioImage.astro';
+import StandingCharacter from '../components/StandingCharacter.astro';
+import ForestScene from '../components/ForestScene.astro';
+import Arrow from '../components/Arrow.astro';
+import { site } from '../config/site';
+---
+<BaseLayout title="Games — Trash Dash | ReplayEveryMemory Studio" description="Discover Trash Dash, the first adventure from ReplayEveryMemory Studio. Meet Trashy and Jimothy, explore their world, and follow the making of the game.">
+  <section class="games-intro container"><h1>Worlds we’re<br /><span>bringing to life.</span></h1><p class="lede">Every game starts with a little “what if?”<br />Here’s where our first one is taking us.</p></section>
+  <article id="trash-dash" aria-labelledby="trash-dash-title">
+    <div class="games-cinema"><ForestScene eager /><div class="games-cinema-content"><h2 id="trash-dash-title"><span class="sr-only">Trash Dash</span><StudioImage src={featuredGame.logo} alt="" previewWidth={850} loading="eager" /></h2><p>A little raccoon. A big adventure.</p></div><span class="cinema-caption">A glimpse into our world · Development artwork</span></div>
+    <div class="container game-detail section">
+      <div><h2>Good friends.<br />Strange trouble.<br /><span>One brave little raccoon.</span></h2><p class="development-status"><span aria-hidden="true"></span>{featuredGame.status} · {featuredGame.releaseNote}</p><p class="game-format">{featuredGame.format}</p><p class="game-platforms">{featuredGame.platforms}</p></div>
+      <div class="game-detail-copy"><p class="lede">Home is worth a little trouble.</p><p>When the purple-black Gunk begins corrupting the animals around Trashy’s forest home, he and his best friend Jimothy follow the trail beyond the woods to help the creatures caught in it.</p><p>From forest to suburbia to city, their journey is about curiosity, friendship, and finding the courage to care. The infected animals are victims to help, not disposable enemies.</p><p>Expect expressive characters, a mischievous sense of humor, and little details that make the world feel personal.</p><a class="text-link" href={site.instagramUrl} target="_blank" rel="noopener noreferrer">Follow the making of Trash Dash <Arrow /><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+    <section class="game-explore section" aria-labelledby="explore-title"><div class="container"><div class="section-heading"><h2 id="explore-title">There’s a whole world in here.</h2><p>Come a little closer.</p></div><div class="explore-grid">
+      <a class="explore-link explore-cast" href={featuredGame.charactersHref}><div class="explore-art"><StandingCharacter character="trashy" alt="Trashy in a chest-up portrait, standing slightly in front of Jimothy." /><StandingCharacter character="jimothy" alt="Jimothy beside and slightly behind Trashy, wearing his teal scarf." /></div><div class="explore-caption"><div><h3>Meet the troublemakers.</h3><p>Trashy, Jimothy, and a friendship at the heart of it all.</p></div><Arrow /></div></a>
+      <a class="explore-link" href={featuredGame.mediaHref}><div class="explore-art explore-world"><StudioImage src="/assets/worlds/creek-distance.png" alt="Sunlit woodland and a creek from the world of Trash Dash." previewWidth={1000} loading="lazy" /></div><div class="explore-caption"><div><h3>From spark to story.</h3><p>Explore the artwork and ideas shaping our first game.</p></div><Arrow /></div></a>
+    </div></div></section>
+  </article>
+  <section class="container games-closing section"><h2>Every adventure has makers.</h2><p>Meet the family bringing this one to life.</p><a class="button" href="/about#team">Meet the team <Arrow /></a></section>
+</BaseLayout>

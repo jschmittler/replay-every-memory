@@ -1,6 +1,6 @@
 ---
 name: ReplayEveryMemory Studio
-description: A brighter, playful navy and gold studio identity with official EuroStyle lettering and supplied character art.
+description: Studio opening titles in midnight navy and sunlit gold, with official lettering and real game artwork.
 colors:
   navy: "#091e2a"
   navy-soft: "#163847"
@@ -12,12 +12,22 @@ colors:
   muted: "#4b6068"
   line: "#d8ddd7"
   focus-rust: "#ad470c"
+  woodland: "#e6ede5"
+  woodland-ink: "#597166"
+  gold-ink: "#70531d"
+  gold-hover: "#ffdb8b"
 typography:
   display:
     fontFamily: "'Eurostile Extended', sans-serif"
     fontSize: "clamp(2.5rem, 5.2vw, 5rem)"
     fontWeight: 900
     lineHeight: 1.08
+    letterSpacing: "-0.035em"
+  studio-display:
+    fontFamily: "'Eurostile Extended', sans-serif"
+    fontSize: "clamp(3.2rem, 5.8vw, 6rem)"
+    fontWeight: 900
+    lineHeight: 1.1
     letterSpacing: "-0.035em"
   headline:
     fontFamily: "'Eurostile Extended', sans-serif"
@@ -47,22 +57,30 @@ typography:
     fontWeight: 400
     lineHeight: 1.5
 rounded:
-  control: "12px"
+  control: "9px"
+  frame: "12px"
   image: "14px"
   panel: "16px"
   pill: "999px"
   circle: "50%"
 spacing:
-  gutter: "clamp(1.25rem, 5vw, 5rem)"
-  space: "clamp(4rem, 7.5vw, 7.5rem)"
+  gutter: "clamp(1.4rem, 5vw, 5rem)"
+  space: "clamp(4.5rem, 8vw, 8rem)"
 components:
   button-primary:
     backgroundColor: "{colors.navy}"
     textColor: "{colors.paper}"
     rounded: "{rounded.control}"
-    padding: ".9rem 1.35rem"
+    padding: "1rem 1.45rem"
   button-primary-hover:
     backgroundColor: "{colors.navy-soft}"
+  button-gold:
+    backgroundColor: "{colors.gold}"
+    textColor: "{colors.navy}"
+    rounded: "{rounded.control}"
+    padding: "1rem 1.45rem"
+  button-gold-hover:
+    backgroundColor: "{colors.gold-hover}"
   text-link:
     textColor: "{colors.ink}"
   filter-chip:
@@ -85,132 +103,156 @@ components:
 
 ## Overview
 
-**Creative North Star: "Navy and Gold in Sunlight"**
+**Creative North Star: "Studio Opening Titles"**
 
-The established navy and gold identity becomes brighter and more playful through sunny fields, warm reading surfaces, confident official lettering, open layouts, and supplied character art. EuroStyle Normal and Eurostile Extended Black, the studio logo, locked Trash Dash title, and Trashy artwork are durable brand commitments; preserve the supplied assets.
+Midnight navy, sunlit gold, oversized official lettering, and the supplied studio insignia introduce a family studio with imagination and heart. Warm reading surfaces and open story spreads give the bold title moments room to breathe. Real woodland layers and expressive character art bring the studio’s work into focus without replacing its identity.
 
-This record describes the built Home, Characters, Media, and About Us surfaces. Home introduces the studio, then the first game and a cast preview. Characters gives Trashy and Jimothy dedicated profile space. Its gold hero pairs a studio promise with Trashy; that composition is a current implementation example, not a required opening for every page. Media and About Us use collection and portrait layouts within the shared system.
+The visual authority is the implemented Astro pages and components, with `src/styles/studio.css` layered after `src/styles/global.css`. The owner delegated this code-led direction; there is no approved image comp and no generated replacement imagery. The surface brief is `.impeccable/review/studio-refresh/direction.md`. This document records the built world; review evidence and final verdict belong to the review record.
 
 **Key Characteristics:**
 
-- Sunny gold and warm paper balanced by concentrated navy fields.
-- Extended black display lettering paired with regular EuroStyle reading text.
-- Official artwork and portraits with open space and restrained framing.
-- Flat surfaces, rounded image frames, and small responsive hover movements.
-- Visible navigation and candid gallery states.
+- Broad navy and gold fields balanced by paper and pale woodland reading surfaces.
+- Oversized Eurostile Extended headings paired with regular EuroStyle text.
+- Official insignia, locked game lettering, supplied portraits, and real game artwork.
+- Open compositions, modest rounded frames, fine rules, and no shadows.
+- Finite emblem motion, quiet forest response, and a pausable character loop.
+- Visible navigation, readable content without scripts, and candid development states.
 
 ## Colors
 
-Gold can fill a welcoming section; paper, cream, and dark ink support longer reading. The frontmatter preserves the actual shared palette from `src/styles/global.css`.
+The frontmatter records the shared palette and repeated accents actually used by the final stylesheet cascade. Local art-stage tints remain component treatments rather than a second brand palette.
 
 ### Primary
 
-- **Studio Navy:** Primary controls, selected filters, game-logo stage, and footer use `navy`.
-- **Sunny Gold:** Home hero, small circular action, footer heading, text selection, and hover accents use `gold`.
-- **Soft Navy:** Primary-button hover uses `navy-soft`.
-- **Sun Accent:** Current-page and hovered navigation underlines use `sun`.
+- **Studio Navy:** The header, Home opening, footer, standard buttons, and selected filters use `navy`.
+- **Sunny Gold:** The leading action on navy, Home story field, About opening, heading emphasis, and small highlights use `gold`.
+- **Soft Navy:** Standard button hover and the game stage fallback use `navy-soft`.
+- **Sun Accent:** Hovered and current main-navigation underlines use `sun`.
+- **Light Gold:** The gold button’s hover uses `gold-hover`.
+
+### Secondary
+
+- **Pale Woodland:** Team and game-exploration sections use `woodland`.
+- **Woodland Ink:** Secondary phrases in project and game headings use `woodland-ink`.
+- **Warm Gold Ink:** Secondary phrases in headings on gold fields use `gold-ink`.
 
 ### Neutral
 
-- **Warm Paper:** Default page and header background, plus text on navy controls, use `paper`.
-- **Studio Cream:** Cast-preview section, media framing and empty state use `cream`.
+- **Warm Paper:** Default reading surfaces and text on navy use `paper`.
+- **Studio Cream:** Gallery framing and empty states use `cream`.
 - **Reading Ink:** Default text and light-surface controls use `ink`.
-- **Quiet Text:** Descriptions, biographies, and collection counts use `muted`.
-- **Quiet Line:** Media-toolbar dividers use `line`.
-- **Focus Rust:** Light-surface focus uses `focus-rust`; footer links use gold against navy.
+- **Quiet Text:** Supporting copy, biographies, and counts use `muted`.
+- **Quiet Line:** Media dividers and character motivation rules use `line`.
+- **Focus Rust:** Light-surface focus uses `focus-rust`; focus in the header, Home opening, and footer uses gold.
 
-The Home character circle, About opening, and character-media tile have additional local warm tints. Those art-stage treatments are implementation examples, not a second global palette.
-
-**The Sunlit Gold Rule.** Gold can be a broad background as well as an accent; use navy or reading ink on its light fields.
+**The Navy and Sunlight Rule.** Let navy and gold carry whole sections as well as controls; use light text on navy and dark text on gold, with warm neutral space between major color fields.
 
 ## Typography
 
 **Display Font:** Eurostile Extended Black, registered as Eurostile Extended, with sans-serif fallback.  
 **Body Font:** EuroStyle Normal, registered as EuroStyle, with sans-serif fallback.
 
-**Character:** Wide, heavy display shapes bring the official identity into headings. The regular companion keeps navigation, descriptions, biographies, and controls readable. Both fonts are supplied locally; font synthesis is disabled.
+**Character:** The wide, heavy heading face is part of the official identity. Its regular companion carries reading text, navigation, labels, and controls. Both fonts are supplied locally; font synthesis is disabled.
 
 ### Hierarchy
 
-- **Display:** The token is the shared heading baseline. About Us and Media use a smaller page-title clamp (2.5rem, 4.4vw, 4.25rem); Home constrains its heading to 14ch on desktop. These are page-specific adjustments.
-- **Headline:** Major section headings use the headline token with balanced wrapping, with local size adjustments for their content.
-- **Title:** Compact headings use the title baseline. Portrait names and media titles have component-specific sizes and leading.
-- **Body:** Reading copy uses the body token and a maximum paragraph measure (68ch).
-- **Lede:** Introductory copy uses the fluid lede token; hero and footer copy use narrower measures.
-- **Label:** Filters and compact controls use regular EuroStyle. Smaller metadata varies by component; no universal uppercase eyebrow style is established.
+- **Studio Display:** The large Home title uses `studio-display` and an intentional desktop measure (12.7ch), with its final phrase in gold. At the stacked breakpoint its size becomes `clamp(2.7rem, 8.4vw, 4.4rem)` and its maximum measure is 14ch.
+- **Display:** The shared heading baseline supports page-specific sizes. Games, About, Characters, and Media adapt the size and wrapping to their opening composition.
+- **Headline:** Major sections use the headline baseline, with larger editorial phrases in the Home story and smaller collection headings.
+- **Title:** Compact headings use the title baseline. Team names and character names receive larger component-specific sizes.
+- **Body:** Reading copy uses the body token and a maximum paragraph measure (68ch), with narrower measures in hero and biography components.
+- **Lede:** Introductions use the fluid lede token; individual story sections adjust scale and leading.
+- **Label:** Controls and metadata use regular EuroStyle. There is no universal uppercase eyebrow treatment.
 
 **The Official Lettering Rule.** Use the supplied extended black face for headings and the regular face for reading and controls; preserve lettering inside locked logo artwork.
 
 ## Layout
 
-The shared container uses the fluid gutter token and a maximum width (1320px). Major sections use the fluid `space` token. Desktop combines asymmetric two-column copy-and-art sections, a four-column cast preview, a three-column full credit grid, and a two-column media collection. Reading content sits directly on section backgrounds.
+The container uses the fluid gutter token and a maximum width (1320px). Major sections use the fluid `space` token. Because `studio.css` loads last, these fluid root values remain active at narrow widths; the older mobile root overrides in `global.css` do not define the current spacing. The composition alternates wide color fields, asymmetric two-column openings, open editorial copy, and two-column art or portrait collections.
 
-- Up to 1100px: gaps and hero proportions tighten; the extra contact link disappears while all three main page links remain visible.
-- Up to 760px: gutter becomes 1.4rem and major section spacing becomes 4rem. The header stacks the brand above a visible navigation row. Major copy-and-art splits become one column with copy before art; actions wrap. Cast preview and credits use two columns; media remains two columns.
-- Up to 520px: credits and media become one column; the media toolbar stacks. Portraits retain square framing with an observed maximum height (420px).
-- Up to 360px: gutter becomes 1.1rem, and headings and controls tighten.
-- From 1500px: the Home hero gains height and a larger character presentation.
+The implemented Home begins with the studio on navy: oversized cream/gold title, supplied emblem with fine orbit lines, gold “Meet the team” action to `/about#team`, and “Meet Trash Dash” to `/games`. A real woodland game feature follows, then a gold DIY studio story and shared contact footer. Home contains no team portraits. These are this surface’s choices, not a requirement that every page repeat the hero.
 
-Preserve semantic reading order and wrapping. Long media titles and contact addresses must fit the available width. These thresholds describe implemented layouts, not device categories.
+Games is a substantial first-game landing page: introductory title, full-width woodland cinema, development and story details, character/artwork destinations, and a makers invitation. About combines a gold studio opening, expanded origin story, and the approved family profiles. Characters and Media remain separate game-supporting pages beneath Games in navigation.
+
+- Up to 1100px: desktop gaps and hero/art proportions tighten; the extra contact link disappears while the three main links remain visible.
+- Up to 760px: the header stacks its brand above the visible navigation. Main splits, game exploration, character profiles, and the About team become one column. The Home game window becomes a tall composition with title/status above Trashy and its action below. Media remains two columns.
+- Up to 520px: Media becomes one column and its toolbar stacks.
+- Up to 360px: remaining legacy compact adjustments affect selected labels and page titles; the final fluid gutter is retained.
+- From 1500px: the Home opening gains height.
+
+Preserve semantic order, independent space for artwork/status/controls, and wrapping of long media titles or contact addresses. In character and team profiles, the name comes before the role.
 
 ## Elevation & Depth
 
-The build uses no box shadows or artwork drop shadows. Depth comes from color fields, image scale, the circle behind Trashy, and small transforms. Primary buttons rise on hover (2px), portrait previews rise (5px), and the linked game-logo artwork enlarges slightly.
+The current system has no box shadows or artwork drop shadows. Depth comes from contrasting fields, scale, fine orbit lines, and layered real woodland imagery. A dark gradient at the base of the forest supports foreground text. Buttons rise slightly on hover (2px); game exploration and character artwork scale subtly.
 
-The shared easing is `cubic-bezier(.16,1,.3,1)`. Control transitions run for .2s, portraits for .3s, gallery or logo images for .45s, while the Home hero uses the supplied 4.041-second transparent idle video instead of a CSS entrance. The hero loop is muted, has a Pause/Play control, and pauses outside the viewport or while the page is hidden. Reduced-motion preferences keep the approved still image and disable CSS animation and transitions. If VP9 playback or actual frame transparency is unavailable, the still also remains.
+The shared easing is `cubic-bezier(.16,1,.3,1)`. Controls transition over .2s. The Home emblem settles once over 1.8s and its orbit over 2.2s. Woodland foreground response is pointer-driven only on hover-capable devices without reduced motion, bounded to 6px horizontally and 4px vertically, with a .8s transition. Exploration artwork uses .6s and character artwork .45s.
+
+The Home game feature uses the supplied silent transparent Trashy idle loop (4.041s), with a visible Pause/Play control after supported playback is ready. It loads in view and pauses offscreen, while the page is hidden, or after a manual pause. Reduced motion, unsupported VP9, failed decoding, or missing decoded transparency retain the supplied still. Reduced motion also disables CSS animation and transitions. Static content never waits for a script or animation to become readable.
 
 **The Flat Surface Rule.** Separate content with space, tone, and fine rules; the current system does not add shadows to controls, artwork, or containers.
 
 ## Shapes
 
-Sections are rectangular fields. Controls use the control radius; portraits and media frames use the image radius; game posters and empty states use the panel radius. Filters are pills. Circles appear in the poster arrow, the development marker, and the hero's background light.
+Sections are rectangular fields. Primary buttons use the control radius; exploration and team frames use the frame radius; gallery and character frames use the image radius; the Home game window and empty state use the panel radius. Filters are pills. Small status badges use a local radius (6px); dialog-close and animation controls use their existing local radius (12px).
 
-Portraits use square crops. Gallery artwork is contained within wider frames, with a local character crop. Logo lockups keep their proportions. Slight rotations belong to the Home character and About logo compositions, not every container.
+The studio emblem’s circles and fine star marks are the signature geometry. Preserve supplied logo proportions. About portraits use gently wide crops (1.15 aspect ratio on desktop, 1.1 when stacked). Gallery boards fit entirely within their frame; character art has dedicated crops. Slight logo rotations are local compositions, not a rule for all containers.
 
 ## Components
 
 ### Buttons and Text Links
 
-Primary actions use navy, paper text, rounded corners, and an inline outlined arrow. Their minimum height is 54px, becoming 50px at 760px with tighter padding. Hover changes to soft navy and lifts; pressing returns to rest. Text links use a minimum height (44px), an underline on hover, and a short arrow translation. Links, buttons, and video expose a focus outline (3px) with offset (5px); footer focus is gold. The skip link appears on focus.
+Confident, compact actions pair regular lettering with an outlined arrow. Navy buttons use paper text; gold buttons use navy text and lead on dark art or studio fields. Minimum height is 54px, becoming 50px at the stacked breakpoint; final padding remains the frontmatter value. Hover changes color and lifts; pressing returns to rest. Text links inherit their surface’s color, occupy at least 44px vertically, underline on hover, and move their arrow by 4px. Focus outlines are 3px with a 5px offset. The skip link appears on focus.
 
 ### Navigation
 
-The paper header combines the official studio mark and wordmark treatment with Home, Characters, Media, and About us. Regular EuroStyle links get a sun underline (3px) that grows from the left on hover and identifies `aria-current="page"`. Mobile keeps all four links in a visible second row. Footer navigation repeats those destinations.
+The navy header combines the supplied mark and wordmark treatment with Home, Games, and About Us. A sun underline grows from the left on hover, marks `aria-current="page"`, and keeps Games visually active on Characters and Media. Mobile retains all three links in a visible second row. The footer repeats these destinations.
+
+Characters and Media add a pale game subnavigation: “Games / Trash Dash”, “Characters”, and “Artwork & media”. The current child has `aria-current="page"` and an underline. At the stacked breakpoint the parent link sits above the two child links; touch targets remain at least 44px high.
+
+### Studio Emblem and Game Window
+
+The Home emblem is decorative alongside a semantic studio heading. Use the actual studio mark inside its fine orbital frame. The first-game window combines supplied distant/foreground forest layers, the locked Trash Dash title, a development badge, Trashy, and a clearly separated action. Keep all of these legible at intermediate widths as well as phones. The Games cinema uses the same real forest language at full width and identifies it as development artwork.
+
+### Character Profiles and Team Portraits
+
+Characters presents approved Trashy and Jimothy art above names, roles, personality copy, and a ruled motivation block. Its standalone page gives the characters story context distinct from the gallery.
+
+About presents James, Emily, Matilda, and Ramona from `src/data/studio-team.json`, in a two-column grid that becomes one column at the stacked breakpoint. Portraits precede names, roles, and regular-font biographies. Preserve the exact approved names, roles, biographies, and order. The Home story directs visitors here without duplicating portraits.
 
 ### Media Filters
 
-Pills pair category names with counts. Transparent ink controls hover to cream; pressed controls use navy and paper, with `aria-pressed` as the state source. The row wraps responsively. Filters appear through progressive enhancement; the complete base collection remains available without JavaScript.
+Category pills pair labels with counts. Transparent ink controls hover to cream; `aria-pressed` selects navy with paper text. The row wraps. Filters progressively enhance the complete static collection; all artwork remains readable without JavaScript. Filter changes update a polite live count.
 
 ### Gallery and Empty State
 
-`src/data/media.ts` drives the collection. Rounded image frames have a title, description, and a keyboard-accessible View artwork button. A native dialog displays the web preview with a Close control and a viewing-only notice; Escape closes it and focus returns to the opener. No download controls or direct asset links are offered. Development boards fit fully inside their frames. Cream, navy, and warm character fields are asset-specific presentation variants. Source artwork stays outside the public folder, and a build hook excludes original image files. Context-menu and drag deterrents apply to imagery only; ordinary text selection and browser zoom remain available. Public previews are not copy-proof.
+The data-driven gallery uses rounded frames, titles, descriptions, and progressively enhanced View artwork controls. A native dialog displays the web preview, title, Close control, and viewing notice. Escape and backdrop clicks close it; native dialog behavior returns focus to the opener. Development boards fit fully inside their frames. The gallery’s Videos category has an honest “Still in the making.” state and follow-along link; the Home character loop is not a gallery video. Future data-backed gallery videos use native controls, a poster, and captions when supplied.
 
-The zero-video view uses a cream panel, outlined video icon, “Still in the making.” heading, honest copy, and Instagram link. Filter changes update a polite live count. There are currently no supplied videos; data-backed videos use native controls, poster, and optional captions when supplied. Do not substitute a playable thumbnail for missing footage.
-
-### Character Profiles, Portraits and Credits
-
-Characters uses the approved Trash Dash character art and dialogue bible to introduce Trashy and Jimothy with their roles, personalities, and motivations. The page is separate from the Media gallery so character art can read as story content rather than a downloadable collection item.
-
-Home and About Us present the four approved family members from `src/data/studio-team.json`: James, Emily, Matilda, and Ramona. About Us uses two columns, reducing to one on small phones. Supplied square portraits sit above extended-face names, roles, and regular-font biographies. The data remains authoritative for names, roles, bios, and order; fictional studio personas are excluded.
+Display previews provide no download buttons or direct asset links. Original artwork stays outside the public folder and is excluded by the build pipeline. Image/video context-menu and drag deterrents do not disable ordinary text selection or browser zoom. Public previews are not copy-proof.
 
 ### Contact Rows
 
-The navy footer uses a gold heading, light supporting text, and open Instagram and email rows with fine separators. Each row contains a small context label, readable destination, and gold arrow. Long addresses wrap.
+The navy footer uses a gold heading, light supporting text, privacy copy, and open Instagram/email rows with fine separators. Each row pairs a small context label, readable destination, and gold arrow. Long addresses wrap and external links identify their new-tab behavior accessibly.
 
 ## Do's and Don'ts
 
 ### Do:
 
-- **Do** retain the brighter navy and gold identity, official fonts, and supplied artwork.
-- **Do** use warm reading fields, open spacing, and restrained image framing alongside sunny sections.
-- **Do** keep all three navigation links visible and preserve meaningful reading order at every width.
+- **Do** preserve the official navy/gold identity, EuroStyle fonts, supplied logos, portraits, and game artwork.
+- **Do** balance broad color fields with warm reading surfaces, generous spacing, and restrained frames.
+- **Do** retain visible Home, Games, and About Us navigation and the game-specific child navigation.
+- **Do** keep names before roles and preserve the exact approved team data.
 - **Do** preserve visible focus, accessible names, reduced-motion behavior, and forced-colors support.
-- **Do** present real media, honest availability, and all approved credits from their data sources.
+- **Do** keep media honest, static content available without scripts, and animation controls clear of artwork and labels.
 
 ### Don't:
 
-- **Don't** redraw or replace official logos, locked title artwork, Trashy, or approved portraits.
-- **Don't** restore superseded fonts, hidden mobile navigation, or the former game-first hero as system requirements.
-- **Don't** make local art crops, rotations, or tints mandatory for every surface.
-- **Don't** add fake footage, playback affordances, invented team members, or unsupported release destinations.
-- **Don't** add shadows to every content group or place every paragraph in a rounded card.
+- **Don't** redraw official artwork or replace the supplied typefaces with generic alternatives.
+- **Don't** reintroduce the superseded gold Trashy Home hero or Home portrait strip as the current design direction.
+- **Don't** invent footage, release destinations, team members, or claims of copy-proof public previews.
+- **Don't** force every surface to repeat the Home orbit, art crops, or local rotations.
+- **Don't** add shadows to content groups or place every paragraph inside a rounded card.
+
+### Standing character artwork
+
+Games and Characters use `StandingCharacter.astro` to frame the supplied full standing poses. Jimothy uses the owner’s `Jimothy-Regular.png`, replacing the earlier dialogue portrait. Measured visible bounds plus breathing room remove excess transparent canvas in CSS without modifying the original artwork. The Games preview uses a chest-up composition with Trashy on the left, slightly in front of Jimothy on the right; layer order and vertical offsets reinforce that relationship. Characters keeps both full standing poses. The homepage animated Trashy remains in `TrashyArt.astro`.

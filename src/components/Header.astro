@@ -2,10 +2,11 @@
 import StudioImage from './StudioImage.astro';
 import Arrow from './Arrow.astro';
 const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
-const links = [['/', 'Home'], ['/characters', 'Characters'], ['/media', 'Media'], ['/about', 'About us']];
+const links = [['/', 'Home'], ['/games', 'Games'], ['/about', 'About Us']];
+const inGames = ['/games', '/characters', '/media'].includes(pathname);
 ---
 <header class="site-header"><div class="container header-row">
   <a class="brand" href="/" aria-label="ReplayEveryMemory Studio home"><StudioImage src="/assets/studio-mark.png" alt="" width="4362" height="2805" /><span><strong>ReplayEveryMemory</strong><span>STUDIO</span></span></a>
-  <nav aria-label="Main navigation"><ul>{links.map(([href, label]) => <li><a href={href} aria-current={pathname === href ? 'page' : undefined}>{label}</a></li>)}</ul></nav>
+  <nav aria-label="Main navigation"><ul>{links.map(([href, label]) => <li><a href={href} aria-current={pathname === href ? 'page' : undefined} class:list={{ 'nav-parent-active': href === '/games' && inGames }}>{label}</a></li>)}</ul></nav>
   <a class="header-contact text-link" href="/#hello">Say hello <Arrow /></a>
 </div></header>

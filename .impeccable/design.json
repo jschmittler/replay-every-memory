@@ -1,13 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-21T14:57:07.687Z",
+  "generatedAt": "2026-09-21T22:09:42.803041+00:00",
   "title": "Design System: ReplayEveryMemory Studio",
   "extensions": {
     "colorMeta": {
       "navy": {
         "role": "primary",
         "displayName": "Studio Navy",
-        "canonical": "#091e2a",
         "tonalRamp": [
           "oklch(15.00% 0.03560 236.40)",
           "oklch(26.43% 0.03560 236.40)",
@@ -22,7 +21,6 @@
       "navy-soft": {
         "role": "primary",
         "displayName": "Soft Navy",
-        "canonical": "#163847",
         "tonalRamp": [
           "oklch(15.00% 0.04742 229.62)",
           "oklch(26.43% 0.04742 229.62)",
@@ -37,7 +35,6 @@
       "gold": {
         "role": "primary",
         "displayName": "Sunny Gold",
-        "canonical": "#f7c75d",
         "tonalRamp": [
           "oklch(15.00% 0.13439 84.73)",
           "oklch(26.43% 0.13439 84.73)",
@@ -52,7 +49,6 @@
       "sun": {
         "role": "primary",
         "displayName": "Sun Accent",
-        "canonical": "#e9aa2e",
         "tonalRamp": [
           "oklch(15.00% 0.14862 79.13)",
           "oklch(26.43% 0.14862 79.13)",
@@ -67,7 +63,6 @@
       "paper": {
         "role": "neutral",
         "displayName": "Warm Paper",
-        "canonical": "#fffdf7",
         "tonalRamp": [
           "oklch(15.00% 0.00818 91.48)",
           "oklch(26.43% 0.00818 91.48)",
@@ -82,7 +77,6 @@
       "cream": {
         "role": "neutral",
         "displayName": "Studio Cream",
-        "canonical": "#f5f0e4",
         "tonalRamp": [
           "oklch(15.00% 0.01679 88.00)",
           "oklch(26.43% 0.01679 88.00)",
@@ -97,7 +91,6 @@
       "ink": {
         "role": "neutral",
         "displayName": "Reading Ink",
-        "canonical": "#15313e",
         "tonalRamp": [
           "oklch(15.00% 0.04123 230.39)",
           "oklch(26.43% 0.04123 230.39)",
@@ -112,7 +105,6 @@
       "muted": {
         "role": "neutral",
         "displayName": "Quiet Text",
-        "canonical": "#4b6068",
         "tonalRamp": [
           "oklch(15.00% 0.02848 223.11)",
           "oklch(26.43% 0.02848 223.11)",
@@ -127,7 +119,6 @@
       "line": {
         "role": "neutral",
         "displayName": "Quiet Line",
-        "canonical": "#d8ddd7",
         "tonalRamp": [
           "oklch(15.00% 0.00971 140.51)",
           "oklch(26.43% 0.00971 140.51)",
@@ -142,7 +133,6 @@
       "focus-rust": {
         "role": "neutral",
         "displayName": "Focus Rust",
-        "canonical": "#ad470c",
         "tonalRamp": [
           "oklch(15.00% 0.14747 44.05)",
           "oklch(26.43% 0.14747 44.05)",
@@ -152,6 +142,62 @@
           "oklch(72.14% 0.14747 44.05)",
           "oklch(83.57% 0.14747 44.05)",
           "oklch(95.00% 0.14747 44.05)"
+        ]
+      },
+      "woodland": {
+        "role": "secondary",
+        "displayName": "Pale Woodland",
+        "tonalRamp": [
+          "oklch(15.00% 0.01298 141.81)",
+          "oklch(26.43% 0.01298 141.81)",
+          "oklch(37.86% 0.01298 141.81)",
+          "oklch(49.29% 0.01298 141.81)",
+          "oklch(60.71% 0.01298 141.81)",
+          "oklch(72.14% 0.01298 141.81)",
+          "oklch(83.57% 0.01298 141.81)",
+          "oklch(95.00% 0.01298 141.81)"
+        ]
+      },
+      "woodland-ink": {
+        "role": "secondary",
+        "displayName": "Woodland Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.03314 165.50)",
+          "oklch(26.43% 0.03314 165.50)",
+          "oklch(37.86% 0.03314 165.50)",
+          "oklch(49.29% 0.03314 165.50)",
+          "oklch(60.71% 0.03314 165.50)",
+          "oklch(72.14% 0.03314 165.50)",
+          "oklch(83.57% 0.03314 165.50)",
+          "oklch(95.00% 0.03314 165.50)"
+        ]
+      },
+      "gold-ink": {
+        "role": "secondary",
+        "displayName": "Warm Gold Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.07979 79.76)",
+          "oklch(26.43% 0.07979 79.76)",
+          "oklch(37.86% 0.07979 79.76)",
+          "oklch(49.29% 0.07979 79.76)",
+          "oklch(60.71% 0.07979 79.76)",
+          "oklch(72.14% 0.07979 79.76)",
+          "oklch(83.57% 0.07979 79.76)",
+          "oklch(95.00% 0.07979 79.76)"
+        ]
+      },
+      "gold-hover": {
+        "role": "primary",
+        "displayName": "Light Gold",
+        "tonalRamp": [
+          "oklch(15.00% 0.10659 86.10)",
+          "oklch(26.43% 0.10659 86.10)",
+          "oklch(37.86% 0.10659 86.10)",
+          "oklch(49.29% 0.10659 86.10)",
+          "oklch(60.71% 0.10659 86.10)",
+          "oklch(72.14% 0.10659 86.10)",
+          "oklch(83.57% 0.10659 86.10)",
+          "oklch(95.00% 0.10659 86.10)"
         ]
       }
     },
@@ -179,6 +225,10 @@
       "label": {
         "displayName": "Label",
         "purpose": "Media filters and compact control labels."
+      },
+      "studio-display": {
+        "displayName": "Studio Display",
+        "purpose": "Oversized Home title on navy with a gold final phrase."
       }
     },
     "shadows": [],
@@ -191,22 +241,37 @@
       {
         "name": "control-transition",
         "value": ".2s",
-        "purpose": "Controls and navigation transitions."
+        "purpose": "Buttons, links, and navigation."
       },
       {
-        "name": "portrait-transition",
-        "value": ".3s",
-        "purpose": "Portrait-preview hover."
+        "name": "emblem-arrive",
+        "value": "1.8s",
+        "purpose": "One-time supplied studio-mark settling."
       },
       {
-        "name": "artwork-transition",
+        "name": "orbit-arrive",
+        "value": "2.2s",
+        "purpose": "One-time orbital frame settling."
+      },
+      {
+        "name": "forest-response",
+        "value": ".8s",
+        "purpose": "Pointer-responsive foreground on hover devices without reduced motion; up to 6px horizontally and 4px vertically."
+      },
+      {
+        "name": "explore-art",
+        "value": ".6s",
+        "purpose": "Subtle game-exploration art enlargement."
+      },
+      {
+        "name": "character-art",
         "value": ".45s",
-        "purpose": "Linked game-logo hover."
+        "purpose": "Character artwork hover."
       },
       {
         "name": "trashy-idle",
         "value": "4.041s",
-        "purpose": "Owner-supplied silent transparent loop; user-pausable, suspended offscreen/when hidden, with a still for reduced motion or unsupported playback/transparency."
+        "purpose": "Supplied silent transparent loop in Home game feature; pausable, suspended offscreen or hidden, with still fallback for reduced motion or unsupported playback/transparency."
       }
     ],
     "breakpoints": [
@@ -215,7 +280,7 @@
         "value": "360px"
       },
       {
-        "name": "single-column-max",
+        "name": "media-single-column-max",
         "value": "520px"
       },
       {
@@ -237,9 +302,17 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Navy primary action with an outlined arrow, gentle lift, and visible focus.",
-      "html": "<a class=\"ds-button\" href=\"#trash-dash\">Meet Trash Dash <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
-      "css": ".ds-button{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;display:inline-flex;gap:1.5rem;min-height:54px;align-items:center;justify-content:center;background:var(--navy,#091e2a);color:var(--paper,#fffdf7);border:0;border-radius:12px;padding:.9rem 1.35rem;text-decoration:none;font-size:1.08rem;transition:background .2s,transform .2s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-button:hover{background:var(--navy-soft,#163847);transform:translateY(-2px)}.ds-button:active{transform:translateY(0)}.ds-arrow{display:block;width:1.3rem;height:1.3rem;flex-shrink:0}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible{outline:3px solid #ad470c;outline-offset:5px}@media(max-width:760px){.ds-button{font-size:1rem;min-height:50px;padding:.8rem 1.15rem}}@media(forced-colors:active){.ds-button{border:1px solid ButtonText}}@media(prefers-reduced-motion:reduce){.ds-button,.ds-text-link .ds-arrow,.ds-nav a:after,.ds-filter{animation:none!important;transition:none!important}}"
+      "description": "Navy action with an outlined arrow, gentle lift, and visible focus.",
+      "html": "<a class=\"ds-button\" href=\"/about#team\">Meet the team <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-button{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;display:inline-flex;gap:1.5rem;min-height:54px;align-items:center;justify-content:center;background:var(--navy,#091e2a);color:var(--paper,#fffdf7);border:0;border-radius:9px;padding:1rem 1.45rem;text-decoration:none;font-size:1.08rem;transition:background .2s,transform .2s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-button:hover{background:var(--navy-soft,#163847);transform:translateY(-2px)}.ds-button:active{transform:translateY(0)}.ds-arrow{display:block;width:1.3rem;height:1.3rem;flex-shrink:0}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible{outline:3px solid #ad470c;outline-offset:5px}@media(max-width:760px){.ds-button{font-size:1rem;min-height:50px}}@media(forced-colors:active){.ds-button{border:1px solid ButtonText}}@media(prefers-reduced-motion:reduce){.ds-button,.ds-text-link .ds-arrow,.ds-nav a:after,.ds-filter{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Gold Button",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "Leading gold action on a navy or artwork field.",
+      "html": "<a class=\"ds-button\" href=\"/about#team\">Meet the team <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-button{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;display:inline-flex;gap:1.5rem;min-height:54px;align-items:center;justify-content:center;background:var(--gold,#f7c75d);color:var(--navy,#091e2a);border:0;border-radius:9px;padding:1rem 1.45rem;text-decoration:none;font-size:1.08rem;transition:background .2s,transform .2s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-button:hover{background:#ffdb8b;transform:translateY(-2px)}.ds-button:active{transform:translateY(0)}.ds-arrow{display:block;width:1.3rem;height:1.3rem;flex-shrink:0}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible{outline:3px solid #ad470c;outline-offset:5px}@media(max-width:760px){.ds-button{font-size:1rem;min-height:50px}}@media(forced-colors:active){.ds-button{border:1px solid ButtonText}}@media(prefers-reduced-motion:reduce){.ds-button,.ds-text-link .ds-arrow,.ds-nav a:after,.ds-filter{animation:none!important;transition:none!important}}"
     },
     {
       "name": "Text Link",
@@ -252,16 +325,16 @@
     {
       "name": "Main Navigation",
       "kind": "nav",
-      "description": "Three links remain visible at every width; current and hovered links show a sun underline.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><ul><li><a href=\"/\" aria-current=\"page\">Home</a></li><li><a href=\"/media\">Media</a></li><li><a href=\"/about\">About us</a></li></ul></nav>",
-      "css": ".ds-nav{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;background:var(--paper,#fffdf7);color:var(--ink,#15313e);font-size:1.125rem}.ds-nav ul{display:flex;gap:2.5rem;list-style:none;padding:0;margin:0}.ds-nav a{display:flex;align-items:center;min-height:46px;color:inherit;text-decoration:none;position:relative}.ds-nav a:after{content:'';position:absolute;bottom:3px;left:0;right:0;height:3px;background:var(--sun,#e9aa2e);transform:scaleX(0);transform-origin:left;transition:transform .2s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-nav a:hover:after,.ds-nav a[aria-current=page]:after{transform:scaleX(1)}@media(max-width:1100px){.ds-nav ul{gap:1.5rem}}@media(max-width:760px){.ds-nav{width:100%}.ds-nav ul{justify-content:space-between;gap:1.2rem}.ds-nav a{font-size:1.04rem;min-height:44px}}@media(forced-colors:active){.ds-nav a[aria-current=page]{text-decoration:underline}}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible{outline:3px solid #ad470c;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button,.ds-text-link .ds-arrow,.ds-nav a:after,.ds-filter{animation:none!important;transition:none!important}}"
+      "description": "Navy main navigation with visible Home, Games, and About Us links. Games stays visually active on its child pages.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><ul><li><a href=\"/\" aria-current=\"page\">Home</a></li><li><a href=\"/games\">Games</a></li><li><a href=\"/about\">About Us</a></li></ul></nav>",
+      "css": ".ds-nav{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;background:var(--navy,#091e2a);color:var(--paper,#fffdf7);font-size:1.125rem}.ds-nav ul{display:flex;gap:2.5rem;list-style:none;padding:0;margin:0}.ds-nav a{display:flex;align-items:center;min-height:46px;color:inherit;text-decoration:none;position:relative}.ds-nav a:after{content:'';position:absolute;bottom:3px;left:0;right:0;height:3px;background:var(--sun,#e9aa2e);transform:scaleX(0);transform-origin:left;transition:transform .2s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-nav a:hover:after,.ds-nav a[aria-current=page]:after,.ds-nav a.ds-parent-active:after{transform:scaleX(1)}@media(max-width:1100px){.ds-nav ul{gap:1.5rem}}@media(max-width:760px){.ds-nav{width:100%}.ds-nav ul{justify-content:flex-start;gap:2rem}.ds-nav a{font-size:1rem;min-height:44px}}@media(forced-colors:active){.ds-nav a[aria-current=page]{text-decoration:underline}}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible{outline:3px solid var(--gold,#f7c75d);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button,.ds-text-link .ds-arrow,.ds-nav a:after,.ds-filter{animation:none!important;transition:none!important}}"
     },
     {
       "name": "Media Filter",
       "kind": "chip",
       "refersTo": "filter-chip",
       "description": "Category pill with a count; aria-pressed controls selected styling. The preview shows both states.",
-      "html": "<div class=\"ds-filters\" role=\"group\" aria-label=\"Filter media\"><button class=\"ds-filter\" type=\"button\" aria-pressed=\"true\">All<span>4</span></button><button class=\"ds-filter\" type=\"button\" aria-pressed=\"false\">Videos<span>0</span></button></div>",
+      "html": "<div class=\"ds-filters\" role=\"group\" aria-label=\"Filter media\"><button class=\"ds-filter\" type=\"button\" aria-pressed=\"true\">All<span>6</span></button><button class=\"ds-filter\" type=\"button\" aria-pressed=\"false\">Videos<span>0</span></button></div>",
       "css": ".ds-filters{display:flex;gap:.6rem;flex-wrap:wrap}.ds-filter{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;background:transparent;color:var(--ink,#15313e);display:flex;gap:.65rem;align-items:center;min-height:44px;border:0;border-radius:999px;padding:.6rem 1rem;font-size:1rem;cursor:pointer;transition:background .2s}.ds-filter span{font-size:.8rem}.ds-filter:hover{background:var(--cream,#f5f0e4)}.ds-filter[aria-pressed=true]{background:var(--navy,#091e2a);color:var(--paper,#fffdf7)}@media(max-width:760px){.ds-filters{gap:.2rem}.ds-filter{padding:.55rem .8rem;font-size:.95rem}}@media(max-width:360px){.ds-filter{padding-inline:.65rem}}@media(forced-colors:active){.ds-filter{border:1px solid ButtonText}}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible{outline:3px solid #ad470c;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button,.ds-text-link .ds-arrow,.ds-nav a:after,.ds-filter{animation:none!important;transition:none!important}}"
     },
     {
@@ -269,236 +342,66 @@
       "kind": "card",
       "refersTo": "media-empty",
       "description": "Honest zero-video collection state with a useful follow-along link.",
-      "html": "<div class=\"ds-empty\"><svg class=\"ds-video-icon\" viewBox=\"0 0 48 48\" fill=\"none\" aria-hidden=\"true\"><rect x=\"5\" y=\"10\" width=\"28\" height=\"28\" rx=\"5\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"m33 20 10-6v20l-10-6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg><h2>Still in the making.</h2><p>We\u2019re busy bringing Trash Dash to life. Videos will join the collection when they\u2019re ready to share.</p><a class=\"ds-text-link\" href=\"https://www.instagram.com/replayeverymemory/\" target=\"_blank\" rel=\"noopener noreferrer\">Follow along on Instagram <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div>",
+      "html": "<div class=\"ds-empty\"><svg class=\"ds-video-icon\" viewBox=\"0 0 48 48\" fill=\"none\" aria-hidden=\"true\"><rect x=\"5\" y=\"10\" width=\"28\" height=\"28\" rx=\"5\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"m33 20 10-6v20l-10-6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg><h2>Still in the making.</h2><p>We’re busy bringing Trash Dash to life. Videos will join the collection when they’re ready to share.</p><a class=\"ds-text-link\" href=\"https://www.instagram.com/replayeverymemory/\" target=\"_blank\" rel=\"noopener noreferrer\">Follow along on Instagram <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div>",
       "css": ".ds-empty{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;text-align:center;padding:4.5rem 1.5rem 5rem;background:var(--cream,#f5f0e4);color:var(--ink,#15313e);border-radius:16px;font-size:1.125rem}.ds-video-icon{display:block;width:50px;height:50px;margin:0 auto 1.5rem;color:#805415}.ds-empty h2{font-family:var(--display,'Eurostile Extended',sans-serif);font-weight:900;font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.15;letter-spacing:-.03em;text-wrap:balance;margin:0}.ds-empty p{max-width:43ch;margin:1rem auto;text-wrap:pretty}.ds-empty .ds-text-link{margin-top:1rem}@media(max-width:760px){.ds-empty{padding:3rem 1.25rem}}.ds-text-link{font-family:var(--body,'EuroStyle',sans-serif);font-weight:400;line-height:1.5;font-synthesis:none;display:inline-flex;align-items:center;gap:.75rem;min-height:44px;color:var(--ink,#15313e);text-decoration:none;font-size:1.125rem}.ds-text-link .ds-arrow{transition:transform .2s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-text-link:hover{text-decoration:underline}.ds-text-link:hover .ds-arrow{transform:translateX(4px)}.ds-arrow{display:block;width:1.3rem;height:1.3rem;flex-shrink:0}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-filter:focus-visible{outline:3px solid #ad470c;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button,.ds-text-link .ds-arrow,.ds-nav a:after,.ds-filter{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Game Subnavigation",
+      "kind": "nav",
+      "description": "Parent destination and visible current child links on Characters and Artwork & media.",
+      "html": "<nav class=\"ds-game-nav\" aria-label=\"Trash Dash navigation\"><a href=\"/games\">Games / Trash Dash</a><div><a href=\"/characters\" aria-current=\"page\">Characters</a><a href=\"/media\">Artwork &amp; media</a></div></nav>",
+      "css": ".ds-game-nav{font-family:var(--body,EuroStyle,sans-serif);font-size:.95rem;background:#eaf0ea;color:var(--ink,#15313e);border-bottom:1px solid #ccd8d0;display:flex;justify-content:space-between;gap:1rem}.ds-game-nav div{display:flex;gap:2rem}.ds-game-nav a{display:inline-flex;align-items:center;min-height:60px;color:inherit;text-decoration:none}.ds-game-nav a:hover,.ds-game-nav a[aria-current=page]{text-decoration:underline;text-underline-offset:.25em}.ds-game-nav a:focus-visible{outline:3px solid #ad470c;outline-offset:5px}@media(max-width:760px){.ds-game-nav{align-items:start;flex-direction:column;gap:0;padding-block:.5rem}.ds-game-nav a{min-height:44px}.ds-game-nav div{gap:1.75rem}}"
+    },
+    {
+      "name": "Development Status",
+      "kind": "custom",
+      "description": "Simple in-development label with a quiet green marker beside game details.",
+      "html": "<p class=\"ds-status\"><span aria-hidden=\"true\"></span>In development · Launching in 2026</p>",
+      "css": ".ds-status{display:flex;align-items:center;gap:.6rem;font-family:var(--body,EuroStyle,sans-serif);font-size:1rem;color:var(--ink,#15313e);line-height:1.5}.ds-status span{width:.55rem;height:.55rem;flex-shrink:0;border-radius:50%;background:#38614a}@media(forced-colors:active){.ds-status span{background:CanvasText}}"
     }
   ],
   "narrative": {
-    "schemaVersion": 2,
-    "title": "Design System: ReplayEveryMemory Studio",
-    "frontmatter": {
-      "name": "ReplayEveryMemory Studio",
-      "description": "A brighter, playful navy and gold studio identity with official EuroStyle lettering and supplied character art.",
-      "colors": {
-        "navy": "#091e2a",
-        "navy-soft": "#163847",
-        "gold": "#f7c75d",
-        "sun": "#e9aa2e",
-        "paper": "#fffdf7",
-        "cream": "#f5f0e4",
-        "ink": "#15313e",
-        "muted": "#4b6068",
-        "line": "#d8ddd7",
-        "focus-rust": "#ad470c"
+    "northStar": "Studio Opening Titles",
+    "overview": "Midnight navy, sunlit gold, oversized official lettering, and the supplied studio insignia introduce a family studio with imagination and heart. Warm reading surfaces and open story spreads give the bold title moments room to breathe. Real woodland layers and expressive character art bring the studio’s work into focus without replacing its identity.\n\nThe visual authority is the implemented Astro pages and components, with `src/styles/studio.css` layered after `src/styles/global.css`. The owner delegated this code-led direction; there is no approved image comp and no generated replacement imagery. The surface brief is `.impeccable/review/studio-refresh/direction.md`. This document records the built world; review evidence and final verdict belong to the review record.",
+    "keyCharacteristics": [
+      "Broad navy and gold fields balanced by paper and pale woodland reading surfaces.",
+      "Oversized Eurostile Extended headings paired with regular EuroStyle text.",
+      "Official insignia, locked game lettering, supplied portraits, and real game artwork.",
+      "Open compositions, modest rounded frames, fine rules, and no shadows.",
+      "Finite emblem motion, quiet forest response, and a pausable character loop.",
+      "Visible navigation, readable content without scripts, and candid development states."
+    ],
+    "rules": [
+      {
+        "name": "The Navy and Sunlight Rule",
+        "body": "Let navy and gold carry whole sections as well as controls; use light text on navy and dark text on gold, with warm neutral space between major color fields.",
+        "section": "colors"
       },
-      "typography": {
-        "display": {
-          "fontFamily": "'Eurostile Extended', sans-serif",
-          "fontSize": "clamp(2.5rem, 5.2vw, 5rem)",
-          "fontWeight": 900,
-          "lineHeight": 1.08,
-          "letterSpacing": "-0.035em"
-        },
-        "headline": {
-          "fontFamily": "'Eurostile Extended', sans-serif",
-          "fontSize": "clamp(1.95rem, 3.05vw, 3rem)",
-          "fontWeight": 900,
-          "lineHeight": 1.15,
-          "letterSpacing": "-0.03em"
-        },
-        "title": {
-          "fontFamily": "'Eurostile Extended', sans-serif",
-          "fontSize": "1.3rem",
-          "fontWeight": 900,
-          "lineHeight": 1.2,
-          "letterSpacing": "-0.015em"
-        },
-        "body": {
-          "fontFamily": "'EuroStyle', sans-serif",
-          "fontSize": "1.125rem",
-          "fontWeight": 400,
-          "lineHeight": 1.5
-        },
-        "lede": {
-          "fontFamily": "'EuroStyle', sans-serif",
-          "fontSize": "clamp(1.2rem, 1.6vw, 1.45rem)",
-          "fontWeight": 400,
-          "lineHeight": 1.45
-        },
-        "label": {
-          "fontFamily": "'EuroStyle', sans-serif",
-          "fontSize": "1rem",
-          "fontWeight": 400,
-          "lineHeight": 1.5
-        }
+      {
+        "name": "The Official Lettering Rule",
+        "body": "Use the supplied extended black face for headings and the regular face for reading and controls; preserve lettering inside locked logo artwork.",
+        "section": "typography"
       },
-      "rounded": {
-        "control": "12px",
-        "image": "14px",
-        "panel": "16px",
-        "pill": "999px",
-        "circle": "50%"
-      },
-      "spacing": {
-        "gutter": "clamp(1.25rem, 5vw, 5rem)",
-        "space": "clamp(4rem, 7.5vw, 7.5rem)"
-      },
-      "components": {
-        "button-primary": {
-          "backgroundColor": "{colors.navy}",
-          "textColor": "{colors.paper}",
-          "rounded": "{rounded.control}",
-          "padding": ".9rem 1.35rem"
-        },
-        "button-primary-hover": {
-          "backgroundColor": "{colors.navy-soft}"
-        },
-        "text-link": {
-          "textColor": "{colors.ink}"
-        },
-        "filter-chip": {
-          "backgroundColor": "transparent",
-          "textColor": "{colors.ink}",
-          "typography": "{typography.label}",
-          "rounded": "{rounded.pill}",
-          "padding": ".6rem 1rem"
-        },
-        "filter-chip-selected": {
-          "backgroundColor": "{colors.navy}",
-          "textColor": "{colors.paper}"
-        },
-        "media-empty": {
-          "backgroundColor": "{colors.cream}",
-          "textColor": "{colors.ink}",
-          "rounded": "{rounded.panel}",
-          "padding": "4.5rem 1.5rem 5rem"
-        }
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Separate content with space, tone, and fine rules; the current system does not add shadows to controls, artwork, or containers.",
+        "section": "elevation"
       }
-    },
-    "overview": {
-      "subtitle": null,
-      "creativeNorthStar": "Navy and Gold in Sunlight",
-      "philosophy": [
-        "The established navy and gold identity becomes brighter and more playful through sunny fields, warm reading surfaces, confident official lettering, open layouts, and supplied character art. EuroStyle Normal and Eurostile Extended Black, the studio logo, locked Trash Dash title, and Trashy artwork are durable brand commitments; preserve the supplied assets.",
-        "This record describes the built Home, Media, and About Us surfaces. Home introduces the studio, then the first game and a cast preview. Its gold hero pairs a studio promise with Trashy; that composition is a current implementation example, not a required opening for every page. Media and About Us use collection and portrait layouts within the shared system."
-      ],
-      "keyCharacteristics": [
-        "Sunny gold and warm paper balanced by concentrated navy fields.",
-        "Extended black display lettering paired with regular EuroStyle reading text.",
-        "Official artwork and portraits with open space and restrained framing.",
-        "Flat surfaces, rounded image frames, and small responsive hover movements.",
-        "Visible navigation and candid gallery states."
-      ]
-    },
-    "colors": {
-      "subtitle": null,
-      "description": "Gold can fill a welcoming section; paper, cream, and dark ink support longer reading. The frontmatter preserves the actual shared palette from `src/styles/global.css`.",
-      "groups": [],
-      "rules": [
-        {
-          "name": "The Sunlit Gold Rule",
-          "body": "Gold can be a broad background as well as an accent; use navy or reading ink on its light fields."
-        }
-      ]
-    },
-    "typography": {
-      "subtitle": null,
-      "fonts": {
-        "display": {
-          "family": "Eurostile Extended Black, registered as Eurostile Extended, with sans-serif fallback.",
-          "fallback": null
-        },
-        "body": {
-          "family": "EuroStyle Normal, registered as EuroStyle, with sans-serif fallback.",
-          "fallback": null
-        }
-      },
-      "character": "Wide, heavy display shapes bring the official identity into headings. The regular companion keeps navigation, descriptions, biographies, and controls readable. Both fonts are supplied locally; font synthesis is disabled.",
-      "hierarchy": [],
-      "rules": [
-        {
-          "name": "The Official Lettering Rule",
-          "body": "Use the supplied extended black face for headings and the regular face for reading and controls; preserve lettering inside locked logo artwork."
-        }
-      ]
-    },
-    "layout": {
-      "subtitle": null,
-      "description": "The shared container uses the fluid gutter token and a maximum width (1320px). Major sections use the fluid `space` token. Desktop combines asymmetric two-column copy-and-art sections, a four-column cast preview, a three-column full credit grid, and a two-column media collection. Reading content sits directly on section backgrounds. Preserve semantic reading order and wrapping. Long media titles and contact addresses must fit the available width. These thresholds describe implemented layouts, not device categories.",
-      "rules": []
-    },
-    "elevation": {
-      "subtitle": null,
-      "description": "The build uses no box shadows or artwork drop shadows. Depth comes from color fields, image scale, the circle behind Trashy, and small transforms. Primary buttons rise on hover (2px), portrait previews rise (5px), and the linked game-logo artwork enlarges slightly. The shared easing is `cubic-bezier(.16,1,.3,1)`. Control transitions run for .2s, portraits for .3s, gallery or logo images for .45s, while the Home hero uses the supplied 4.041-second transparent idle video instead of a CSS entrance. The hero loop is muted, has a Pause/Play control, and pauses outside the viewport or while the page is hidden. Reduced-motion preferences keep the approved still image and disable CSS animation and transitions. If VP9 playback or actual frame transparency is unavailable, the still also remains. **The Flat Surface Rule.** Separate content with space, tone, and fine rules; the current system does not add shadows to controls, artwork, or containers.",
-      "rules": [
-        {
-          "name": "The Flat Surface Rule",
-          "body": "Separate content with space, tone, and fine rules; the current system does not add shadows to controls, artwork, or containers."
-        }
-      ],
-      "shadows": []
-    },
-    "shapes": {
-      "subtitle": null,
-      "description": "Sections are rectangular fields. Controls use the control radius; portraits and media frames use the image radius; game posters and empty states use the panel radius. Filters are pills. Circles appear in the poster arrow, the development marker, and the hero's background light. Portraits use square crops. Gallery artwork is contained within wider frames, with a local character crop. Logo lockups keep their proportions. Slight rotations belong to the Home character and About logo compositions, not every container.",
-      "rules": []
-    },
-    "components": {
-      "subtitle": null,
-      "components": [
-        {
-          "name": "Buttons and Text Links",
-          "description": "Primary actions use navy, paper text, rounded corners, and an inline outlined arrow. Their minimum height is 54px, becoming 50px at 760px with tighter padding. Hover changes to soft navy and lifts; pressing returns to rest. Text links use a minimum height (44px), an underline on hover, and a short arrow translation. Links, buttons, and video expose a focus outline (3px) with offset (5px); footer focus is gold. The skip link appears on focus.",
-          "properties": {},
-          "variants": []
-        },
-        {
-          "name": "Navigation",
-          "description": "The paper header combines the official studio mark and wordmark treatment with Home, Media, and About us. Regular EuroStyle links get a sun underline (3px) that grows from the left on hover and identifies `aria-current=\"page\"`. Mobile keeps all three links in a visible second row. Footer navigation repeats those destinations.",
-          "properties": {},
-          "variants": []
-        },
-        {
-          "name": "Media Filters",
-          "description": "Pills pair category names with counts. Transparent ink controls hover to cream; pressed controls use navy and paper, with `aria-pressed` as the state source. The row wraps responsively. Filters appear through progressive enhancement; the complete base collection remains available without JavaScript.",
-          "properties": {},
-          "variants": []
-        },
-        {
-          "name": "Gallery and Empty State",
-          "description": "`src/data/media.ts` drives the collection. Rounded image frames have a title, description, and a keyboard-accessible View artwork button. A native dialog displays the web preview with a Close control and a viewing-only notice; Escape closes it and focus returns to the opener. No download controls or direct asset links are offered. Development boards fit fully inside their frames. Cream, navy, and warm character fields are asset-specific presentation variants. Source artwork stays outside the public folder, and a build hook excludes original image files. Context-menu and drag deterrents apply to imagery only; ordinary text selection and browser zoom remain available. Public previews are not copy-proof. The zero-video view uses a cream panel, outlined video icon, \u201cStill in the making.\u201d heading, honest copy, and Instagram link. Filter changes update a polite live count. There are currently no supplied videos; data-backed videos use native controls, poster, and optional captions when supplied. Do not substitute a playable thumbnail for missing footage.",
-          "properties": {},
-          "variants": []
-        },
-        {
-          "name": "Portraits and Credits",
-          "description": "Home and About Us present the four approved family members from `src/data/studio-team.json`: James, Emily, Matilda, and Ramona. About Us uses two columns, reducing to one on small phones. Supplied square portraits sit above extended-face names, roles, and regular-font biographies. The data remains authoritative for names, roles, bios, and order; fictional studio personas are excluded.",
-          "properties": {},
-          "variants": []
-        },
-        {
-          "name": "Contact Rows",
-          "description": "The navy footer uses a gold heading, light supporting text, and open Instagram and email rows with fine separators. Each row contains a small context label, readable destination, and gold arrow. Long addresses wrap.",
-          "properties": {},
-          "variants": []
-        }
-      ]
-    },
-    "dosDonts": {
-      "dos": [
-        "Do retain the brighter navy and gold identity, official fonts, and supplied artwork.",
-        "Do use warm reading fields, open spacing, and restrained image framing alongside sunny sections.",
-        "Do keep all three navigation links visible and preserve meaningful reading order at every width.",
-        "Do preserve visible focus, accessible names, reduced-motion behavior, and forced-colors support.",
-        "Do present real media, honest availability, and all approved credits from their data sources."
-      ],
-      "donts": [
-        "Don't redraw or replace official logos, locked title artwork, Trashy, or approved portraits.",
-        "Don't restore superseded fonts, hidden mobile navigation, or the former game-first hero as system requirements.",
-        "Don't make local art crops, rotations, or tints mandatory for every surface.",
-        "Don't add fake footage, playback affordances, invented team members, or unsupported release destinations.",
-        "Don't add shadows to every content group or place every paragraph in a rounded card."
-      ]
-    }
+    ],
+    "dos": [
+      "Do preserve the official navy/gold identity, EuroStyle fonts, supplied logos, portraits, and game artwork.",
+      "Do balance broad color fields with warm reading surfaces, generous spacing, and restrained frames.",
+      "Do retain visible Home, Games, and About Us navigation and the game-specific child navigation.",
+      "Do keep names before roles and preserve the exact approved team data.",
+      "Do preserve visible focus, accessible names, reduced-motion behavior, and forced-colors support.",
+      "Do keep media honest, static content available without scripts, and animation controls clear of artwork and labels."
+    ],
+    "donts": [
+      "Don't redraw official artwork or replace the supplied typefaces with generic alternatives.",
+      "Don't reintroduce the superseded gold Trashy Home hero or Home portrait strip as the current design direction.",
+      "Don't invent footage, release destinations, team members, or claims of copy-proof public previews.",
+      "Don't force every surface to repeat the Home orbit, art crops, or local rotations.",
+      "Don't add shadows to content groups or place every paragraph inside a rounded card."
+    ]
   }
 }

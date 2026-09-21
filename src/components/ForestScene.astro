@@ -1,0 +1,35 @@
+---
+import StudioImage from './StudioImage.astro';
+interface Props { eager?: boolean; }
+const { eager = false } = Astro.props;
+---
+<div class="forest-scene" aria-hidden="true">
+  <StudioImage class="forest-distance" src="/assets/worlds/woodland-distance.png" alt="" previewWidth={1600} loading={eager ? 'eager' : 'lazy'} />
+  <StudioImage class="forest-frame" src="/assets/worlds/woodland-frame.png" alt="" previewWidth={1600} loading={eager ? 'eager' : 'lazy'} />
+</div>
+<script>
+  // Pointer motion adds a few pixels of depth to the real foreground artwork.
+  // Touch and reduced-motion visitors receive the complete static composition.
+  const scenicMotion = matchMedia('(prefers-reduced-motion: no-preference) and (hover: hover)');
+  for (const scene of document.querySelectorAll<HTMLElement>('.forest-scene')) {
+    const stage = scene.parentElement;
+    if (!stage) continue;
+    let frame = 0;
+    function reset() {
+      cancelAnimationFrame(frame);
+      scene!.style.removeProperty('--scene-x');
+      scene!.style.removeProperty('--scene-y');
+    }
+    stage.addEventListener('pointermove', event => {
+      if (!scenicMotion.matches) return;
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const bounds = stage.getBoundingClientRect();
+        scene.style.setProperty('--scene-x', `${((event.clientX - bounds.left) / bounds.width - .5) * 12}px`);
+        scene.style.setProperty('--scene-y', `${((event.clientY - bounds.top) / bounds.height - .5) * 8}px`);
+      });
+    });
+    stage.addEventListener('pointerleave', reset);
+    scenicMotion.addEventListener('change', reset);
+  }
+</script>
