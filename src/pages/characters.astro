@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import StudioImage from '../components/StudioImage.astro';
+---
+<BaseLayout title="Characters — ReplayEveryMemory Studio" description="Meet Trashy and Jimothy, the unlikely friends at the heart of Trash Dash.">
+  <section class="characters-hero">
+    <div class="container characters-hero-inner">
+      <div>
+        <h1>Meet the heroes<br />of Trash Dash.</h1>
+        <p class="lede">Two friends. One growing mess.<br />A little courage goes a long way.</p>
+      </div>
+      <p class="characters-intro">Trash Dash follows a curious raccoon and his chaotic best friend as they trace a spreading pollution problem from their home in the woods toward a much bigger mystery.</p>
+    </div>
+  </section>
+
+  <section class="container characters-list" aria-labelledby="characters-heading">
+    <div class="section-heading"><h2 id="characters-heading">The heart of the adventure</h2><p>Chapter one characters</p></div>
+    <div class="character-grid">
+      <article class="character-profile character-profile--trashy" id="trashy">
+        <div class="character-art" data-artwork><StudioImage src="/assets/trashy.png" alt="Trashy, a raccoon wearing a gold bandana, blue trousers, and a utility belt." width={2244} height={2804} loading="eager" /></div>
+        <div class="character-copy">
+          <p class="character-role">The hero · The heart of the adventure</p>
+          <h3>Trashy</h3>
+          <p>Thoughtful, curious, clever, brave, humble, and just a little mischievous. Trashy sees value where others see nothing, and he respects the things people throw away.</p>
+          <p>He is not fearless. He is brave because he keeps going while afraid. When something is wrong in the woods, Trashy follows the trail because he cannot leave his neighbors to deal with it alone.</p>
+          <p class="character-motivation"><strong>What drives him</strong> Find where the pollution is coming from and protect the home he loves.</p>
+        </div>
+      </article>
+
+      <article class="character-profile character-profile--jimothy" id="jimothy">
+        <div class="character-art" data-artwork><StudioImage src="/assets/characters/jimothy.png" alt="Jimothy, a tall raccoon with a teal scarf and a curious expression." width={1122} height={1402} loading="lazy" /></div>
+        <div class="character-copy">
+          <p class="character-role">The chaos · The wildcard · The best friend</p>
+          <h3>Jimothy</h3>
+          <p>Unpredictable, enthusiastic, fearless, curious, loyal, and strange. Jimothy is not dumb; he simply values curiosity over caution, which makes every discovery an adventure of its own.</p>
+          <p>He speaks quickly and acts on impulse. Sometimes he says the wrong thing at exactly the wrong time. Every so often, he says something unexpectedly insightful—and he always contributes.</p>
+          <p class="character-motivation"><strong>What drives him</strong> Follow Trashy wherever the trail leads, find something interesting, and see what happens next.</p>
+        </div>
+      </article>
+    </div>
+    <p class="characters-note">Trash Dash is in development. The world—and the mess—will keep growing.</p>
+  </section>
+</BaseLayout>

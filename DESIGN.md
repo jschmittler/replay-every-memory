@@ -89,7 +89,7 @@ components:
 
 The established navy and gold identity becomes brighter and more playful through sunny fields, warm reading surfaces, confident official lettering, open layouts, and supplied character art. EuroStyle Normal and Eurostile Extended Black, the studio logo, locked Trash Dash title, and Trashy artwork are durable brand commitments; preserve the supplied assets.
 
-This record describes the built Home, Media, and About Us surfaces. Home introduces the studio, then the first game and a cast preview. Its gold hero pairs a studio promise with Trashy; that composition is a current implementation example, not a required opening for every page. Media and About Us use collection and portrait layouts within the shared system.
+This record describes the built Home, Characters, Media, and About Us surfaces. Home introduces the studio, then the first game and a cast preview. Characters gives Trashy and Jimothy dedicated profile space. Its gold hero pairs a studio promise with Trashy; that composition is a current implementation example, not a required opening for every page. Media and About Us use collection and portrait layouts within the shared system.
 
 **Key Characteristics:**
 
@@ -175,7 +175,7 @@ Primary actions use navy, paper text, rounded corners, and an inline outlined ar
 
 ### Navigation
 
-The paper header combines the official studio mark and wordmark treatment with Home, Media, and About us. Regular EuroStyle links get a sun underline (3px) that grows from the left on hover and identifies `aria-current="page"`. Mobile keeps all three links in a visible second row. Footer navigation repeats those destinations.
+The paper header combines the official studio mark and wordmark treatment with Home, Characters, Media, and About us. Regular EuroStyle links get a sun underline (3px) that grows from the left on hover and identifies `aria-current="page"`. Mobile keeps all four links in a visible second row. Footer navigation repeats those destinations.
 
 ### Media Filters
 
@@ -187,7 +187,9 @@ Pills pair category names with counts. Transparent ink controls hover to cream; 
 
 The zero-video view uses a cream panel, outlined video icon, “Still in the making.” heading, honest copy, and Instagram link. Filter changes update a polite live count. There are currently no supplied videos; data-backed videos use native controls, poster, and optional captions when supplied. Do not substitute a playable thumbnail for missing footage.
 
-### Portraits and Credits
+### Character Profiles, Portraits and Credits
+
+Characters uses the approved Trash Dash character art and dialogue bible to introduce Trashy and Jimothy with their roles, personalities, and motivations. The page is separate from the Media gallery so character art can read as story content rather than a downloadable collection item.
 
 Home and About Us present the four approved family members from `src/data/studio-team.json`: James, Emily, Matilda, and Ramona. About Us uses two columns, reducing to one on small phones. Supplied square portraits sit above extended-face names, roles, and regular-font biographies. The data remains authoritative for names, roles, bios, and order; fictional studio personas are excluded.
 

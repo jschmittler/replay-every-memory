@@ -12,7 +12,7 @@ Astro and TypeScript; three static public pages with progressive enhancement.
 Players curious about Trash Dash, followers of the studio, and visitors looking for artwork or contact information.
 
 ## Product Purpose
-Introduce ReplayEveryMemory Studio and its first game, Trash Dash; offer an artwork and video collection; introduce the four family members building the game; connect visitors with Instagram and email.
+Introduce ReplayEveryMemory Studio and its first game, Trash Dash; introduce Trashy and Jimothy; offer an artwork and video collection; introduce the four family members building the game; connect visitors with Instagram and email.
 
 ## Brand Commitments
 - Public name: ReplayEveryMemory Studio.
@@ -29,12 +29,13 @@ The user's September 21 request supersedes the earlier website handoff's page li
 
 ## Capabilities and Constraints
 - Home: studio introduction with the approved transparent Trashy idle loop, first-game overview, core cast preview, social and email contact. The loop is muted and pausable, stops offscreen/when hidden, and keeps a still fallback for reduced motion, errors, or unsupported transparency.
+- Characters: a focused overview of Trashy and Jimothy with approved artwork, personalities, and motivations sourced from the Trash Dash project.
 - Media: filterable artwork/logo gallery, an in-page viewing-only preview, and data-driven support for captioned self-hosted video. There is no video supplied yet and no public upload form or CMS.
 - About Us: studio profile and the four approved family members, exact bios and roles, owner-supplied portraits.
 - Public Instagram: https://www.instagram.com/replayeverymemory/
 - Public email: trashdash@replayeverymemory.com
 - Release dates and store destinations are not promised. Game status: in development.
-- Only Home, Media, and About Us are public content pages; a 404 recovery page is included.
+- Home, Characters, Media, and About Us are public content pages; a 404 recovery page is included.
 - Original artwork stays in `src/assets/`; only display renditions ship. No download or direct-original links. Image context menus and dragging are discouraged, not security controls. Displayed previews and fonts can still be copied by a determined visitor, and screenshots cannot be prevented.
 - Live origin: https://replayeverymemory.com. Hostinger deploys GitHub `main`; the root routing configuration exposes only the generated website. Publishing requires successful local checks and the owner's explicit authorization.
 

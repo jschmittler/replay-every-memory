@@ -50,6 +50,11 @@
       "sourceAsset": "src/assets/team/ramona.png"
     },
     {
+      "source": "/Users/jamesschmittler/Documents/Projects/trash-dash-v3/assets/runtime/campaign/portraits/jimothy_portrait_dialogue_01.png",
+      "sourceAsset": "src/assets/characters/jimothy.png",
+      "usage": "Approved Jimothy character portrait for the Characters page."
+    },
+    {
       "source": "/Users/jamesschmittler/Downloads/social-story.png",
       "sourceAsset": "src/assets/media/social-story.png"
     },
