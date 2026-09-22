@@ -14,6 +14,11 @@
       "sourceAsset": "src/assets/trashy.png"
     },
     {
+      "source": "src/assets/trashy.png",
+      "sourceAsset": "src/assets/trashy-belt-up.png",
+      "usage": "Derived belt-up crop of owner-supplied Trashy art for Safari and other browsers that cannot render the alpha idle video correctly."
+    },
+    {
       "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/interface/logos/TrashDashLogo-transparent.png",
       "sourceAsset": "src/assets/trash-dash-logo.png"
     },
