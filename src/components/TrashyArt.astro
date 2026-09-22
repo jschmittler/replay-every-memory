@@ -3,45 +3,41 @@ import StudioImage from './StudioImage.astro';
 import idleAnimation from '../assets/animation/trashy-idle.webm?url';
 interface Props { decorative?: boolean; eager?: boolean; }
 const { decorative = false, eager = false } = Astro.props;
-const description = 'Trashy, our raccoon hero, wearing his golden bandana and trusty utility belt.';
+const description = 'Trashy, our raccoon hero, wearing his golden bandana, framed from the belt up and looking into the woodland scene.';
 ---
-<!-- Motion: the supplied idle loop is the hero's single focal animation. Keep
+<!-- Motion: loop the supplied idle artwork while it is in view. Keep
      a visible still by default; load only in view, pause when hidden, and honor
      reduced motion. A one-frame alpha check avoids opaque video backgrounds. -->
 <div class="trashy-art" data-trashy-animation data-animation-src={idleAnimation} role={decorative ? undefined : 'img'} aria-label={decorative ? undefined : description} aria-hidden={decorative ? 'true' : undefined}>
   <StudioImage src="/assets/trashy.png" width="2244" height="2804" alt="" loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : 'auto'} />
   <video class="trashy-idle" muted loop playsinline preload="none" controlslist="nodownload" disablepictureinpicture draggable="false" aria-hidden="true" tabindex="-1"></video>
 </div>
-<button class="trashy-motion-toggle" type="button" hidden>Pause animation</button>
 <script>
   for (const art of document.querySelectorAll<HTMLElement>('[data-trashy-animation]')) {
     const video = art.querySelector<HTMLVideoElement>('video')!;
-    const toggle = art.nextElementSibling as HTMLButtonElement;
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
-    let manuallyPaused = false;
     let inView = false;
     let loaded = false;
     let transparent = false;
     let failed = !video.canPlayType('video/webm; codecs="vp9"');
     video.muted = true;
+    video.loop = true;
 
     function showStill() {
       delete art.dataset.videoReady;
-      toggle.hidden = true;
     }
 
     function updatePlayback() {
       if (motion.matches || failed) { video.pause(); showStill(); return; }
-      if (transparent) { art.dataset.videoReady = 'true'; toggle.hidden = false; }
-      toggle.textContent = manuallyPaused ? 'Play animation' : 'Pause animation';
-      if (!inView || document.hidden || manuallyPaused) { video.pause(); return; }
+      if (transparent) art.dataset.videoReady = 'true';
+      if (!inView || document.hidden) { video.pause(); return; }
       if (!loaded) {
         video.src = art.dataset.animationSrc!;
         loaded = true;
       }
       void video.play().catch(() => {
         // A visibility change may interrupt play without a playback failure.
-        if (inView && !document.hidden && !motion.matches && !manuallyPaused) showStill();
+        if (inView && !document.hidden && !motion.matches) showStill();
       });
     }
 
@@ -61,7 +57,6 @@ const description = 'Trashy, our raccoon hero, wearing his golden bandana and tr
       updatePlayback();
     });
     video.addEventListener('error', () => { failed = true; updatePlayback(); });
-    toggle.addEventListener('click', () => { manuallyPaused = !manuallyPaused; updatePlayback(); });
     motion.addEventListener('change', updatePlayback);
     document.addEventListener('visibilitychange', updatePlayback);
     const observer = new IntersectionObserver(([entry]) => { inView = entry.isIntersecting; updatePlayback(); }, { threshold: 0.05 });

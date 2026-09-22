@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import StandingCharacter from '../components/StandingCharacter.astro';
+import StudioImage from '../components/StudioImage.astro';
 ---
 <BaseLayout title="Trash Dash Characters — ReplayEveryMemory Studio" description="Meet Trashy and Jimothy, the unlikely friends at the heart of Trash Dash.">
   <section class="characters-hero">
@@ -39,5 +40,38 @@ import StandingCharacter from '../components/StandingCharacter.astro';
       </article>
     </div>
     <p class="characters-note">Trash Dash is in development. The world—and the mess—will keep growing.</p>
+  </section>
+
+  <section class="villains-list section" aria-labelledby="villains-heading">
+    <div class="container">
+      <div class="section-heading"><h2 id="villains-heading">Meet the villains.</h2><p>The Gunk has its grip on them.</p></div>
+      <div class="character-grid villain-grid">
+        <article class="character-profile character-profile--trash-monster" id="trash-monster">
+          <div class="character-art villain-art" data-artwork>
+            <StudioImage class="villain-figure villain-figure--trash-monster" src="/assets/characters/trash-monster.png" alt="The Trash Monster: an angry charcoal-gray garbage sack with golden eyes, stitched patch, rope-tied top, and green Gunk at its base." previewWidth={1200} loading="lazy" />
+          </div>
+          <div class="character-copy">
+            <h3>Trash Monster</h3>
+            <p class="character-role">Chapter 1 · The Gunk’s first warning</p>
+            <p>A familiar refuse mass, warped and animated by the Gunk. It guards its pile and blocks Trashy’s path through the woods.</p>
+            <p>It is not a creature Trashy needs to conquer. It is an infected victim: a first look at what happens when the things Trashy values become corrupted.</p>
+            <p class="character-motivation"><strong>What it reveals</strong> The Gunk can turn something ordinary into a threat without taking away the need for care.</p>
+          </div>
+        </article>
+
+        <article class="character-profile character-profile--brutus" id="brutus">
+          <div class="character-art villain-art" data-artwork>
+            <StudioImage class="villain-figure villain-figure--brutus" src="/assets/characters/brutus.png" alt="Brutus, a bulldog fused with a rolling metal garbage can and wearing a red spiked collar." previewWidth={1440} loading="lazy" />
+          </div>
+          <div class="character-copy">
+            <h3>Brutus</h3>
+            <p class="character-role">Chapter 2 · The bin-hound</p>
+            <p>Half bulldog, half garbage can, and fully caught in the Gunk. At the edge of the neighborhood, Brutus comes charging out of the dark.</p>
+            <p>For a moment, his eyes clear and he recognizes Trashy. Then the Gunk takes over again. Water can stop the attack, but it does not cure him.</p>
+            <p class="character-motivation"><strong>What he reveals</strong> Even when the Gunk changes someone, there may still be a friend trapped inside.</p>
+          </div>
+        </article>
+      </div>
+    </div>
   </section>
 </BaseLayout>

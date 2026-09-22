@@ -115,7 +115,7 @@ The visual authority is the implemented Astro pages and components, with `src/st
 - Oversized Eurostile Extended headings paired with regular EuroStyle text.
 - Official insignia, locked game lettering, supplied portraits, and real game artwork.
 - Open compositions, modest rounded frames, fine rules, and no shadows.
-- Finite emblem motion, quiet forest response, and a pausable character loop.
+- Static studio mark with bounded atmospheric animation, quiet forest response, and a single character greeting.
 - Visible navigation, readable content without scripts, and candid development states.
 
 ## Colors
@@ -125,7 +125,7 @@ The frontmatter records the shared palette and repeated accents actually used by
 ### Primary
 
 - **Studio Navy:** The header, Home opening, footer, standard buttons, and selected filters use `navy`.
-- **Sunny Gold:** The leading action on navy, Home story field, About opening, heading emphasis, and small highlights use `gold`.
+- **Sunny Gold:** The leading action on navy, Home story field, heading emphasis, and small highlights use `gold`.
 - **Soft Navy:** Standard button hover and the game stage fallback use `navy-soft`.
 - **Sun Accent:** Hovered and current main-navigation underlines use `sun`.
 - **Light Gold:** The gold button’s hover uses `gold-hover`.
@@ -170,7 +170,7 @@ The frontmatter records the shared palette and repeated accents actually used by
 
 The container uses the fluid gutter token and a maximum width (1320px). Major sections use the fluid `space` token. Because `studio.css` loads last, these fluid root values remain active at narrow widths; the older mobile root overrides in `global.css` do not define the current spacing. The composition alternates wide color fields, asymmetric two-column openings, open editorial copy, and two-column art or portrait collections.
 
-The implemented Home begins with the studio on navy: oversized cream/gold title, supplied emblem with fine orbit lines, gold “Meet the team” action to `/about#team`, and “Meet Trash Dash” to `/games`. A real woodland game feature follows, then a gold DIY studio story and shared contact footer. Home contains no team portraits. These are this surface’s choices, not a requirement that every page repeat the hero.
+The implemented Home begins with the studio on navy: an oversized cream/gold title alongside the static studio mark and surrounding mist and fireflies, gold “Meet the team” action to `/about#team`, and “Meet Trash Dash” to `/games`. A real woodland game feature follows, then a gold DIY studio story and shared contact footer. Home contains no team portraits. These are this surface’s choices, not a requirement that every page repeat the hero.
 
 Games is a substantial first-game landing page: introductory title, full-width woodland cinema, development and story details, character/artwork destinations, and a makers invitation. About combines a gold studio opening, expanded origin story, and the approved family profiles. Characters and Media remain separate game-supporting pages beneath Games in navigation.
 
@@ -184,19 +184,19 @@ Preserve semantic order, independent space for artwork/status/controls, and wrap
 
 ## Elevation & Depth
 
-The current system has no box shadows or artwork drop shadows. Depth comes from contrasting fields, scale, fine orbit lines, and layered real woodland imagery. A dark gradient at the base of the forest supports foreground text. Buttons rise slightly on hover (2px); game exploration and character artwork scale subtly.
+The current system has no box shadows or artwork drop shadows. Depth comes from contrasting fields, scale, the atmospheric field, and layered real woodland imagery. A dark gradient at the base of the forest supports foreground text. Buttons rise slightly on hover (2px); game exploration and character artwork scale subtly.
 
-The shared easing is `cubic-bezier(.16,1,.3,1)`. Controls transition over .2s. The Home emblem settles vertically, without rotation, once over 1.8s and its orbit over 2.2s. Woodland foreground response is pointer-driven only on hover-capable devices without reduced motion, bounded to 6px horizontally and 4px vertically, with a .8s transition. Exploration artwork uses .6s and character artwork .45s.
+The shared easing is `cubic-bezier(.16,1,.3,1)`. Controls transition over .2s. The studio mark remains static. Teal mist and 48 gold motes animate for up to 4.5 seconds, then settle; pointer movement wakes the surrounding field for 1.2 seconds. The canvas caps pixel density at 2 and stops offscreen, in hidden tabs, and for reduced motion. The intro video has been removed. Woodland foreground response is pointer-driven only on hover-capable devices without reduced motion, bounded to 6px horizontally and 4px vertically, with a .8s transition. Exploration artwork uses .6s and character artwork .45s.
 
-The Home game feature uses the supplied silent transparent Trashy idle loop (4.041s), with a visible Pause/Play control after supported playback is ready. It loads in view and pauses offscreen, while the page is hidden, or after a manual pause. Reduced motion, unsupported VP9, failed decoding, or missing decoded transparency retain the supplied still. Reduced motion also disables CSS animation and transitions. Static content never waits for a script or animation to become readable.
+The Home game feature plays the supplied silent transparent Trashy animation once (4.041s, capped at 4.5s) with no playback button. It loads in view and pauses offscreen or while the page is hidden. Reduced motion, unsupported VP9, failed decoding, or missing decoded transparency retain the supplied still. Reduced motion also disables CSS animation and transitions. Static content never waits for a script or animation to become readable.
 
 **The Flat Surface Rule.** Separate content with space, tone, and fine rules; the current system does not add shadows to controls, artwork, or containers.
 
 ## Shapes
 
-Sections are rectangular fields. Primary buttons use the control radius; exploration and team frames use the frame radius; gallery and character frames use the image radius; the Home game window and empty state use the panel radius. Filters are pills. Small status badges use a local radius (6px); dialog-close and animation controls use their existing local radius (12px).
+Sections are rectangular fields. Primary buttons use the control radius; exploration and team frames use the frame radius; gallery and character frames use the image radius; the Home game window and empty state use the panel radius. Filters are pills. The development label is typeset directly over the game scene with a fine separator and no pill background. Dialog-close controls keep their existing local radius (12px).
 
-The studio emblem’s circles and fine star marks are the signature geometry. Preserve supplied logo proportions. About portraits use gently wide crops (1.15 aspect ratio on desktop, 1.1 when stacked). Gallery boards fit entirely within their frame; character art has dedicated crops. Studio logos and marks must stay straight on with their original proportions, including during animation. Never append captions, subtext, or extra taglines: the full studio logo already contains “Dreams with a start button.”
+The studio mark remains upright and unchanged within the restored atmospheric field. Preserve supplied logo proportions. About portraits use gently wide crops (1.15 aspect ratio on desktop, 1.1 when stacked). Gallery boards fit entirely within their frame; character art has dedicated crops. Studio logos and marks must stay straight on with their original proportions, including during animation. Never append captions, subtext, or extra taglines: the full studio logo already contains “Dreams with a start button.”
 
 ## Components
 
@@ -212,11 +212,13 @@ Characters and Media add a pale game subnavigation: “Games / Trash Dash”, �
 
 ### Studio Emblem and Game Window
 
-The Home emblem is decorative alongside a semantic studio heading. Use the actual studio mark inside its fine orbital frame. The first-game window combines supplied distant/foreground forest layers, the locked Trash Dash title, a development badge, Trashy, and a clearly separated action. Keep all of these legible at intermediate widths as well as phones. The Games cinema uses the same real forest language at full width and identifies it as development artwork.
+The static Home studio mark fills the larger half of a 47.5/52.5 desktop grid with zero-minimum tracks, preventing the heading from squeezing the artwork. Its 1600px display rendition comes from the existing 4362px source. On phones it stacks below the copy at full content width. The decorative atmospheric canvas spans the whole hero behind both columns, with 80 gold particles and teal mist; particles behind copy have half intensity. The supplied logo stays upright and unaltered. About uses the owner-supplied rem-intro-yellow-simple.mp4 converted to a 1080p VP9 WebM with explicit sRGB transfer metadata, playing once muted for approximately 14 seconds, then holding the final decoded frame in place. It preserves its full 16:9 framing. The About opening uses #edc46c as its fallback, with the film rendered through an sRGB canvas and its background sampled from the actual browser-decoded video/still to eliminate native video-compositor color shifts. The final still is a lossless PNG; no filters or overlays alter the video. Its desktop grid assigns 45% to copy and 55% to the film after spacing, with the column gap equal to the right viewport inset. Phones stack the film at the full content width. An extracted lossless still supports skip and fallbacks. A temporary Skip intro control disappears at completion; reduced motion, no JavaScript, errors, and unsupported playback retain the final logo still.
+
+The first-game window combines supplied distant/foreground forest layers, the locked Trash Dash title, an integrated development label, Trashy, and “Dash into Trashy’s world!” The game CTA belongs below the artwork. Home frames Trashy at the belt at the bottom-right edge, with a 4% frame inset and a 24% horizontal offset to compensate for the transparent tail area, at 150% of the previous figure width (450px desktop, 405px intermediate, 345px mobile, constrained to the frame). Mirror the character presentation so he faces left into the scene; preserve the animation and still-source pixels. The caption moves above him on phones. Keep all of these legible at intermediate widths as well as phones. The Games cinema uses the same real forest language at full width and identifies it as development artwork.
 
 ### Character Profiles and Team Portraits
 
-Characters presents approved Trashy and Jimothy art above names, roles, personality copy, and a ruled motivation block. Its standalone page gives the characters story context distinct from the gallery.
+Characters presents approved Trashy and Jimothy art above names, roles, personality copy, and a ruled motivation block. A distinct soft-woodland Meet the villains section follows with owner-supplied Trash Monster and Brutus art. Each villain profile keeps the game's victim-first story truth: the Chapter 1 Trash Monster is refuse animated by Gunk, while Chapter 2’s Brutus recognizes Trashy but cannot control himself. Its standalone page gives the characters story context distinct from the gallery.
 
 About presents James, Emily, Matilda, and Ramona from `src/data/studio-team.json`, in a two-column grid that becomes one column at the stacked breakpoint. Portraits precede names, roles, and regular-font biographies. Preserve the exact approved names, roles, biographies, and order. The Home story directs visitors here without duplicating portraits.
 
@@ -250,7 +252,7 @@ The navy footer uses a gold heading, light supporting text, privacy copy, and op
 - **Don't** redraw official artwork or replace the supplied typefaces with generic alternatives.
 - **Don't** reintroduce the superseded gold Trashy Home hero or Home portrait strip as the current design direction.
 - **Don't** invent footage, release destinations, team members, or claims of copy-proof public previews.
-- **Don't** force every surface to repeat the Home orbit or art crops.
+- **Don't** force every surface to repeat the Home atmosphere or art crops.
 - **Don't** add shadows to content groups or place every paragraph inside a rounded card.
 
 ### Standing character artwork

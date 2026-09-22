@@ -11,7 +11,7 @@ Audience: visitors curious about the family studio and its games. They should fi
 
 Primary action: Meet the team -> /about#team. Secondary: Meet Trash Dash -> /games. Home sequence: studio introduction, first-game feature, personal DIY studio story, contact. Individual portraits belong only on About Us.
 
-Direction: studio opening titles. Oversized official lettering, a gently settling studio insignia, a window onto real game environment art and the supplied pausable character loop, then an open studio story. Supporting pages keep visible game-context navigation. Every general game-introduction CTA reaches Games.
+Direction: studio opening titles. Oversized official lettering, the oversized static upright studio mark filling the right half of the navy hero, with atmospheric animation spanning behind both artwork and text, a window onto real game environment art and a single supplied character greeting, then an open studio story. Supporting pages keep visible game-context navigation. Every general game-introduction CTA reaches Games.
 
 Proof: the approved four-person roster and exact biographies, official studio artwork, real Trash Dash environment layers, current game description and existing development claims. Source masters do not ship. Motion has reduced-motion/static fallbacks and no-JS content remains complete.
 

@@ -5,9 +5,11 @@ import { featuredGame } from '../data/games';
 import Arrow from '../components/Arrow.astro';
 import TrashyArt from '../components/TrashyArt.astro';
 import ForestScene from '../components/ForestScene.astro';
+import StudioAtmosphere from '../components/StudioAtmosphere.astro';
 ---
 <BaseLayout title="ReplayEveryMemory Studio — Dreams with a start button" description="A homegrown, family-powered game studio. We’re turning a lifelong love of play into worlds of our own, starting with Trash Dash.">
   <section class="studio-hero" aria-labelledby="home-title">
+    <StudioAtmosphere />
     <div class="container studio-hero-main">
       <div class="studio-hero-copy">
         <h1 id="home-title">Dreams with<br />a <span>start button.</span></h1>
@@ -15,8 +17,7 @@ import ForestScene from '../components/ForestScene.astro';
         <div class="actions"><a class="button button-gold" href="/about#team">Meet the team <Arrow /></a><a class="text-link" href="/games">Meet Trash Dash <Arrow /></a></div>
       </div>
       <div class="studio-emblem" aria-hidden="true">
-        <svg class="emblem-orbits" viewBox="0 0 520 520" fill="none"><circle cx="260" cy="260" r="245" /><circle cx="260" cy="260" r="209" /><path d="M9 260h38m426 0h38M260 9v38m0 426v38" /><circle class="orbit-spark" cx="430" cy="85" r="6" /><path class="emblem-star" d="M84 93v26m-13-13h26M429 394v18m-9-9h18" /></svg>
-        <StudioImage src="/assets/studio-mark.png" alt="" previewWidth={850} loading="eager" />
+        <StudioImage src="/assets/studio-mark.png" alt="" previewWidth={1600} loading="eager" />
       </div>
     </div>
     <div class="container studio-hero-foot"><p>Homegrown games. Wholehearted adventures.</p><a href="#our-work">See what we’re making <Arrow /></a></div>
@@ -25,9 +26,9 @@ import ForestScene from '../components/ForestScene.astro';
     <div class="container project-heading"><h2 id="game-heading">Our first adventure.<br /><span>Anything but ordinary.</span></h2><p>A little raccoon. A big heart.<br />A world worth looking after.</p></div>
     <div class="container project-window" id="trash-dash">
       <ForestScene />
-      <div class="project-window-title"><a href="/games" aria-label="Get to know Trash Dash"><StudioImage src={featuredGame.logo} alt="Trash Dash" previewWidth={650} loading="lazy" /></a><span>Our first game · {featuredGame.status}</span></div>
+      <div class="project-window-title"><a href="/games" aria-label="Get to know Trash Dash"><StudioImage src={featuredGame.logo} alt="Trash Dash" previewWidth={650} loading="lazy" /></a><p class="project-art-status"><span>Our first game</span><span>{featuredGame.status}</span></p></div>
       <div class="project-character"><TrashyArt /></div>
-      <div class="project-window-bottom"><span>Step into Trashy’s world.</span><a href="/games" class="button button-gold">Meet Trash Dash <Arrow /></a></div>
+      <div class="project-window-bottom"><span>Dash into Trashy’s world!</span></div>
     </div>
     <div class="container project-summary"><p>{featuredGame.summary}</p><a class="text-link" href="/games">Get to know Trash Dash <Arrow /></a></div>
   </section>

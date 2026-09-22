@@ -1,0 +1,96 @@
+---
+import { getImage } from 'astro:assets';
+import finalFrame from '../assets/animation/rem-intro-yellow-final.png';
+import intro from '../assets/animation/rem-intro-yellow-simple.webm?url';
+const poster = await getImage({ src: finalFrame, width: 1440, format: 'png' });
+---
+<div class="about-brand" data-about-intro>
+  <img src={poster.src} width="1440" height="810" alt="ReplayEveryMemory — Dreams with a start button" fetchpriority="high" draggable="false" />
+  <video muted playsinline preload="none" data-src={intro} aria-hidden="true" tabindex="-1" disablepictureinpicture controlslist="nodownload" poster={poster.src}></video>
+  <canvas width="1440" height="810" aria-hidden="true"></canvas>
+  <button class="about-intro-skip" type="button" hidden>Skip intro</button>
+</div>
+<script>
+  for (const stage of document.querySelectorAll<HTMLElement>('[data-about-intro]')) {
+    const video = stage.querySelector<HTMLVideoElement>('video')!;
+    const skip = stage.querySelector<HTMLButtonElement>('button')!;
+    const still = stage.querySelector<HTMLImageElement>('img')!;
+    const hero = stage.closest<HTMLElement>('.about-opening')!;
+    const display = stage.querySelector<HTMLCanvasElement>('canvas')!;
+    const frameContext = display.getContext('2d', { willReadFrequently: true });
+    const motion = matchMedia('(prefers-reduced-motion: reduce)');
+    let visible = false, loaded = false, finished = false;
+    let frameRequest = 0;
+    let lastFrameTime = -1;
+    video.muted = true;
+    // Match the actual browser decode, including small codec/color-profile shifts.
+    // This corner stays yellow throughout the supplied film and its final still.
+    const sample = document.createElement('canvas');
+    sample.width = sample.height = 1;
+    const context = sample.getContext('2d', { willReadFrequently: true });
+    function matchBackground(source: HTMLVideoElement | HTMLImageElement) {
+      if (!context) return;
+      try {
+        context.drawImage(source, 40, 40, 1, 1, 0, 0, 1, 1);
+        const [r, g, b] = context.getImageData(0, 0, 1, 1).data;
+        hero.style.setProperty('--intro-background', `rgb(${r}, ${g}, ${b})`);
+      } catch { /* The stylesheet provides a matching fallback while media loads. */ }
+    }
+    still.addEventListener('load', () => { if (!stage.dataset.playing) matchBackground(still); });
+    if (still.complete && still.naturalWidth) matchBackground(still);
+    // Render the film and its sampled background in the same sRGB canvas space.
+    // Native video compositing can apply a different display transfer curve.
+    function drawFrame() {
+      if (finished || video.paused || !frameContext) return;
+      if (video.currentTime !== lastFrameTime) {
+        frameContext.drawImage(video, 0, 0, display.width, display.height);
+        matchBackground(video);
+        lastFrameTime = video.currentTime;
+      }
+      frameRequest = requestAnimationFrame(drawFrame);
+    }
+    function finish() {
+      finished = true;
+      video.pause();
+      cancelAnimationFrame(frameRequest);
+      if (video.ended && frameContext) {
+        frameContext.drawImage(video, 0, 0, display.width, display.height);
+        matchBackground(video);
+      } else {
+        delete stage.dataset.playing;
+        matchBackground(still);
+      }
+      if (document.activeElement === skip) {
+        stage.tabIndex = -1;
+        stage.focus({ preventScroll: true });
+      }
+      skip.hidden = true;
+    }
+    function update() {
+      if (finished) return;
+      if (motion.matches || !frameContext) { finish(); return; }
+      if (!visible || document.hidden) { video.pause(); return; }
+      if (!loaded) {
+        if (!video.canPlayType('video/webm; codecs="vp9"')) { finish(); return; }
+        video.src = video.dataset.src!;
+        loaded = true;
+      }
+      void video.play().catch(() => { if (visible && !document.hidden) finish(); });
+    }
+    video.addEventListener('playing', () => {
+      if (finished) { video.pause(); return; }
+      stage.dataset.playing = 'true';
+      cancelAnimationFrame(frameRequest);
+      drawFrame();
+      skip.hidden = false;
+    });
+    video.addEventListener('ended', finish);
+    video.addEventListener('error', finish);
+    skip.addEventListener('click', finish);
+    motion.addEventListener('change', update);
+    document.addEventListener('visibilitychange', update);
+    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; update(); }, { threshold: .1 });
+    observer.observe(stage);
+    document.addEventListener('astro:before-swap', () => { video.pause(); observer.disconnect(); }, { once: true });
+  }
+</script>

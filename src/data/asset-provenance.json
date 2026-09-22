@@ -55,6 +55,16 @@
       "usage": "Owner-supplied full standing pose, replacing the dialogue portrait on Games and Characters. CSS framing removes transparent canvas margins only; the complete figure remains visible."
     },
     {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/character-designs/level1/_boss_trashdash.png",
+      "sourceAsset": "src/assets/characters/trash-monster.png",
+      "usage": "Owner-supplied Chapter 1 Trash Monster artwork for the Characters villains section. CSS framing removes transparent canvas margins only."
+    },
+    {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/character-designs/level2/_boss_brutus.png",
+      "sourceAsset": "src/assets/characters/brutus.png",
+      "usage": "Owner-supplied Chapter 2 Brutus artwork for the Characters villains section. CSS framing removes transparent canvas margins only."
+    },
+    {
       "source": "/Users/jamesschmittler/Downloads/social-story.png",
       "sourceAsset": "src/assets/media/social-story.png"
     },
@@ -98,6 +108,16 @@
       "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/studio-branding/logos/studio-logo-favicon.png",
       "sourceAsset": "src/assets/studio-logo-favicon.png",
       "usage": "Owner-supplied 2805 \u00d7 2805 square mark. Use only where a perfect 1:1 image is required, currently the favicon. General studio branding continues using the existing mark and logo."
+    },
+    {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/videos/rem-intro-yellow-simple.mp4",
+      "sourceAsset": "src/assets/animation/rem-intro-yellow-simple.webm",
+      "usage": "Owner-supplied About hero intro converted to 1920x1080 VP9 WebM, CRF18, 29.97fps, approximately 14 seconds, audio removed. Explicit sRGB transfer metadata prevents the native MP4 display color mismatch. Plays once and holds the final logo; hero matches browser-decoded yellow."
+    },
+    {
+      "source": "src/assets/animation/rem-intro-yellow-simple.webm",
+      "sourceAsset": "src/assets/animation/rem-intro-yellow-final.png",
+      "usage": "Full final frame extracted from the last 40ms at 1920x1080, displayed as a lossless 1440x810 PNG; fallback for reduced motion/no JavaScript and final-frame hold."
     }
   ]
 }

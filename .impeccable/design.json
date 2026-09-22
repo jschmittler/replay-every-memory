@@ -244,16 +244,6 @@
         "purpose": "Buttons, links, and navigation."
       },
       {
-        "name": "emblem-arrive",
-        "value": "1.8s",
-        "purpose": "One-time vertical studio-mark settling without rotation."
-      },
-      {
-        "name": "orbit-arrive",
-        "value": "2.2s",
-        "purpose": "One-time orbital frame settling."
-      },
-      {
         "name": "forest-response",
         "value": ".8s",
         "purpose": "Pointer-responsive foreground on hover devices without reduced motion; up to 6px horizontally and 4px vertically."
@@ -271,7 +261,17 @@
       {
         "name": "trashy-idle",
         "value": "4.041s",
-        "purpose": "Supplied silent transparent loop in Home game feature; pausable, suspended offscreen or hidden, with still fallback for reduced motion or unsupported playback/transparency."
+        "purpose": "Supplied silent transparent greeting in Home game feature; plays once for at most 4.5 seconds, suspended offscreen or hidden, with still fallback for reduced motion or unsupported playback/transparency."
+      },
+      {
+        "name": "studio-atmosphere",
+        "value": "4.5s greeting; 1.2s pointer response",
+        "purpose": "Restored teal mist and gold particles surround the static upright mark; no hero video."
+      },
+      {
+        "name": "about-studio-intro",
+        "value": "14s",
+        "purpose": "Owner-supplied yellow-background video plays once muted; extracted final frame holds after completion or skip and for reduced motion/failures."
       }
     ],
     "breakpoints": [
@@ -368,7 +368,7 @@
       "Oversized Eurostile Extended headings paired with regular EuroStyle text.",
       "Official insignia, locked game lettering, supplied portraits, and real game artwork.",
       "Open compositions, modest rounded frames, fine rules, and no shadows.",
-      "Finite emblem motion, quiet forest response, and a pausable character loop.",
+      "Static studio mark with bounded atmospheric animation, quiet forest response, and a single character greeting.",
       "Visible navigation, readable content without scripts, and candid development states."
     ],
     "rules": [
@@ -400,7 +400,7 @@
       "Don't redraw official artwork or replace the supplied typefaces with generic alternatives.",
       "Don't reintroduce the superseded gold Trashy Home hero or Home portrait strip as the current design direction.",
       "Don't invent footage, release destinations, team members, or claims of copy-proof public previews.",
-      "Don't force every surface to repeat the Home orbit or art crops.",
+      "Don't force every surface to repeat the Home atmosphere or art crops.",
       "Don't add shadows to content groups or place every paragraph inside a rounded card."
     ]
   }
