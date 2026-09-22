@@ -186,7 +186,7 @@ Preserve semantic order, independent space for artwork/status/controls, and wrap
 
 The current system has no box shadows or artwork drop shadows. Depth comes from contrasting fields, scale, fine orbit lines, and layered real woodland imagery. A dark gradient at the base of the forest supports foreground text. Buttons rise slightly on hover (2px); game exploration and character artwork scale subtly.
 
-The shared easing is `cubic-bezier(.16,1,.3,1)`. Controls transition over .2s. The Home emblem settles once over 1.8s and its orbit over 2.2s. Woodland foreground response is pointer-driven only on hover-capable devices without reduced motion, bounded to 6px horizontally and 4px vertically, with a .8s transition. Exploration artwork uses .6s and character artwork .45s.
+The shared easing is `cubic-bezier(.16,1,.3,1)`. Controls transition over .2s. The Home emblem settles vertically, without rotation, once over 1.8s and its orbit over 2.2s. Woodland foreground response is pointer-driven only on hover-capable devices without reduced motion, bounded to 6px horizontally and 4px vertically, with a .8s transition. Exploration artwork uses .6s and character artwork .45s.
 
 The Home game feature uses the supplied silent transparent Trashy idle loop (4.041s), with a visible Pause/Play control after supported playback is ready. It loads in view and pauses offscreen, while the page is hidden, or after a manual pause. Reduced motion, unsupported VP9, failed decoding, or missing decoded transparency retain the supplied still. Reduced motion also disables CSS animation and transitions. Static content never waits for a script or animation to become readable.
 
@@ -196,7 +196,7 @@ The Home game feature uses the supplied silent transparent Trashy idle loop (4.0
 
 Sections are rectangular fields. Primary buttons use the control radius; exploration and team frames use the frame radius; gallery and character frames use the image radius; the Home game window and empty state use the panel radius. Filters are pills. Small status badges use a local radius (6px); dialog-close and animation controls use their existing local radius (12px).
 
-The studio emblem’s circles and fine star marks are the signature geometry. Preserve supplied logo proportions. About portraits use gently wide crops (1.15 aspect ratio on desktop, 1.1 when stacked). Gallery boards fit entirely within their frame; character art has dedicated crops. Slight logo rotations are local compositions, not a rule for all containers.
+The studio emblem’s circles and fine star marks are the signature geometry. Preserve supplied logo proportions. About portraits use gently wide crops (1.15 aspect ratio on desktop, 1.1 when stacked). Gallery boards fit entirely within their frame; character art has dedicated crops. Studio logos and marks must stay straight on with their original proportions, including during animation. Never append captions, subtext, or extra taglines: the full studio logo already contains “Dreams with a start button.”
 
 ## Components
 
@@ -250,7 +250,7 @@ The navy footer uses a gold heading, light supporting text, privacy copy, and op
 - **Don't** redraw official artwork or replace the supplied typefaces with generic alternatives.
 - **Don't** reintroduce the superseded gold Trashy Home hero or Home portrait strip as the current design direction.
 - **Don't** invent footage, release destinations, team members, or claims of copy-proof public previews.
-- **Don't** force every surface to repeat the Home orbit, art crops, or local rotations.
+- **Don't** force every surface to repeat the Home orbit or art crops.
 - **Don't** add shadows to content groups or place every paragraph inside a rounded card.
 
 ### Standing character artwork

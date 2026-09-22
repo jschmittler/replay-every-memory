@@ -17,6 +17,7 @@ Introduce ReplayEveryMemory Studio as a homegrown, family-powered game studio wi
 ## Brand Commitments
 - Public name: ReplayEveryMemory Studio.
 - Tagline: Dreams with a start button.
+- Always display studio logos and marks straight on, preserving their original proportions. Never rotate or slant them, including during animation. Do not append captions, subtext, or extra taglines to studio branding; the full logo already includes its tagline.
 - User requested a brighter, more playful presentation of the navy and gold identity.
 - EuroStyle Normal and Eurostile Extended Black are the supplied official fonts.
 - Use the supplied official studio logo, locked Trash Dash title, and Trashy artwork. Do not redraw or replace them.

@@ -246,7 +246,7 @@
       {
         "name": "emblem-arrive",
         "value": "1.8s",
-        "purpose": "One-time supplied studio-mark settling."
+        "purpose": "One-time vertical studio-mark settling without rotation."
       },
       {
         "name": "orbit-arrive",
@@ -379,7 +379,7 @@
       },
       {
         "name": "The Official Lettering Rule",
-        "body": "Use the supplied extended black face for headings and the regular face for reading and controls; preserve lettering inside locked logo artwork.",
+        "body": "Use the supplied extended black face for headings and the regular face for reading and controls; preserve lettering inside locked logo artwork. Studio logos and marks stay straight on, including during motion, with no appended captions or taglines.",
         "section": "typography"
       },
       {
@@ -400,7 +400,7 @@
       "Don't redraw official artwork or replace the supplied typefaces with generic alternatives.",
       "Don't reintroduce the superseded gold Trashy Home hero or Home portrait strip as the current design direction.",
       "Don't invent footage, release destinations, team members, or claims of copy-proof public previews.",
-      "Don't force every surface to repeat the Home orbit, art crops, or local rotations.",
+      "Don't force every surface to repeat the Home orbit or art crops.",
       "Don't add shadows to content groups or place every paragraph inside a rounded card."
     ]
   }

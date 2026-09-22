@@ -19,17 +19,16 @@ html { scroll-padding-top: 2rem; }
 .studio-hero-copy>p { margin-top: 2rem; max-width: 39ch; color: #d1dee1; font-size: 1.25rem; line-height: 1.6; }
 .studio-hero .actions { margin-top: 2.2rem; gap: 1.8rem; }
 .studio-emblem { position: relative; width: 115%; margin-left: -4%; aspect-ratio: 1; display: grid; place-items: center; }
-.studio-emblem>img { width: 91%; position: relative; transform: rotate(-9deg); animation: emblem-arrive 1.8s var(--ease); }
+.studio-emblem>img { width: 91%; position: relative; animation: emblem-arrive 1.8s var(--ease); }
 .emblem-orbits { position: absolute; inset: 0; width: 100%; height: 100%; stroke: #6e7d75; stroke-width: 1; animation: orbit-arrive 2.2s var(--ease); }
 .emblem-orbits circle:nth-child(2) { stroke: #354d55; }
 .orbit-spark { fill: var(--gold); stroke: none; }
 .emblem-star { stroke: var(--gold); stroke-width: 2; }
-.emblem-caption { position: absolute; bottom: 5%; font-size: .9rem; color: #c6d3d2; transform: rotate(-9deg); }
 .studio-hero-foot { border-top: 1px solid #3a515a; display: flex; justify-content: space-between; align-items: center; gap: 2rem; padding-block: 1.25rem; color: #c6d3d2; font-size: .95rem; }
 .studio-hero-foot a { display: inline-flex; align-items: center; gap: 1rem; min-height: 44px; text-decoration: none; color: var(--gold); }
 .studio-hero-foot a:hover { text-decoration: underline; }
 .studio-hero-foot .arrow-icon { transform: rotate(90deg); }
-@keyframes emblem-arrive { from { transform: translateY(18px) rotate(-15deg); } to { transform: translateY(0) rotate(-9deg); } }
+@keyframes emblem-arrive { from { transform: translateY(18px); } to { transform: translateY(0); } }
 @keyframes orbit-arrive { from { transform: rotate(-28deg); clip-path: inset(0 0 12% 0); } to { transform: rotate(0); clip-path: inset(0); } }
 .project-heading { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 3rem; }
 .project-heading h2 { font-size: clamp(2rem, 3.2vw, 3.2rem); }
@@ -115,8 +114,6 @@ html { scroll-padding-top: 2rem; }
 .about-opening h1 span { color: #70531d; }
 .about-opening .lede { margin-top: 2rem; }
 .about-brand { text-align: center; }
-.about-brand img { transform: rotate(-4deg); }
-.about-brand p { margin-top: 1.5rem; font-size: 1rem; }
 .about-origin { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
 .about-origin h2 { font-size: clamp(2rem, 3vw, 3rem); }
 .about-origin p:not(.lede) { color: var(--muted); line-height: 1.65; }
@@ -136,7 +133,6 @@ html { scroll-padding-top: 2rem; }
  .studio-hero-main { grid-template-columns: 1.35fr 1fr; min-height: 590px; }
  .studio-hero h1 { font-size: clamp(3rem, 5.8vw, 4.6rem); }
  .studio-emblem { width: 112%; }
- .emblem-caption { font-size: .8rem; }
  .project-window { min-height: 480px; }
  .project-character { width: 270px; right: 8%; top: 5%; height: 390px; }
  .project-summary { gap: 2rem; }
@@ -151,7 +147,6 @@ html { scroll-padding-top: 2rem; }
  .studio-hero-copy>p { font-size: 1.16rem; margin-top: 1.5rem; }
  .studio-hero .actions { margin-top: 1.7rem; gap: .8rem 1.4rem; }
  .studio-emblem { width: min(100%, 320px); margin: 1rem auto 0; }
- .emblem-caption { font-size: .8rem; }
  .studio-hero-foot { gap: 1rem; font-size: .85rem; align-items: start; }
  .studio-hero-foot p { max-width: 19ch; }
  .studio-hero-foot a { align-items: start; min-height: 44px; max-width: 17ch; }
