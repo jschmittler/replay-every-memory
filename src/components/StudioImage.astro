@@ -5,7 +5,7 @@ import type { HTMLAttributes } from 'astro/types';
 
 interface Props extends HTMLAttributes<'img'> { src: string; alt: string; previewWidth?: number; }
 const { src, alt, previewWidth = 1440, width: _width, height: _height, ...attributes } = Astro.props;
-const artwork = import.meta.glob<{ default: ImageMetadata }>('../assets/**/*.png', { eager: true });
+const artwork = import.meta.glob<{ default: ImageMetadata }>('../assets/**/*.{png,jpg,jpeg}', { eager: true });
 const source = artwork[src.replace('/assets/', '../assets/')]?.default;
 if (!source) throw new Error(`Missing studio artwork: ${src}`);
 // Publish a display rendition, never a link to the source artwork.

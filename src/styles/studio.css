@@ -131,6 +131,13 @@ html { scroll-padding-top: 2rem; }
 .member-copy>p:not(.member-role) { font-size: 1.1rem; max-width: 48ch; }
 .contact-layout h2 { font-size: clamp(2.2rem, 3.7vw, 3.7rem); }
 .contact-layout .privacy-note { font-size: .85rem; max-width: 49ch; color: #a6bbc4; margin-top: 2rem; }
+.media-origin { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 6vw, 6rem); padding: clamp(2rem, 4vw, 3.5rem); margin-bottom: 3.5rem; border-radius: 16px; background: #e6ede5; }
+.media-origin-label { margin-bottom: .8rem; color: #49675a; font-size: .9rem; letter-spacing: .1em; text-transform: uppercase; }
+.media-origin h2 { max-width: 15ch; font-size: clamp(1.9rem, 3vw, 3rem); }
+.media-origin-story { max-width: 65ch; }
+.media-origin-story p { line-height: 1.65; }
+.media-origin-signature { color: #49675a; font-family: var(--display); font-size: .9rem; }
+@media (max-width: 760px) { .media-origin { grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 2.5rem; } }
 @media (min-width: 1500px) { .studio-hero-main { min-height: 730px; } }
 @media (max-width: 1100px) {
  .studio-hero-main { min-height: 590px; }

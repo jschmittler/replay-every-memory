@@ -1,5 +1,5 @@
 {
-  "note": "Owner-supplied original images stay outside public/ and are excluded from production. Web previews and the owner-approved web-ready animation are delivered for viewing.",
+  "note": "Owner-supplied original images stay outside public/ and are excluded from production. Web previews and owner-approved web-ready videos are delivered for viewing.",
   "files": [
     {
       "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/__project-assets/branding/newlogo/4x/Artboard 1@4x.png",
@@ -88,6 +88,21 @@
     {
       "source": "/Users/jamesschmittler/Downloads/social-story-board.png",
       "sourceAsset": "src/assets/media/social-story-board.png"
+    },
+    {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/social-media/sketch.jpeg",
+      "sourceAsset": "src/assets/media/first-character-sketch.jpeg",
+      "usage": "Owner-supplied photo of the first Trash Dash character sketches. Astro publishes a compressed display preview; the original JPEG is excluded from the built site."
+    },
+    {
+      "source": "/Users/jamesschmittler/Library/Mobile Documents/com~apple~CloudDocs/_trashfiles/social-media/trash_dash_how_it_started_30s_soft_fades.mp4",
+      "sourceAsset": "src/assets/media/trash-dash-how-it-started.mp4",
+      "usage": "Owner-supplied 30-second, silent 1920x1080 MP4 for the media gallery."
+    },
+    {
+      "source": "src/assets/media/trash-dash-how-it-started.mp4",
+      "sourceAsset": "public/_astro/media/trash-dash-how-it-started-poster.jpg",
+      "usage": "JPEG display poster copied from a frame of the owner-supplied video."
     },
     {
       "source": "/Users/jamesschmittler/Downloads/idle-relaxed-loop-1811-transparent-video.webm",
