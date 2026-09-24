@@ -64,7 +64,7 @@ The site omits downloads, blocks image dragging and image context menus, and req
 
 ## Homepage character animation
 
-`src/assets/animation/trashy-idle.webm` is the owner-supplied web-ready loop, used only in the Home hero. `TrashyArt.astro` starts it silently when visible and motion is allowed, pauses it offscreen or when the page is hidden, and provides a Pause/Play control. Reduced-motion preferences, unsupported playback, unavailable transparency, and loading errors keep the approved still image visible. The source is assigned only when animation is allowed and the character is in view. The video remains subject to the same public-preview copying limitations as any displayed media.
+`src/assets/animation/trashy-idle.webm` is the owner-supplied web-ready loop, used only in the Home game feature (mirrored so Trashy faces into the woodland scene). `TrashyArt.astro` loops it silently while visible and motion is allowed, and pauses it offscreen or when the page is hidden. There is no playback button. Reduced-motion preferences, unsupported playback, unavailable transparency, and loading errors keep the approved belt-up still visible. Safari always shows the still, with a gentle CSS idle motion. The source is assigned only when animation is allowed and the character is in view. The video remains subject to the same public-preview copying limitations as any displayed media.
 
 
 ## Studio-first architecture

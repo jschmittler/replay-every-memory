@@ -188,7 +188,7 @@ The current system has no box shadows or artwork drop shadows. Depth comes from 
 
 The shared easing is `cubic-bezier(.16,1,.3,1)`. Controls transition over .2s. The studio mark remains static. Teal mist and 48 gold motes animate for up to 4.5 seconds, then settle; pointer movement wakes the surrounding field for 1.2 seconds. The canvas caps pixel density at 2 and stops offscreen, in hidden tabs, and for reduced motion. The intro video has been removed. Woodland foreground response is pointer-driven only on hover-capable devices without reduced motion, bounded to 6px horizontally and 4px vertically, with a .8s transition. Exploration artwork uses .6s and character artwork .45s.
 
-The Home game feature plays the supplied silent transparent Trashy animation once (4.041s, capped at 4.5s) with no playback button. It loads in view and pauses offscreen or while the page is hidden. Reduced motion, unsupported VP9, failed decoding, or missing decoded transparency retain the supplied still. Reduced motion also disables CSS animation and transitions. Static content never waits for a script or animation to become readable.
+The Home game feature loops the supplied silent transparent Trashy idle animation while it is in view, with no playback button. It loads in view and pauses offscreen or while the page is hidden. Reduced motion, unsupported VP9, failed decoding, or missing decoded transparency retain the supplied belt-up still. Safari always uses that still, with a gentle 2.8s CSS idle motion when motion is allowed. Reduced motion also disables CSS animation and transitions. Static content never waits for a script or animation to become readable.
 
 **The Flat Surface Rule.** Separate content with space, tone, and fine rules; the current system does not add shadows to controls, artwork, or containers.
 
@@ -228,7 +228,7 @@ Category pills pair labels with counts. Transparent ink controls hover to cream;
 
 ### Gallery and Empty State
 
-The data-driven gallery uses rounded frames, titles, descriptions, and progressively enhanced View artwork controls. A native dialog displays the web preview, title, Close control, and viewing notice. Escape and backdrop clicks close it; native dialog behavior returns focus to the opener. Development boards fit fully inside their frames. The gallery’s Videos category has an honest “Still in the making.” state and follow-along link; the Home character loop is not a gallery video. Future data-backed gallery videos use native controls, a poster, and captions when supplied.
+The data-driven gallery uses rounded frames, titles, descriptions, and progressively enhanced View artwork controls. A native dialog displays the web preview, title, Close control, and viewing notice. Escape and backdrop clicks close it; native dialog behavior returns focus to the opener. Development boards fit fully inside their frames. Gallery videos, starting with “How it started”, use native controls, a poster, and captions when supplied, and never autoplay. Any filter with no items shows an honest “Still in the making.” state and follow-along link; the Home character loop is not a gallery video.
 
 Display previews provide no download buttons or direct asset links. Original artwork stays outside the public folder and is excluded by the build pipeline. Image/video context-menu and drag deterrents do not disable ordinary text selection or browser zoom. Public previews are not copy-proof.
 
