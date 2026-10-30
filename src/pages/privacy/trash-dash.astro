@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import policy from '../../data/trash-dash-privacy.json';
+---
+<BaseLayout title="Trash Dash! Privacy Policy — Replay Every Memory" description="How Trash Dash! handles local game data, Apple services and support correspondence.">
+  <article class="container policy-page">
+    <p><a href="/games#trash-dash">Trash Dash!</a> · <a href="/support/trash-dash">Game support</a></p>
+    <h1>{policy.title}</h1>
+    <p>Effective: <time datetime={policy.effective_date}>{policy.effective_date}</time></p>
+    {policy.sections.map(section => <section><h2>{section.heading}</h2><p>{section.text}</p></section>)}
+    <p><a href={`mailto:${policy.contact_email}`}>Contact us about privacy</a></p>
+  </article>
+</BaseLayout>
+<style>
+  .policy-page { max-width: 900px; padding-block: clamp(40px, 6vw, 90px); overflow-wrap: anywhere; }
+  h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.1; margin-block: 24px; }
+  h2 { font-size: clamp(24px, 3vw, 32px); margin-block: 32px 12px; }
+  p { line-height: 1.65; max-width: 70ch; }
+  a { text-decoration: underline; text-underline-offset: 3px; }
+</style>

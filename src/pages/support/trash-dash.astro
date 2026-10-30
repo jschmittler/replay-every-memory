@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import policy from '../../data/trash-dash-privacy.json';
+---
+<BaseLayout title="Trash Dash! Support — Replay Every Memory" description="Get help with Trash Dash! and report gameplay, control or save problems.">
+  <article class="container support-page">
+    <p><a href="/games#trash-dash">Trash Dash!</a> · <a href="/privacy/trash-dash">Privacy policy</a></p>
+    <h1>Trash Dash! support</h1>
+    <p>Need help or want to report a problem? Email <a href={`mailto:${policy.contact_email}`}>{policy.contact_email}</a>.</p>
+    <h2>What to include</h2>
+    <p>Tell us your device model, operating-system version, game version/build, and the chapter or stage where the problem happened. Describe what you expected and what happened instead. Screenshots or a short recording can help; please avoid including personal information.</p>
+    <p>If you are using TestFlight, you can also send feedback through TestFlight. Include the build number so we can identify the version you played.</p>
+    <h2>Controls and comfort settings</h2>
+    <p>Open Options from the main menu, or use the pause menu during play. The available options depend on the build and input device. Check Controls for the actions and choices available in your version.</p>
+    <h2>Continuing your journey</h2>
+    <p>Choose Continue from the main menu. If progress appears to be missing, contact us with what you last completed and your build number. Avoid deleting the app while investigating a save problem, because that may remove local progress.</p>
+    <h2>Release news</h2>
+    <p>Visit <a href="/games">our games page</a> or <a href="https://www.instagram.com/replayeverymemory/">@replayeverymemory on Instagram</a>. Availability is confirmed through the actual store listing when published.</p>
+  </article>
+</BaseLayout>
+<style>
+  .support-page { max-width: 900px; padding-block: clamp(40px, 6vw, 90px); overflow-wrap: anywhere; }
+  h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.1; margin-block: 24px; }
+  h2 { font-size: clamp(24px, 3vw, 32px); margin-block: 32px 12px; }
+  p { line-height: 1.65; max-width: 70ch; }
+  a { text-decoration: underline; text-underline-offset: 3px; }
+</style>

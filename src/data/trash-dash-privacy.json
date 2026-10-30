@@ -1,0 +1,40 @@
+{
+  "title": "Trash Dash! Privacy Policy",
+  "effective_date": "2026-10-29",
+  "policy_url": "https://replayeverymemory.com/privacy/trash-dash",
+  "contact_email": "trashdash@replayeverymemory.com",
+  "sections": [
+    {
+      "heading": "Who we are",
+      "text": "Trash Dash! is developed by James Schmittler under the Replay Every Memory studio brand. This policy covers the game and support correspondence about it. For privacy questions, contact trashdash@replayeverymemory.com."
+    },
+    {
+      "heading": "Data in the game",
+      "text": "The game does not require an account and does not send personal information or gameplay records to our servers. We do not include advertising, advertising identifiers, behavioral tracking or third-party analytics SDKs. There is no in-game chat or public upload service."
+    },
+    {
+      "heading": "Local saves and replays",
+      "text": "Progress, discoveries, best times, ghost replays, story-read state and preferences are stored locally on your device to support play. They remain there until removed by you or the operating system. Starting a new journey may retain records and preferences. Removing the app can remove its local data; device backups may retain copies under your Apple settings. We do not operate a cloud-save service."
+    },
+    {
+      "heading": "Apple services",
+      "text": "Apple processes App Store payments, downloads, device backups and TestFlight under its own terms and privacy practices. We do not receive your payment-card details. Apple may make sales reports, diagnostics or beta feedback available to us according to its services and your settings. TestFlight feedback may include contact details, device information and screenshots you submit. We use this information to test, support and improve the game."
+    },
+    {
+      "heading": "Support email",
+      "text": "If you contact us, we receive your email address, message and attachments. We use them to answer your request, investigate problems and follow up. Email providers process correspondence to deliver and store it. We do not use support correspondence for marketing without a separate choice, and we do not sell personal information or share it for behavioral advertising. Please avoid sending sensitive information or including it in screenshots."
+    },
+    {
+      "heading": "Retention and deletion",
+      "text": "We retain support correspondence only as long as reasonably needed to handle the request, related follow-up and applicable legal or security obligations. When no longer needed, it is deleted or de-identified. You may email us to request access, correction or deletion of information you provided, or withdraw a previous optional consent. We may need enough information to verify the request and may retain information when required by law. Local game data and Apple-managed backups are controlled through your device and Apple settings; we cannot remotely access or erase them."
+    },
+    {
+      "heading": "Children and privacy",
+      "text": "The game does not ask children or other players to create an account or submit personal information to play. A parent or guardian who believes a child sent us personal information through support can contact us to request its review or deletion. The App Store age rating describes game content and does not change these data practices."
+    },
+    {
+      "heading": "Links and updates",
+      "text": "An optional studio or policy link may open your device browser. Apple services and external websites have their own data practices; this policy does not claim those services keep no access logs. We will update this policy when our practices change and show the revised effective date. Contact: trashdash@replayeverymemory.com."
+    }
+  ]
+}
