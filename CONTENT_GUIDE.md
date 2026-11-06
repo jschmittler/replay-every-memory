@@ -48,7 +48,7 @@ Add WebVTT captions when the video contains speech or meaningful sound; place th
 
 ## Update the studio team
 
-The approved roster is in `src/data/studio-team.json`. Roles, biographies, and ordering on About Us come from this file. Original portraits live in `src/assets/team/` and are rendered as web previews. The owner-approved website roster is James, Emily, Matilda, Ramona, and Dot, the family dog and Head of Operations. Preserve their approved roles, biographies, and existing order; do not restore fictional studio personas from the game credits. The portraits appear on About Us; Home links to the team section.
+The approved roster is in `src/data/studio-team.json`. Roles, biographies, and ordering on About Us come from this file. Original portraits live in `src/assets/team/` and are rendered as web previews. The owner-approved website roster is James, Emily, Matilda, Ramona, Dot (the family dog and Head of Operations), and Holly (Head of HR). Preserve their approved roles, biographies, and existing order; do not restore fictional studio personas from the game credits. The portraits appear on About Us; Home links to the team section.
 
 ## Update contact or publish changes
 

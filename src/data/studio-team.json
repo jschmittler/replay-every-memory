@@ -57,7 +57,17 @@
       "background": "A cozy dog bed in the family game-development studio, with a soft blanket and a walking leash beside the garden door.",
       "portrait": "/assets/team/dot.png",
       "likeness_source": "owner-supplied photograph of the family dog"
+    },
+    {
+      "skill": "studio-hr",
+      "credit_order": 6,
+      "name": "Holly",
+      "role": "Head of HR",
+      "bio": "Holly makes sure every new hire feels welcome, from onboarding to getting set up. She\u2019s been known to let things slide, but she always supports the people joining the team. Despite the title, she\u2019s an unpaid intern and doesn\u2019t officially hold any stock in the company.",
+      "background": "A welcoming game-studio onboarding desk with a ready workstation, planning cards, leafy houseplants, and warm lamplight.",
+      "portrait": "/assets/team/holly.png",
+      "likeness_source": "owner-supplied photographs"
     }
   ],
-  "website_roster_note": "Owner-directed website roster: James, Emily, Matilda, Ramona, and Dot. The four human family members retain their approved game-credit roles and biographies. Dot is the owner-approved family dog and Head of Operations, employed since 2023."
+  "website_roster_note": "Owner-directed website roster: James, Emily, Matilda, Ramona, Dot, and Holly. The original four human family members retain their approved game-credit roles and biographies. Dot is the owner-approved family dog and Head of Operations, employed since 2023. Holly is the owner-approved Head of HR and unpaid intern, with no official company stock."
 }

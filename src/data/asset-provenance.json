@@ -143,6 +143,11 @@
       "source": "output/team/dot/dot-portrait.png",
       "sourceAsset": "src/assets/team/dot.png",
       "usage": "Owner-approved generated portrait of Dot, the family dog and Head of Operations. Created with the built-in image generator using the owner-supplied dog photograph for likeness and James and Matilda portraits for style. Full prompt and profile: output/team/dot/portrait-notes.md."
+    },
+    {
+      "source": "output/team/holly/holly-portrait.png",
+      "sourceAsset": "src/assets/team/holly.png",
+      "usage": "Owner-approved generated portrait of Holly, Head of HR. Created with the built-in image generator using three owner-supplied photographs for likeness and James and Emily portraits for style. Full prompt and profile: output/team/holly/portrait-notes.md."
     }
   ]
 }

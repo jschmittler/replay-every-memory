@@ -220,7 +220,7 @@ The first-game window combines supplied distant/foreground forest layers, the lo
 
 Characters presents approved Trashy and Jimothy art above names, roles, personality copy, and a ruled motivation block. A distinct soft-woodland Meet the villains section follows with owner-supplied Trash Monster and Brutus art. Each villain profile keeps the game's victim-first story truth: the Chapter 1 Trash Monster is refuse animated by Gunk, while Chapter 2’s Brutus recognizes Trashy but cannot control himself. Its standalone page gives the characters story context distinct from the gallery.
 
-About presents James, Emily, Matilda, Ramona, and Dot from `src/data/studio-team.json`, in a two-column grid that becomes one column at the stacked breakpoint. Portraits precede names, roles, and regular-font biographies. Preserve the exact approved names, roles, biographies, and order. The Home story directs visitors here without duplicating portraits.
+About presents James, Emily, Matilda, Ramona, Dot, and Holly from `src/data/studio-team.json`, in a two-column grid that becomes one column at the stacked breakpoint. Portraits precede names, roles, and regular-font biographies. Preserve the exact approved names, roles, biographies, and order. The Home story directs visitors here without duplicating portraits.
 
 ### Media Filters
 
