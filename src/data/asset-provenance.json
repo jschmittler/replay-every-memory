@@ -138,6 +138,11 @@
       "source": "src/assets/animation/rem-intro-yellow-simple.webm",
       "sourceAsset": "src/assets/animation/rem-intro-yellow-final.png",
       "usage": "Full final frame extracted from the last 40ms at 1920x1080, displayed as a lossless 1440x810 PNG; fallback for reduced motion/no JavaScript and final-frame hold."
+    },
+    {
+      "source": "output/team/dot/dot-portrait.png",
+      "sourceAsset": "src/assets/team/dot.png",
+      "usage": "Owner-approved generated portrait of Dot, the family dog and Head of Operations. Created with the built-in image generator using the owner-supplied dog photograph for likeness and James and Matilda portraits for style. Full prompt and profile: output/team/dot/portrait-notes.md."
     }
   ]
 }

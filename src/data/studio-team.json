@@ -47,7 +47,17 @@
       "background": "A cozy music studio with keyboard, percussion, glowing waveform shapes, and warm amber light.",
       "portrait": "res://assets/runtime/campaign/credits/studio_team/ramona.png",
       "likeness_source": "owner-supplied family reference"
+    },
+    {
+      "skill": "studio-operations",
+      "credit_order": 5,
+      "name": "Dot",
+      "role": "Head of Operations",
+      "bio": "Dot is solely responsible for team morale, daily walks, and making sure everyone gets plenty of naps. She leads by example. Employed since 2023, she has been an integral member of the team since before the beginning.",
+      "background": "A cozy dog bed in the family game-development studio, with a soft blanket and a walking leash beside the garden door.",
+      "portrait": "/assets/team/dot.png",
+      "likeness_source": "owner-supplied photograph of the family dog"
     }
   ],
-  "website_roster_note": "Owner-directed website roster: James, Emily, Matilda, and Ramona only. Their roles and biographies retain the approved game-credit wording."
+  "website_roster_note": "Owner-directed website roster: James, Emily, Matilda, Ramona, and Dot. The four human family members retain their approved game-credit roles and biographies. Dot is the owner-approved family dog and Head of Operations, employed since 2023."
 }
